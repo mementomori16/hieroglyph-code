@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { products } from '../../data/products';
 import { Product } from '../../types/Product';
 import { useNavigate } from 'react-router-dom';
-import './searchBar.scss';
+import './searchbar.scss';
 import { FaSearch } from 'react-icons/fa';
 
 interface SearchBarProps {
