@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Product } from '../../../types/Product';
 import ViewGallery from '../../View Gallery/ViewGallery';
-import './CardContainer.scss';
+import './cardContainer.scss';
 
 interface CardContainerProps {
     product: Product; // Accept product as a prop

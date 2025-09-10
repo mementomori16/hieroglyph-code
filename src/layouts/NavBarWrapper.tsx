@@ -1,3 +1,5 @@
+// src/components/NavBarWrapper.tsx
+
 import { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import NavDesktop from "../components/NavBar/NavDesktop/NavDesktop";
@@ -6,7 +8,9 @@ import Footer from "../components/Footer/Footer";
 import BackToTop from "../components/BacktoTopButton/BacktoTopButton";
 
 export default function NavBarWrapper() {
-  const [isMobile, setMobile] = useState<boolean>(window.innerWidth < 1024);
+  // Change the breakpoint to a smaller value, for example, 992px
+  // This will render the desktop nav for screens larger than 991px
+  const [isMobile, setMobile] = useState<boolean>(window.innerWidth < 992);
   const location = useLocation();
 
   useEffect(() => {
@@ -15,7 +19,8 @@ export default function NavBarWrapper() {
 
   useEffect(() => {
     const handleResize = () => {
-      setMobile(window.innerWidth < 1024);
+      // Use the same breakpoint here
+      setMobile(window.innerWidth < 992);
     };
 
     window.addEventListener("resize", handleResize);
