@@ -49,13 +49,16 @@ const CardContainer: React.FC<CardContainerProps> = ({ product }) => {
     };
 
     // Constructing the images array for ViewGallery
-    const images = product ? [
-        { url: product.image, title: product.title },
-        ...product.thumbnails.map(thumbnail => ({
-            url: thumbnail,
-            title: product.title,
-        }))
-    ] : [];
+    const images = product
+        ? [
+            { url: product.image, title: product.title, date: product.date || '' }, // Use a fallback value if date is undefined
+            ...product.thumbnails.map((thumbnail) => ({
+                url: thumbnail,
+                title: product.title,
+                date: product.date || '', // Use a fallback value if date is undefined
+            })),
+        ]
+        : [];
 
     const currentImageIndex = product ? images.findIndex(image => image.url === mainImage) : 0;
 
@@ -68,7 +71,7 @@ const CardContainer: React.FC<CardContainerProps> = ({ product }) => {
                             src={mainImage}
                             alt={product.title}
                             className="image"
-                            style={{ opacity, cursor: 'zoom-in' }} // Indicate it's clickable
+                            style={{ opacity, cursor: 'zoom-in' }}
                             onClick={handleImageClick}
                         />
                     ) : (
