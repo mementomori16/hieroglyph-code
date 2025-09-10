@@ -1,0 +1,184 @@
+@use "sass:color";
+@import '../../../global.scss';
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $space-md $space-md;
+    background-color: $color-background;
+    font-family: $font-family-base;
+
+    .contact-title {
+      @include services-heading; 
+ 
+    margin-bottom: $space-xxl; 
+
+    @media (max-width: $breakpoint-md) {
+    font-size: $font-size-h3;
+    margin-bottom: $space-lg;
+    }
+    @media (max-width: $breakpoint-sm) {
+    font-size: $font-size-h4;
+    margin-bottom: $space-md;
+  
+}
+  }
+}
+
+.contact-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: $breakpoint-xl;
+    gap: $space-xl;
+
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        align-items: stretch; // This makes the two flex items have the same height
+        gap: $space-xxl;
+    }
+}
+
+.contact-info {
+    padding: $space-lg;
+    flex: 1;
+    
+    .city-view-image-container {
+        width: 100%;
+        max-width: 50%;
+        margin: 0 auto $space-xl auto;
+        text-align: center;
+        max-height: 250px; // Add a max-height to the image container
+        overflow: hidden; // Hide any overflow
+
+        .city-view-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: $border-radius-md;
+            box-shadow: $shadow-md;
+            object-fit: cover; // Ensures the image fills the container without distortion
+        }
+
+        .image-caption {
+            font-size: $font-size-sm;
+            color: $color-text-light;
+            margin-top: $space-sm;
+        }
+    }
+
+    .contact-description {
+        font-size: $font-size-base;
+        line-height: 1.7;
+        color: $color-text-dark;
+        margin-bottom: $space-md;
+
+        strong {
+            color: $color-secondary;
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+    .contact-methods {
+        .contact-method-title {
+            color: $color-button-blue;
+            font-size: $font-size-h3;
+            font-weight: $font-weight-bold;
+            margin-top: $space-lg;
+            margin-bottom: $space-xs;
+        }
+        .contact-connect-title {
+            font-size: $font-size-base;
+        }
+
+        .contact-method-text {
+            font-size: $font-size-base;
+            line-height: 1.7;
+            color: $color-text-dark;
+            margin-bottom: $space-md;
+        }
+    }
+}
+
+.contact-form-container {
+    padding: $space-lg;
+    flex: 1;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 100%; // Make the form fill its container
+
+        input,
+        textarea {
+            margin-bottom: $space-md;
+            padding: $space-sm $space-md;
+            border: 1px solid $color-border-subtle;
+            border-radius: $border-radius-sm;
+            font-family: $font-family-base;
+            font-size: $font-size-base;
+            color: $color-secondary;
+            outline: none;
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+            &::placeholder {
+                color: lighten($color-text-light, 10%);
+            }
+
+            &:focus {
+                border-color: $color-primary;
+                box-shadow: 0 0 0 3px rgba($color-primary, 0.2);
+            }
+        }
+
+        textarea {
+            flex-grow: 1; // Allows the textarea to expand and fill available space
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .privacy-checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: $space-md;
+            
+            input[type="checkbox"] {
+                margin: 0 $space-sm 0 0;
+                width: auto;
+                height: auto;
+            }
+
+            label {
+                font-size: $font-size-sm;
+                line-height: 1.5;
+                color: $color-text-light;
+            }
+        }
+
+        button {
+            @extend .btn-blue;
+            padding: $space-md $space-lg;
+            font-size: $font-size-md;
+            margin-top: $space-sm;
+            width: fit-content;
+            align-self: flex-start; // Align the button to the left
+        }
+    }
+    
+    .success-message, .error-message {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-semibold;
+        text-align: center;
+        margin-bottom: $space-sm;
+        margin-top: 0;
+    }
+
+    .success-message {
+        color: $color-success;
+    }
+
+    .error-message {
+        color: $color-error;
+    }
+}

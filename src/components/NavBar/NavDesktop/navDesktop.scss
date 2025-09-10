@@ -1,0 +1,128 @@
+@use "sass:color";
+@import '../../../global.scss';
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $color-surface;
+  color: $color-secondary;
+  box-shadow: $shadow-sm;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $space-md $space-xl;
+  gap: $space-lg;
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    flex-shrink: 0;
+
+    .nav-logo-img {
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: $space-xxl;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    
+    .nav-item {
+      .nav-link {
+        font-family: $font-family-base;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-semibold;
+        color: $color-text-light;
+        text-decoration: none;
+        position: relative;
+        padding: 0.5rem 0;
+        transition: color 0.3s ease-in-out;
+        letter-spacing: 0.02rem;
+        white-space: nowrap;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: $color-primary;
+          transition: width 0.3s ease-in-out;
+        }
+
+        &:hover {
+          color: $color-button-blue;  
+        }
+
+        &.active {
+          color: $color-button-blue;
+          font-weight: $font-weight-bold;
+          
+          &::after {
+            width: 0;
+            height: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .nav-right-actions {
+    display: flex;
+    align-items: center;
+    gap: $space-lg;
+    flex-shrink: 0;
+    
+    .search-bar-container {
+      min-width: 250px;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .navbar {
+    padding: $space-md $space-md;
+    gap: $space-md;
+
+    .nav-menu {
+      gap: $space-lg;
+      
+      .nav-item .nav-link {
+        font-size: 0.7rem;
+      }
+    }
+    
+    .nav-right-actions {
+      gap: $space-md;
+
+      .search-bar-container {
+        min-width: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .header {
+    display: none;
+  }
+}
+

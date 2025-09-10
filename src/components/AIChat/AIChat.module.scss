@@ -1,0 +1,128 @@
+// src/components/AIChat/AIChat.module.scss
+
+.chatContainer {
+  width: 100%; // Make it responsive
+  max-width: 400px; // Or whatever max width you prefer
+  height: 500px; // Or set a min-height and max-height for flexibility
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color, #ffffff);
+}
+
+.messagesContainer {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 15px;
+  background-color: var(--messages-bg-color, #f7f7f7);
+  display: flex;
+  flex-direction: column;
+
+  // Custom scrollbar for better appearance
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color, #f1f1f1);
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #888);
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover-color, #555);
+  }
+}
+
+.welcomeMessage {
+  text-align: center;
+  color: var(--welcome-message-color, #666);
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 10px; // Space between messages
+
+  &.userMessage {
+    justify-content: flex-end;
+  }
+
+  &.aiMessage {
+    justify-content: flex-start;
+  }
+}
+
+.messageBubble {
+  padding: 10px 15px;
+  border-radius: 18px; // More rounded corners
+  max-width: 80%; // Limit bubble width
+
+  &.userMessage .messageBubble {
+    background-color: var(--user-bubble-bg, #007bff);
+    color: var(--user-bubble-text, white);
+  }
+
+  &.aiMessage .messageBubble {
+    background-color: var(--ai-bubble-bg, #e2e2e2);
+    color: var(--ai-bubble-text, #333);
+  }
+}
+
+.inputForm {
+  display: flex;
+  padding: 10px 15px;
+  border-top: 1px solid var(--input-border-top-color, #eee);
+  background-color: var(--input-form-bg-color, #ffffff);
+  gap: 10px; // Space between input and button
+}
+
+.textInput {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid var(--input-border-color, #ddd);
+  border-radius: 20px; // Rounded input
+  font-size: 1rem;
+  outline: none; // Remove default focus outline
+
+  &:focus {
+    border-color: var(--input-focus-border-color, #007bff);
+    box-shadow: 0 0 0 2px var(--input-focus-shadow-color, rgba(0, 123, 255, 0.25));
+  }
+
+  &:disabled {
+    background-color: var(--input-disabled-bg, #f0f0f0);
+    cursor: not-allowed;
+  }
+}
+
+.sendButton {
+  padding: 10px 20px;
+  background-color: var(--send-button-bg, #007bff);
+  color: var(--send-button-text, white);
+  border: none;
+  border-radius: 20px; // Rounded button
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  min-width: 80px; // Ensure button has a consistent width
+
+  &:hover:not(:disabled) {
+    background-color: var(--send-button-hover-bg, #0056b3);
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    background-color: var(--send-button-disabled-bg, #cccccc);
+    cursor: not-allowed;
+  }
+}

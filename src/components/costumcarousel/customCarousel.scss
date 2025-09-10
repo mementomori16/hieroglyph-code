@@ -1,0 +1,601 @@
+// src/components/costumcarousel/customCarousel.scss
+
+// REVISED: Corrected import path to access global variables
+@use "sass:color";
+@import '../../global.scss';
+
+.custom-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .carousel-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .carousel-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.4) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 8%;
+      color: #fff;
+      text-align: left;
+
+      .carousel-global-title {
+        $font-family-base: 'Open Sans', sans-serif;
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        line-height: 1.1;
+        font-weight: 700;
+        animation: fadeIn 1s ease-out;
+        color: #ffffff;
+
+        @media (max-width: $breakpoint-lg) {
+          font-size: 2.4rem;
+        }
+        @media (max-width: $breakpoint-md) {
+          font-size: 1.8rem;
+        }
+        @media (max-width: $breakpoint-sm) {
+          font-size: 1.4rem;
+        }
+      }
+
+      .carousel-global-description {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        max-width: 55%;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        font-weight: 300;
+        animation: fadeIn 1.2s ease-out;
+        color: #f5f5f5;
+
+        @media (max-width: $breakpoint-lg) {
+          font-size: 1rem;
+          max-width: 65%;
+        }
+        @media (max-width: $breakpoint-md) {
+          font-size: 0.9rem;
+          max-width: 80%;
+        }
+        @media (max-width: $breakpoint-sm) {
+          font-size: 0.8rem;
+          max-width: 90%;
+        }
+      }
+
+      .carousel-product-title {
+        $font-family-base: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        animation: slideInLeft 0.8s ease-out;
+
+        @media (max-width: $breakpoint-lg) {
+          font-size: 1.6rem;
+        }
+        @media (max-width: $breakpoint-md) {
+          font-size: 1.3rem;
+        }
+        @media (max-width: $breakpoint-sm) {
+          font-size: 1.1rem;
+        }
+      }
+
+      .carousel-product-description {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+        max-width: 50%;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        color: #e8e8e8;
+        animation: slideInLeft 1s ease-out;
+
+        @media (max-width: $breakpoint-lg) {
+          font-size: 0.9rem;
+          max-width: 60%;
+        }
+        @media (max-width: $breakpoint-md) {
+          font-size: 0.8rem;
+          max-width: 70%;
+        }
+        @media (max-width: $breakpoint-sm) {
+          font-size: 0.75rem;
+          max-width: 80%;
+        }
+      }
+
+      .explore-button {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 0.8rem 1.6rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        border-radius: 50px;
+        backdrop-filter: blur(10px);
+        animation: fadeIn 1.4s ease-out;
+
+        &:hover {
+          background-color: rgb(162, 200, 234);
+          color: #000;
+          border-color: #000;
+        }
+
+        .arrow {
+          margin-left: 0.6rem;
+        }
+      }
+    }
+  }
+
+  .arrows {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dadada;
+    cursor: pointer;
+    z-index: 10;
+    
+    svg {
+      font-size: 2.5rem;
+      margin: 2mm 0;
+    }
+  }
+
+  .blinking-arrow {
+    animation: blink 2s infinite;
+  }
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  .active {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+// Responsive adjustments for carousel
+@media (max-width: $breakpoint-md) {
+  .custom-carousel {
+    height: 60vh;
+    .overlay {
+      padding: 0 5%;
+      .carousel-global-title {
+        font-size: 1.6rem;
+      }
+      .carousel-global-description {
+        font-size: 0.85rem;
+      }
+      .carousel-product-title {
+        font-size: 1.2rem;
+      }
+      .carousel-product-description {
+        font-size: 0.75rem;
+      }
+      .explore-button {
+        font-size: 0.85rem;
+        padding: 0.7rem 1.4rem;
+      }
+    }
+    .arrows {
+      display: none;
+    }
+    .dots {
+      bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .custom-carousel {
+    height: 50vh;
+    .overlay {
+      align-items: center;
+      text-align: center;
+      .carousel-global-title,
+      .carousel-global-description,
+      .carousel-product-title,
+      .carousel-product-description {
+        max-width: 90%;
+      }
+      .carousel-global-title {
+        font-size: 1.1rem;
+      }
+      .carousel-global-description {
+        font-size: 0.75rem;
+      }
+      .carousel-product-title {
+        font-size: 0.9rem;
+      }
+      .carousel-product-description {
+        font-size: 0.7rem;
+      }
+      .explore-button {
+        font-size: 0.75rem;
+        padding: 0.6rem 1.2rem;
+      }
+    }
+    .arrows {
+      display: none;
+    }
+    .dots {
+      bottom: 15px;
+    }
+  }
+}
+
+
+
+/* new code
+// src/components/costumcarousel/customCarousel.scss
+
+@use "sass:color";
+@import '../../global.scss';
+
+// Main carousel container
+.custom-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 87vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: $color-background;
+
+  // Carousel content wrapper
+  .carousel-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 $space-xxxl;
+  }
+
+  // Text container
+  .text-container {
+    flex: 1;
+    color: $color-text-light;
+    text-align: left;
+    max-width: 50%;
+    z-index: 2;
+
+    .carousel-global-title {
+      font-family: $font-family-base;
+      font-size: $font-size-h2;
+      margin-bottom: $space-sm;
+      font-weight: $font-weight-extrabold;
+      animation: fadeIn 1s ease-out;
+      color: $color-text-light;
+      text-shadow: none;
+    }
+    .carousel-global-description {
+      font-family: $font-family-base;
+      font-size: $font-size-h5;
+      line-height: 1.5;
+      margin-bottom: $space-lg;
+      font-weight: $font-weight-normal;
+      animation: fadeIn 1.2s ease-out;
+      color: $color-text-light;
+      text-shadow: none;
+    }
+    .carousel-product-title {
+      font-family: $font-family-base;
+      font-size: $font-size-h3;
+      margin-top: $space-lg;
+      margin-bottom: $space-sm;
+      color: $color-text-light;
+      animation: slideInLeft 0.8s ease-out;
+      text-shadow: none;
+    }
+    .carousel-product-description {
+      font-family: $font-family-base;
+      font-size: $font-size-base;
+      line-height: 1.4;
+      margin-bottom: $space-lg;
+      color: $color-text-light;
+      animation: slideInLeft 1s ease-out;
+      text-shadow: none;
+    }
+    .explore-button {
+      background-color: transparent;
+      color: $color-button-blue;
+      border: 2px solid $color-button-blue;
+      padding: $space-md $space-lg;
+      cursor: pointer;
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      border-radius: 50px;
+      backdrop-filter: none;
+      animation: fadeIn 1.4s ease-out;
+      &:hover {
+        background-color: $color-button-blue;
+        color: $color-text-white;
+        border-color: $color-button-blue;
+      }
+      .arrow {
+        margin-left: $space-sm;
+      }
+    }
+  }
+
+  // Image container
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: $space-xl;
+    max-width: 50%;
+  }
+
+  .carousel-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: $border-radius-md;
+    box-shadow: $shadow-lg;
+    animation: fadeIn 1s ease-out;
+  }
+
+  // Arrows for scrolling
+  .arrows {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-text-light;
+    cursor: pointer;
+    z-index: 10;
+    
+    svg {
+      font-size: $font-size-h2;
+      margin: $space-xxs 0;
+    }
+  }
+
+  .blinking-arrow {
+    animation: blink 2s infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  // Navigation dots
+  .dots {
+    position: absolute;
+    bottom: $space-lg;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: $space-xs;
+    z-index: 10;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(138, 190, 236, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid rgba(138, 190, 236, 0.5);
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+  .active {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+}
+
+// --- Responsive Adjustments ---
+
+@media (max-width: $breakpoint-lg) {
+  .custom-carousel .carousel-content {
+    padding: 0 $space-xxl;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .custom-carousel {
+    min-height: auto; 
+    padding: $space-xxl 0;
+
+    .carousel-content {
+      // Stacks elements vertically but keeps them left-aligned
+      flex-direction: column; 
+      align-items: flex-start; // Keeps content aligned to the left
+      padding: 0 $space-lg;
+    }
+
+    .text-container {
+      max-width: 100%; 
+      padding: 0;
+      text-align: left; // Explicitly set text to left-align
+      
+      .carousel-global-title { 
+        font-size: $font-size-h3; 
+      }
+      .carousel-product-title { 
+        font-size: $font-size-h4; 
+      }
+    }
+
+    .image-container {
+      max-width: 100%; 
+      justify-content: flex-start; // Keeps image aligned to the left
+      margin-top: $space-xl;
+      padding-left: 0;
+    }
+
+    .arrows { 
+      display: none; 
+    }
+    
+    .dots { 
+      bottom: $space-lg; 
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .custom-carousel {
+    min-height: auto;
+    height: auto;
+    padding: $space-xl 0;
+
+    .carousel-content {
+      padding: 0 $space-md; 
+    }
+
+    .image-container {
+      max-width: 100%;
+    }
+    .carousel-image {
+      width: 100%;
+      // Reduce the image size further for smaller screens
+      max-width: 300px;
+      box-shadow: none;
+    }
+
+    // Drastically reduce font sizes for smaller screens
+    .carousel-global-title { 
+      font-size: $font-size-h5; 
+      line-height: 1.2;
+    }
+    .carousel-global-description { 
+      font-size: $font-size-xs; 
+      line-height: 1.4;
+    }
+    .carousel-product-title { 
+      font-size: $font-size-h6; 
+      line-height: 1.2;
+    }
+    .carousel-product-description { 
+      font-size: $font-size-xxs; 
+      line-height: 1.4;
+    }
+    
+    // Make the button and its text smaller
+    .explore-button { 
+      font-size: $font-size-xs; 
+      padding: $space-xs $space-sm; 
+    }
+    
+    // Reduce the size of the navigation dots
+    .dots { 
+      bottom: $space-md; 
+      gap: $space-xxs;
+      .dot {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+}
+*/

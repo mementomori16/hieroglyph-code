@@ -1,0 +1,191 @@
+// src/components/FloatingAIChat/FloatingAIChat.module.scss
+
+// Styles for the chat popup container
+.chatPopup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100; /* Ensure it's above most content */
+  width: 350px;
+  height: 550px;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease-out; /* Smooth transition for appearance */
+  transform-origin: bottom right;
+
+  animation: fadeInScale 0.3s ease-out forwards; /* Animation on mount */
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+// Styles for the chat header (title and close button)
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  background-color: var(--primary-color);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+// Styles for the floating button that opens the chat
+.floatingChatButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 90; /* Lower z-index than popup, higher than content */
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 30px; /* Pill shape */
+  padding: 15px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: var(--send-button-hover-bg); /* Reusing a variable from AIChat.module.scss */
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Styles for the contact form modal overlay */
+.contactFormOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Highest z-index for modals */
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-out forwards;
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+.contactFormModal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  animation: slideInFromTop 0.3s ease-out forwards;
+
+  @keyframes slideInFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5em;
+  }
+
+  p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+}
+
+.formInput {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+  font-size: 1em;
+
+  &:focus {
+    border-color: var(--input-focus-border-color);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--input-focus-shadow-color);
+  }
+}
+
+.formActions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.submitButton, .cancelButton {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.submitButton {
+  background-color: #28a745;
+  color: white;
+  &:hover { background-color: #218838; }
+  &:active { transform: scale(0.98); }
+}
+
+.cancelButton {
+  background-color: #dc3545;
+  color: white;
+  &:hover { background-color: #c82333; }
+  &:active { transform: scale(0.98); }
+}

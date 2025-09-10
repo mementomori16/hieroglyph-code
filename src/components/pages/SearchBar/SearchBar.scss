@@ -1,0 +1,102 @@
+/* src/components/SearchBar/searchBar.scss */
+// Ensure this path correctly points to your global.scss
+@import '../../../global.scss';
+
+.search-bar {
+  position: relative; // Position relative for absolute positioning of results
+  display: flex;
+  align-items: center;
+  width: 100%; // Takes full width of its parent container
+
+  .search-input-container {
+    position: relative; // Make this the positioning context for the icon
+    display: flex;
+    align-items: center;
+    // Clean, subtle border
+    border: 1px solid $color-border-subtle;
+    border-radius: $border-radius-sm; // Consistent small border radius
+    overflow: hidden; // To contain the icon within the input
+    width: 100%; // Full width of the container
+    background-color: $color-surface; // White background for the input area
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:focus-within { // Style when input inside is focused
+      border-color: $color-primary; // Highlight border with primary color
+      box-shadow: 0 0 0 2px lighten($color-primary, 30%); // Subtle focus ring
+    }
+
+    input {
+      padding: $space-sm $space-sm $space-sm ($space-xxl); /* Added left padding for icon */
+      border: none; // Remove border from input itself
+      outline: none; // Remove outline on focus
+      width: 100%; // Full width
+      font-family: $font-family-base; // Use global font
+      font-size: $font-size-sm; // Smaller font size (14px)
+      color: $color-secondary; // Input text color
+      background: transparent; // Ensure input background is transparent to show container background
+
+      &::placeholder {
+        color: $color-text-light; // Placeholder text color
+      }
+    }
+
+    .search-icon {
+      position: absolute; /* Position the icon absolutely inside the container */
+      left: $space-sm; /* Position it from the left */
+      color: $color-text-light;
+      font-size: $font-size-base;
+      pointer-events: none; /* Make icon unclickable so clicks pass through to input */
+    }
+  }
+
+  .search-results {
+    position: absolute; // Position the results absolutely
+    top: calc(100% + #{$space-xs}); // Align below the input with a small gap
+    left: 0; // Align to the left
+    right: 0; // Align to the right
+    border: 1px solid $color-border-subtle; // Consistent border
+    border-radius: $border-radius-sm; // Consistent border radius
+    background: $color-surface; // White background for results
+    max-height: 10rem; // Make results list smaller (e.g., 160px)
+    overflow-y: auto;
+    z-index: 1000; // Ensure it appears above other elements
+    display: flex;
+    flex-direction: column; // Stack results vertically
+    box-shadow: $shadow-md; // Add a subtle shadow to results
+
+    .search-result {
+      display: flex; // Use flexbox for alignment
+      align-items: center; // Center items vertically
+      padding: $space-xs $space-sm; // Smaller padding for results items
+      cursor: pointer; // Change cursor to pointer
+      border-bottom: 1px solid $color-border-subtle; // Use global border color
+
+      &:last-child {
+        border-bottom: none; // Remove border for the last item
+      }
+
+      &:hover {
+        background-color: lighten($color-background, 3%); // Light hover effect
+      }
+
+      &.highlighted {
+        background-color: lighten($color-primary, 40%); // Highlight color
+      }
+
+      .thumbnail {
+        width: 2.5rem; // Smaller thumbnail (e.g., 40px)
+        height: 2.5rem; // Keep square aspect ratio
+        margin-right: $space-sm; // Space between thumbnail and title
+        border-radius: $border-radius-sm; // Small border radius for thumbnails
+        object-fit: cover; // Cover space
+      }
+
+      .product-title {
+        font-size: $font-size-sm; // Smaller font size for title
+        color: $color-secondary; // Title color
+        font-family: $font-family-base; // Use global font
+        font-weight: $font-weight-normal;
+      }
+    }
+  }
+}

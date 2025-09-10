@@ -1,0 +1,70 @@
+@use "sass:color";
+@import '../../global.scss';
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  
+  .lang-toggle {
+    background: transparent;
+    border: 1px solid $color-border-subtle;
+    border-radius: $border-radius-sm;
+    color: $color-button-blue;
+    padding: $space-xs $space-sm;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: color.adjust($color-surface, $lightness: -5%);
+      border-color: $color-secondary;
+    }
+    
+    .arrow-icon {
+      margin-left: $space-xxs;
+      transition: transform 0.2s ease-in-out;
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .lang-options {
+    position: absolute;
+    top: calc(100% + $space-xs);
+    right: 0;
+    list-style: none;
+    background-color: $color-surface;
+    box-shadow: none; /* Removed box-shadow */
+    border-radius: $border-radius-sm;
+    padding: 0;
+    min-width: 60px; /* Makes the dropdown narrower */
+    z-index: 2000;
+    border: 1px solid $color-border-subtle;
+    
+    &.open {
+      display: block;
+    }
+
+    .lang-option {
+      cursor: pointer;
+      padding: $space-xs $space-sm;
+      font-size: $font-size-sm;
+      color: $color-text-light;
+      
+      &:hover {
+        background-color: color.adjust($color-surface, $lightness: -5%);
+      }
+      
+      &.active {
+        font-weight: $font-weight-bold;
+        color: $color-text-white;
+        background-color: $color-button-blue;
+        box-shadow: none; /* Removed the dark outline from active item */
+      }
+    }
+  }
+}

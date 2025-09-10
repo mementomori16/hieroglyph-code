@@ -1,0 +1,56 @@
+// sharePopup.scss
+.share-popup {
+    background-color: #7c7272; // Background color for the popup
+    border: 1px solid #bfbebe; // Border for the popup
+    border-radius: 5px; // Rounded corners
+    padding: 10px; // Padding inside the popup
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Shadow for better visibility
+    z-index: 1000; // Ensure it appears above other elements
+    width: 200px; // Set a fixed width for the popup
+    font-size: 0.8rem; // Smaller font size for the text
+    position: absolute;
+
+    .close-icon {
+        position: absolute; // Position it absolutely within the popup
+        top: 10px; // Adjust as needed
+        right: 10px; // Adjust as needed
+        font-size: 1.4rem; // Size of the X icon
+        cursor: pointer; // Change cursor to pointer
+        color: #000000; // Color for the close icon
+        transition: color 0.3s; // Smooth transition for color
+
+        &:hover {
+            color: #4d4d4d; // Darker shade on hover
+        }
+    }
+
+    .share-icons {
+        display: flex; // Use flexbox for alignment
+        justify-content: space-around; // Space out the icons evenly
+        margin-top: 10px; // Add some space above the icons
+
+        svg {
+            width: 24px; // Smaller size for the icons
+            height: 24px; // Smaller size for the icons
+            transition: transform 0.2s; // Add a transition for hover effect
+
+            &:hover {
+                transform: scale(1.1); // Scale up on hover
+            }
+        }
+    }
+
+    .copy-permalink-button {
+        background-color: #4a4444; // Bootstrap primary color
+        color: rgb(193, 191, 191); // Text color
+        border: none; // border-radius: 5px; // Rounded corners
+        padding: 8px 12px; // Padding for the button
+        cursor: pointer; // Change cursor to pointer
+        font-size: 0.8rem; // Smaller font size
+        transition: background-color 0.3s; // Smooth transition for background color
+
+        &:hover {
+            background-color: #8c8080; // Darker shade on hover
+        }
+    }
+}

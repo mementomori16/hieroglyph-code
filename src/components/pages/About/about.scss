@@ -1,0 +1,119 @@
+@use "sass:color";
+@import '../../../global.scss'; 
+
+.about-container {
+  padding: $space-md; // Changed from $space-xxl to match Services page
+  max-width: $breakpoint-xxl;
+  margin: 0 auto;
+  background-color: $color-background;
+  color: $color-secondary;
+  font-family: $font-family-base;
+
+  h1,
+  h2 {
+    text-align: center;
+    position: relative;
+  }
+
+  h1 {
+    font-size: $font-size-h2;
+    line-height: 1.2;
+    color: $color-primary;
+    margin-bottom: $space-xxl; // Consistent with Services heading
+
+    @media (max-width: $breakpoint-md) {
+      font-size: $font-size-h3;
+      margin-bottom: $space-lg;
+    }
+    @media (max-width: $breakpoint-sm) {
+      font-size: $font-size-h4;
+      margin-bottom: $space-md;
+    }
+    
+    span {
+      display: block;
+      font-size: $font-size-h3;
+      color: $color-text-light;
+      margin-bottom: $space-sm;
+      text-shadow: none;
+    }
+  }
+
+  h2 {
+    font-size: $font-size-h3;
+    margin-top: $space-xxl;
+    color: $color-text-light;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $space-xxl;
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: $space-xl;
+      box-shadow: $shadow-md;
+    }
+
+    p {
+      max-width: 800px;
+      text-align: left;
+      font-weight: $font-weight-normal;
+      font-size: $font-size-base;
+      line-height: 1.7;
+      color: $color-secondary;
+      font-family: $font-family-base;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: $space-xl;
+      max-width: 800px;
+      text-align: left;
+
+      li {
+        position: relative;
+        padding-left: $space-md;
+        margin-bottom: $space-sm;
+        font-family: $font-family-base;
+
+        &::before {
+          content: '•';
+          color: $color-primary;
+          position: absolute;
+          left: 0;
+          font-weight: $font-weight-bold;
+          font-size: $font-size-md;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  .cta-section {
+    text-align: center;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+
+    .cta-title {
+      @extend h2;
+      margin-top: 0;
+      margin-bottom: $space-md;
+    }
+
+    .cta-button {
+      @extend .btn-primary;
+      padding: $space-md $space-lg;
+      font-size: $font-size-md;
+    }
+  }
+}

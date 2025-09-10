@@ -1,0 +1,156 @@
+{
+  "home": "Home",
+  "services": "SoftwareDienstleistungen",
+  "projects": "Projekte",
+  "about": "Über uns",
+  "contact": "Kontakt",
+  "homePage": {
+    "aboutTeaserTitle": "Über uns",
+    "aboutTeaserDescription": "Ihre digitale Präsenz verdient mehr als nur eine Vorlage. Hieroglyph Code ist Ihr All-in-One-Partner für massgeschneiderte Web- und Mobile-Entwicklung, von der Konzeption bis zur Fertigstellung und darüber hinaus.<h5>Geleitet von Expertise</h5>Geleitet von Ilya Medvedev, einem zertifizierten Full-Stack-Entwickler aus Basel, Schweiz, widmet sich Hieroglyph Code der leidenschaftlichen Umwandlung komplexer Ideen in elegante, benutzerfreundliche Software. Durch die Kombination von technischer Präzision und kreativer Vision liefert das Unternehmen massgeschneiderte Lösungen, die Ihre digitale Präsenz wirklich aufwerten.<h5>Ein Fokus auf Schlüssel-Dienstleistungen</h5><ul><li><strong>Full-Stack-Entwicklung:</strong> Leistungsstarke Full-Stack-Applikationen, die reaktionsschnell und schnell sind.</li><li><strong>Spezialisierte Funktionen:</strong> Zu den Dienstleistungen gehören die Erstellung von APIs, robusten E-Commerce-Plattformen, sicheren Anmeldesystemen und nahtlosen Zahlungsintegrationen.</li><li><strong>Wartung & Support:</strong> Zuverlässige, laufende Wartung und Updates, um sicherzustellen, dass Ihre digitalen Tools stets reibungslos funktionieren.</li></ul>",
+    "learnMoreButton": "Klicken Sie fuer mehr"
+  },
+  "carousel": {
+    "globalTitle": "Hieroglyph Code: Digitale Exzellenz gestalten",
+    "globalDescription": "Ihre Vision wird in robuste, intuitive und visuell beeindruckende Softwareloesungen verwandelt.",
+    "learnMoreButton": "Erfahren Sie mehr ueber diesen Service"
+  },
+  "projectsPage": {
+    "title": "Projekte",
+    "viewButton": "Details ansehen"
+  },
+  "servicesPage": {
+    "title": "Softwaredienstleistungen",
+    "viewButton": "Details ansehen"
+  },
+  "cardPage": {
+    "productNotFound": "Produkt nicht gefunden",
+    "technologiesUsed": "Verwendete Technologien:",
+    "siteLink": "Website-Link:"
+  },
+  "products": {
+    "200": {
+      "title": "Entwicklung von Webanwendungen & E-Commerce",
+      "description": "Robuste Webanwendungen und hochkonvertierende E-Commerce-Plattformen werden entwickelt. Die Loesungen werden mit JavaScript und TypeScript fuer eine skalierbare und wartbare Codebasis erstellt. Durch den Einsatz moderner Frameworks werden leistungsstarke und ansprechende Webanwendungen konzipiert.<h5>Wichtige Merkmale & Technologien</h5><ul><li><strong>Front-End-Entwicklung:</strong> Ausgefeilte und intuitive Benutzeroberflaechen werden mit modernsten Frameworks wie React, Next.js, Vue.js und Svelte erstellt. Fuer eine optimierte Inhaltsbereitstellung und Leistung werden auch Technologien wie SvelteKit und Bunny.net CDN verwendet.</li><li><strong>Back-End-Systeme:</strong> Das Backend wird auf Node.js aufgebaut, um eine skalierbare und sichere Grundlage zu schaffen. Fuer spezifische Anforderungen koennen auch andere robuste serverseitige Sprachen wie Java oder Golang integriert werden.</li><li><strong>E-Commerce & Zahlungen:</strong> Sichere Transaktionen und eine felsenfeste Grundlage fuer das Wachstum werden durch die Integration fuehrender Zahlungs-Gateways wie Stripe, PayPal und anderer direkter Zahlungsmethoden gewaehrleistet.</li></ul>"
+    },
+    "201": {
+      "title": "UI/UX Design & Prototyping",
+      "description": "Ein aussergewoehnliches digitales Produkt beginnt mit einem herausragenden Benutzererlebnis. Spezialisierung auf die Gestaltung intuitiver, ansprechender und visuell beeindruckender Benutzeroberflaechen (UI) und Benutzererlebnisse (UX), die das Publikum fesseln.<h5>Wichtige Merkmale & Prozess</h5><ul><li><strong>Benutzerzentriertes Design:</strong> Der umfassende Prozess deckt alles ab, von der anfaenglichen Benutzerforschung und detaillierten Wireframing bis hin zu interaktiven Prototypen und ausgefeilten finalen Designs.</li><li><strong>Intuitive Erlebnisse:</strong> Der Fokus liegt darauf, dass ein digitales Produkt nicht nur funktional, sondern auch eine Freude in der Nutzung und ein unvergessliches Erlebnis fuer jeden Benutzer ist.</li></ul>"
+    },
+    "202": {
+      "title": "Mobile App Entwicklung",
+      "description": "Innovative Ideen werden durch die Entwicklung leistungsstarker, responsiver mobiler Anwendungen mit React Native an die Fingerspitzen von Millionen gebracht. Dies gewaehrleistet ein fluessiges und konsistentes Benutzererlebnis auf iOS und Android.<h5>Kernkomponenten</h5><ul><li><strong>UI/UX Design:</strong> Das Erstellen intuitiver UI/UX-Designs wird von Redux fuer nahtloses Zustandsmanagement unterstuetzt.</li><li><strong>Backend-Integration:</strong> Robuste Backend-Systeme werden integriert, um sicherzustellen, dass Apps sich wirklich von der Masse abheben.</li><li><strong>Visuals & Funktionalitaet:</strong> Erwarten Sie pixelgenaue Visuals und eine unerschuetterliche Funktionalitaet bei jedem Tippen und Wischen, die darauf ausgelegt sind, Benutzer zu binden und zum Wiederkommen zu bewegen.</li></ul>"
+    },
+    "203": {
+      "title": "Leistungsoptimierung & SEO-Audits",
+      "description": "Signifikante Steigerung der Website-Sichtbarkeit und Verbesserung des Benutzererlebnisses durch spezialisierte Leistungs- und SEO-Audits.<h5>Audit-Prozess</h5><ul><li><strong>Eingehende Analyse:</strong> Der Prozess beinhaltet eine eingehende Analyse einer Website, um Geschwindigkeitsengpaesse zu identifizieren, Core Web Vitals zu bewerten und die optimale Suchmaschinenfreundlichkeit zu gewaehrleisten.</li><li><strong>Umsetzbare Berichte:</strong> Der Service bietet detaillierte, umsetzbare Berichte und strategische Empfehlungen zur dramatischen Verbesserung von Ladezeiten, Reaktionsfaehigkeit und organischen Suchrankings.</li><li><strong>Zielorientierte Ergebnisse:</strong> Das Ziel ist es, sicherzustellen, dass eine Website ihr volles Potenzial ausschoepft und ein deutlich groesseres Publikum anzieht.</li></ul>"
+    },
+    "204": {
+      "title": "Kundenspezifische API-Entwicklung & Integration",
+      "description": "Die muehelose Kommunikation verschiedener Systeme wird ermoeglicht und ein leistungsstarkes Backend fuer innovative Anwendungen wird bereitgestellt. Spezialisierung auf die Gestaltung und den Aufbau sicherer, skalierbarer und hocheffizienter APIs (Application Programming Interfaces). Ob beim Entwurf einer benutzerdefinierten RESTful oder GraphQL API von Grund auf oder bei der nahtlosen Integration mit wesentlichen Drittanbieterdiensten wie Zahlungs-Gateways oder CRM-Systemen, der Fokus liegt stets auf der Gewaehrleistung eines reibungslosen Datenflusses und einer makellosen Konnektivitaet, die den Betrieb staerkt.<h5>Kernfunktionen & Technologien</h5><ul><li><strong>API-Entwicklung:</strong> Kundenspezifische APIs werden von Grund auf entwickelt, um einzigartige Anforderungen zu erfuellen und Anwendungen die Kommunikation mit anderen Diensten und den Abruf von Daten aus externen Ressourcen zu ermoeglichen.</li><li><strong>Kerntechnologien:</strong> Die Backend-APIs werden mit leistungsstarken serverseitigen Technologien wie Node.js mit Frameworks wie Express.js, NestJS oder Koa.js entwickelt. Bibliotheken wie Mongoose (fuer MongoDB) oder Sequelize (fuer SQL-Datenbanken) werden ebenfalls zur Datenverwaltung eingesetzt. Datenintegritaet und Sicherheit werden durch ordnungsgemaesse Validierungs- und Authentifizierungsmethoden gewaehrleistet.</li></ul>"
+    },
+    "205": {
+      "title": "Website-Wartung & Content-Management",
+      "description": "Eine Website ist ein lebendiges Gut, und die Dienstleistungen stellen sicher, dass sie scharf, sicher und stets auf dem neuesten Stand bleibt.<h5>Wartungsdienste</h5><ul><li><strong>Umfassende Abdeckung:</strong> Website-Wartung deckt sowohl die Frontend-Optimierung als auch die kritische Backend-Stabilitaet ab.</li><li><strong>Proaktives Management:</strong> Der Prozess beinhaltet regelmaessige Updates, entscheidende Leistungsoptimierungen und sorgfaeltiges Content-Management. Vom Bereinigen ungenutzter Dateien bis zur Integration aufregender neuer Funktionen werden die Websites proaktiv verwaltet.</li><li><strong>Kundenfokus:</strong> Dies ermoeglicht einem Kunden, sich voll und ganz auf sein Kerngeschaeft zu konzentrieren, mit der Gewissheit, dass seine Online-Plattform stets Hoechstleistungen erbringt.</li></ul>"
+    },
+    "206": {
+      "title": "WordPress-Entwicklung",
+      "description": "Die volle Kraft einer Online-Praesenz wird durch massgeschneiderte WordPress-Loesungen freigesetzt, die genau auf spezifische Beduerfnisse zugeschnitten sind.<h5>Entwicklung & Funktionalitaet</h5><ul><li><strong>E-Commerce & Veranstaltungen:</strong> Der Service handhabt alles von der Einrichtung eines leistungsstarken E-Commerce-Shops mit WooCommerce bis zur Verwaltung komplexer Veranstaltungsplaene.</li><li><strong>Mehrsprachige Unterstuetzung:</strong> Ein nahtloses mehrsprachiges Erlebnis wird mit Tools wie Polylang geschaffen.</li><li><strong>Massgeschneiderte Loesungen:</strong> Von der anfaenglichen Kerninstallation bis zur massgeschneiderten Plugin-Entwicklung wird eine WordPress-Seite robust, benutzerfreundlich und perfekt auf die einzigartigen Geschaeftsziele abgestimmt sein, um maximale Wirkung zu erzielen.</li></ul>"
+    },
+    "207": {
+      "title": "Statische Website-Entwicklung",
+      "description": "Websites werden erstellt, die blitzschnell laden und ein gestochen scharfes Benutzererlebnis bieten.<h5>Wichtige Merkmale</h5><ul><li><strong>Blitzschnelle Leistung:</strong> Spezialisierung auf den Bau blitzschneller statischer Websites unter Verwendung von reinem Vanilla JavaScript, HTML5 und SCSS.</li><li><strong>Hohe Optimierung:</strong> Diese Websites sind nicht nur optisch ansprechend; sie sind auch hochgradig fuer Geschwindigkeit optimiert, von Natur aus sicher und auf maximale Effizienz ausgelegt.</li><li><strong>Ideale Anwendungsfaelle:</strong> Perfekt fuer dynamische Portfolios, wirkungsvolle Marketingseiten oder jedes Projekt, bei dem sofortiges Laden und makelloses Design von groesster Bedeutung sind, um eine Botschaft sofort zu fesseln.</li></ul>"
+    },
+    "208": {
+      "title": "Progressive Web App (PWA) Entwicklung",
+      "description": "Die Luecke zwischen traditionellen Web- und nativen mobilen Anwendungen wird mit einer Progressive Web App (PWA) nahtlos ueberbrueckt. Eine bestehende Webpraesenz kann in eine installierbare, app-aehnliche Erfahrung umgewandelt werden, die sich wirklich auszeichnet.<h5>Kern-PWA-Vorteile</h5><ul><li><strong>Verbesserte Leistung:</strong> Die Apps funktionieren offline und laden sofort.</li><li><strong>Erhoehtes Engagement:</strong> Sie sind in der Lage, reichhaltige Push-Benachrichtigungen direkt an die Benutzer zu senden.</li><li><strong>Verbesserte Zugaenglichkeit:</strong> Ein beispielloses Benutzerengagement und eine verbesserte Zugaenglichkeit werden ohne die Notwendigkeit komplexer App-Store-Downloads geliefert, was eine bemerkenswert reibungslose und schnelle Erfahrung auf allen Geraeten und Netzwerken bietet.</li></ul>"
+    },
+    "100": {
+      "title": "Anwendung fuer demokratische Abstimmungen: delib-5.web.app",
+      "description": "Mitwirkung bei der Entwicklung von benutzerdefinierten Popup-Komponenten fuer die delib-5.web.app-Plattform. Das Projekt nutzte Figma fuer das Design und Next.js mit TypeScript fuer die Implementierung.<h5>Wichtige Beitraege</h5><ul><li><strong>Interaktive Popups:</strong> Eine doppelseitige Popup-Komponente wurde mit vollstaendig interaktiven Elementen entwickelt, die es den Benutzern ermoeglichen, zwischen den beiden Seiten zu navigieren und zur ersten zurueckzukehren.</li><li><strong>Fehlerbehebungen & Leistung:</strong> Die Arbeit umfasste auch Fehlerbehebungen und CSS-Korrekturen, was zu einer spuerbaren Verbesserung der allgemeinen Site-Funktionalitaet und Leistung um 15% fuehrte.</li><li><strong>Zusammenarbeit:</strong> Dies war eine gemeinschaftliche Anstrengung mit einem achtköpfigen Team, wobei die gesamte Arbeit ueber Slack koordiniert wurde, um eine nahtlose Kommunikation und Fortschritte zu gewaehrleisten.</li></ul>"
+    },
+    "101": {
+      "title": "Anwendung fuer Musikstudien: loctoc.ch",
+      "description": "Wartung und aktive Entwicklung von Frontend-Komponenten fuer eine in der Schweiz ansaessige Musikanwendung, die Online- und Praesenzunterricht fuer Studenten anbietet.<h5>Entwicklung & Technologie</h5><ul><li><strong>Frontend-Entwicklung:</strong> Im Rahmen dieser Bemuehungen wurden zwei neue Startseiten-Komponenten hinzugefuegt und in vier Sprachen (Englisch, Franzoesisch, Italienisch und Spanisch) uebersetzt, wodurch die Startseiten-Erklaerung der Website um 30% verbessert und den Benutzern ein klareres Verstaendnis des Zwecks der Plattform vermittelt wurde. Die Plattform verwendet Svelte und SvelteKit.</li><li><strong>Integrationen:</strong> Zahlungsdienste wurden ueber Stripe integriert, und die Inhaltsbereitstellung wurde mit BunnyNet CDN optimiert.</li><li><strong>Projekt-Oekosystem:</strong> Das Projekt laeuft innerhalb eines umfassenden Entwicklungs-Oekosystems, das ein Golang-Backend, eine Postgres-DB, Docker, Heroku und GitLab fuer eine nahtlose Zusammenarbeit und Bereitstellung umfasst.</li></ul>"
+    },
+    "102": {
+      "title": "Plattform fuer Orchesterkonzerte: klangweltfinder-lartedelsuono.ch",
+      "description": "Eine umfassende, mehrsprachige WordPress-Website wurde fuer ein in der Schweiz ansaessiges philharmonisches Orchester entwickelt.<h5>Plattform-Merkmale & Entwicklung</h5><ul><li><strong>Benutzerdefiniertes Event-Management:</strong> Die Plattform verfuegt ueber ein benutzerdefiniertes Event-Management-System, dessen Kernfunktionalitaet durch eine tiefe Anpassung von PHP-Dateien erweitert wurde.</li><li><strong>Mehrsprachige Unterstuetzung:</strong> Die Website ist ueber das Polylang-Plugin vollstaendig uebersetzbar, was eine nahtlose Erfahrung fuer ein vielfältiges Publikum gewaehrleistet.</li><li><strong>Technischer Umfang:</strong> Der Projektumfang umfasste die Implementierung der Domain, das Management des SSL-Zertifikats, die sichere Hosting-Bereitstellung und die laufende Wartung der MySQL-Datenbank und des PHP-Backends, um eine langfristige Stabilitaet und Leistung zu gewaehrleisten.</li></ul>"
+    },
+    "103": {
+      "title": "Website fuer Mobile Psychologische Therapie-Dienstleistungen: lebend-ich.ch",
+      "description": "Eine massgeschneiderte, hochleistungsfaehige Website wurde fuer eine psychologische Praxis entwickelt. Gebaut von Grund auf mit Vanilla JavaScript, gestylt mit SASS und CSS, und angetrieben von einem Node.js-Backend, ist die Website aussergewoehnlich leicht und schnell.<h5>Projektumfang & Merkmale</h5><ul><li><strong>Entwicklung & Bereitstellung:</strong> Der gesamte Lebenszyklus des Projekts, vom anfaenglichen Design bis zur Produktionsbereitstellung, wurde mit ausgewiesener Expertise in den Bereichen Domain-Registrierung, DNS-Management, SSL/TLS-Konfiguration und Cloud-Bereitstellung ueber Firebase gehandhabt.</li><li><strong>Interaktive Elemente:</strong> Die Anwendung verfuegt ueber einen benutzerdefinierten 'mehr lesen/weniger lesen'-Button, eine dynamische Testimonials-Komponente und eine Bildergalerie. Zusaetzlich wurde die Datenschutzrichtlinie akribisch erstellt, um den offiziellen schweizerischen medizinischen Gesundheitsstandards zu entsprechen.</li><li><strong>Analytik & Optimierung:</strong> Fuer die laufende Optimierung wurde Google Analytics eingesetzt, um die Website-Funktionalitaet und Benutzeraktivitaet zu verfolgen, wodurch Daten fuer die kontinuierliche Verbesserung des Benutzererlebnisses bereitgestellt werden.</li></ul>"
+    },
+    "104": {
+      "title": "Custom E-commerce Platform Online-Shop",
+      "description": "Entwicklung eines hochkonvertierenden Online-Shops mit sicheren Zahlungen und Bestandsverwaltung, der darauf ausgelegt ist, die Verkaeufe der Kunden signifikant zu steigern. Die Architektur der Plattform ist auf Leistung, Skalierbarkeit und ein nahtloses Benutzererlebnis ausgerichtet und nutzt eine robuste RESTful-API fuer eine effiziente Datenverarbeitung. <h5>Frontend-Komponenten und Benutzererlebnis</h5> <ul> <li><strong>Produktkarte & Detailseite:</strong> Eine benutzerdefinierte Kartenkomponente bietet eine saubere Anzeige von Produkten. Das Klicken auf eine Karte oeffnet eine dedizierte Produktseite mit einer benutzerdefinierten Bildergalerie, die ein thumbnail-basiertes Navigationssystem und eine reibungslose Zoom-Komponente fuer die detaillierte Ansicht enthaelt. Jede Produktseite enthaelt einen Likes-Zaehler, einen Ansichtsaehler und Optionen zum Teilen des Produkts ueber soziale Medien oder einen direkten Link.</li> <li><strong>Navigation & Entdeckung:</strong> Die Website verwendet mehrere Produkt-Karussell-Komponenten, um die Produktentdeckung zu verbessern. Dazu gehoeren ein Startseiten-Karussell fuer vorgestellte Produkte, ein Karussell fuer aehnliche Artikel basierend auf der aktuellen Ansicht eines Benutzers und ein weiteres fuer zusaetzliche verwandte Produkte. Eine Suchleiste ist ebenfalls verfuegbar, die den Benutzern eine schnelle und effiziente Moeglichkeit bietet, Produkte zu finden.</li> <li><strong>Interaktive Funktionen:</strong> Kernkomponenten wurden entwickelt, um die Benutzerfreundlichkeit und Leistung der Website zu verbessern. Dies umfasst eine Lazy-Load-Komponente zur Optimierung der Ladezeiten, einen \"Nach oben\"-Button fuer eine einfache Navigation und ein Benachrichtigungs-Popup fuer altersbeschraenkte Inhalte, das die Ansicht von Produkten fuer Erwachsene fuer Benutzer unter 18 Jahren einschraenkt.</li> </ul> <h5>Backend und Kernfunktionalitaet</h5> <ul> <li><strong>Sichere Transaktionen:</strong> Die Stripe-Zahlungskomponente und die Warenkorb-Komponente wurden implementiert, um sichere Transaktionen und die Bestandsverwaltung zu handhaben. Diese Integration gewaehrleistet einen reibungslosen und zuverlaessigen Checkout-Prozess fuer die Kunden.</li> <li><strong>Benutzerauthentifizierung:</strong> Eine Login-Komponente wurde integriert, die den Benutzern die Bequemlichkeit eines Google-Kontos fuer eine schnelle und einfache Anmeldung bietet.</li> </ul> <h5>Einzigartige Funktionen</h5> <ul> <li><strong>Audio-Player:</strong> Eine benutzerdefinierte Audio-Player-Komponente wurde entwickelt und in die Fusszeile platziert, um ein einzigartiges Benutzererlebnis zu bieten. Sie ermoeglicht es Benutzern, beim Betreten der Website Musik zu starten, mit Bedienelementen fuer Lautstaerke und Stummschaltung.</li> </ul>"
+    },
+    "105": {
+      "title": "Messenger-Komponente fuer mobile App",
+      "description": "Eine Frontend-Messenger-Komponente wurde fuer eine mobile Anwendung entwickelt, die mit React Native erstellt wurde.<h5>Komponentenmerkmale</h5><ul><li><strong>Benutzeroberflaeche:</strong> Die Komponente verfuegt ueber den Namen und das Foto des Benutzers, Textfelder, Nachrichten-Zeitstempel, ein Nachrichtenbenachrichtigungs-Symbol mit einer ungelesenen Anzahl und Lese-/Ungelesen-Status-Pfeile.</li><li><strong>Funktionalitaet:</strong> Eine Suchleiste wurde ebenfalls integriert, um Benutzern die Suche nach bestimmten Benutzern oder Nachrichten zu ermoeglichen.</li><li><strong>Interaktive Elemente:</strong> Eine zusaetzliche Popup-Komponente wurde erstellt, die einen 'Nachricht schreiben'-Button sowie Buttons fuer Standort, Benachrichtigungen und Ankuendigungen enthaelt und ein umfassendes und intuitives Benutzererlebnis bietet.</li></ul>"
+    }
+  },
+  "testimonials": {
+    "title": "Kundenstimmen",
+    "subtitle": "Entdecken Sie die wahre Wirkung unserer Softwareloesungen, direkt von unseren Partnern.",
+    "readMoreButton": "Weiterlesen",
+    "ariaLabels": {
+      "previousTestimonial": "Vorheriges Testimonial",
+      "nextTestimonial": "Naechstes Testimonial",
+      "goToSlide": "Gehe zu Folie {{slideNumber}}",
+      "closeModal": "Modal schliessen"
+    },
+    "1": {
+      "quote": "Ich kann Ilyas Arbeit und ihn persoenlich mit voller Ueberzeugung empfehlen. Ich weiss nicht einmal, wo ich anfangen soll, seine Qualitaeten hervorzuheben. Seine Persoenlichkeit ist aussergewoehnlich, und das spiegelt sich in seiner Arbeit wider. Er ist kein typischer Programmierer. Ich habe das Gefuehl, er hat dieses Fachgebiet nur angefangen, um seinen brillanten Geist zu befriedigen. Aber Ilyas Arbeit ist mehr als nur Programmieren. Sein Erfahrungsschatz scheint endlos zu sein, was seine Beitraege so wertvoll macht. Er kennt sich sowohl mit Kunst als auch mit aktuellen technologischen Entwicklungen aus. Seine Kreativitaet sprudelt ueber. Er investiert sich wirklich in seine Arbeit, anstatt nur eine Aufgabe zu erfuellen. Was wirklich wertvoll ist, ist, dass er zum Nutzen des Kunden beitraegt. Er denkt immer: „Was koennte sonst noch hilfreich sein? Was koennte diese neue Homepage noch aktueller machen?“ Dinge, die ich mir nicht einmal vorstellen konnte, sind fuer ihn alltaeglich, und er baut sie ein. Er besitzt auch eine Geduld und Freundlichkeit, die unsere Zusammenarbeit unglaublich angenehm gemacht haben. Meine Einwaende, Ideen, Wuensche... alles! Er hat immer alles zu Herzen genommen und umgesetzt. Selbst als meine Arbeit etwas Altmodisches erforderte, hat er sich absolut bemueht, die beste Loesung fuer mich zu finden. Es ist ein Geschenk, Ilya an meiner Seite zu haben, sowohl fuer das Design als auch fuer die Wartung meiner Homepage.",
+      "clientName": "Daniela Hagmann",
+      "clientTitle": "Co",
+      "clientCompany": "Lebend-Ich"
+    },
+    "2": {
+      "quote": "Wir waren unglaublich zufrieden mit Ilyas Beitraegen zu unserem Team. Er spielte eine Schlusselrolle bei der Entwicklung mehrerer Komponenten unserer Haupt-PWA, behielt stets eine positive Einstellung bei und foerderte eine grossartige Arbeitsatmosphaere. Ilya ist eine echte Bereicherung!",
+      "clientName": "Tal Yaron",
+      "clientTitle": "CEO",
+      "clientCompany": "FreeDi"
+    }
+  },
+  "aboutPage": {
+    "titlePrefix": "Über",
+    "titleSuffix": "HIEROGLYPH CODE",
+    "intro1": "Willkommen bei Hieroglyph Code, einem Dienst fuer massgeschneiderte Softwareloesungen, geleitet von Ilya Medvedev, einem Full-Stack-Software-Ingenieur mit Sitz in Basel, Schweiz. Der Service kombiniert technisches Fachwissen mit kreativer Kunst, um professionelle, benutzerfreundliche und skalierbare digitale Erlebnisse zu liefern. Hieroglyph Code ist darauf spezialisiert, Loesungen zu entwickeln, die nicht nur funktional, sondern auch intuitiv und visuell ansprechend sind.",
+    "intro2": "Hieroglyph Code widmet sich dem Bau von qualitativ hochwertigen Anwendungen, indem moderne Webtechnologien, KI-Werkzeuge und ein akribisches Auge fuer Details genutzt werden. Die Grundlage der Arbeit ist ein tiefes Wissen ueber TypeScript und Vanilla JavaScript, das die Lieferung robuster und skalierbarer Anwendungen mit Frameworks wie React, Next.js, React Native, Vue.js, Svelte.js, Node.js, CSS3 und SASS gewaehrleistet.",
+    "servicesTitle": "Softwaredienstleistungen",
+    "servicesIntro": "Bei Hieroglyph Code umfassen die Dienstleistungen die umfassende kundenspezifische Softwareentwicklung, vom anfaenglichen Konzept bis zur endgueltigen Bereitstellung:",
+    "serviceList": {
+      "fullStack": "Full Stack Web- & Mobilentwicklung: Responsive, robuste Anwendungen werden unter Verwendung moderner Technologien wie TypeScript, Vanilla JavaScript, React.js, Next.js, React Native, Vue.js, Svelte.js, Node.js, CSS3 und SASS gebaut.",
+      "backEnd": "Back-End- & API-Entwicklung: Sichere und skalierbare Back-End-Dienste werden mit Node.js erstellt und kundenspezifische API-Entwicklung wird gehandhabt. Der Service hat umfangreiche Erfahrung mit verschiedenen Datenbanken, einschliesslich MongoDB, Firebase, MySQL und Postgres DB. Der Service integriert auch Plattformen wie Stripe fuer den E-Commerce.",
+      "wordpress": "WordPress-Entwicklung & -Wartung: Die Dienstleistungen reichen vom Entwurf und Bau neuer E-Commerce-Websites mit Divi und Elementor bis zur Optimierung und Wartung bestehender Plattformen, mit einem besonderen Fokus auf die Anpassung von Plugins mittels PHP.",
+      "aiTools": "KI-Werkzeuge & Integration: Plattformen wie Google AI Studio und Gemini werden genutzt, um Entwicklungsworkflows zu straffen, den Komponentencode zu optimieren und Inhaltsentwuerfe fuer effiziente und innovative Loesungen zu generieren.",
+    "devOps": "DevOps & Bereitstellung: Der Entwicklungs- und Bereitstellungsprozess wird mit modernen Werkzeugen wie Docker, GitLab und Heroku gestrafft. Dies umfasst wesentliche Dienste wie SSL- und DNS-Implementierung, um eine sichere und zuverlaessige Online-Praesenz zu gewaehrleisten.",
+      "uiUx": "UI/UX-fokussierte Entwicklung: Mit Kenntnissen in Tools wie Figma und Photoshop stellt Hieroglyph Code sicher, dass Anwendungen nicht nur leistungsstark, sondern auch eine Freude in der Nutzung sind, mit sorgfaeltiger Beachtung von Designdetails und Benutzerengagement."
+    },
+    "outro": "Hieroglyph Code ist bestrebt, klar zu kommunizieren und Loesungen zu liefern, die praezise auf die Kundenbeduerfnisse zugeschnitten sind, immer mit einem Fokus auf sauberen, effizienten und leichten Code.",
+    "ctaTitle": "Bereit, Ihr naechstes Projekt zu besprechen?",
+    "ctaButton": "Kontakt aufnehmen"
+  },
+
+  "similarProjects": {
+    "exploreOtherProjects": "Ähnliche Projekte entdecken"
+  },
+
+  "contactPage": {
+    "title": "Kontakt",
+    "imageCaption": "Basel, Schwiiz",
+    "description": "Bisch parat, dis Projekt z'bspräche? Hieroglyph Code isch z'Basel, Schwiiz, dihei und isch druf spezialisiert, Idee in Realität z'verwandle. Mäld di hüt, um es Gspräch über dini individuelle Software-Bedürfniss z'starte. Normalerwiis wird uf alli Aafroge innert 2 Stunde zruggmeldet.",
+    "connectTitle": "La üs in Kontakt cho",
+    "connectDescription": "Obwohl d'Arbet hauptsächlich remote gmacht wird, sind Beraatige z'Basel oder per Videoaaruuf mögli, um dis Projekt im Detail z'bspräche. Ich freu mi druf, di z'kenneglehre.",
+    "form": {
+      "namePlaceholder": "Din Name",
+      "emailPlaceholder": "Dini E-Mail",
+      "messagePlaceholder": "Dini Nachricht",
+      "privacyAgreement": "Wenn du das Chäschtli aachruuzisch, willigsch ii, dass i dich kontakere, um dini Aafrog z'bspräche.",
+      "submitButton": "Nachricht schicke",
+      "successMessage": "Nachricht isch erfolgriich verschickt worde!",
+      "errorMessage": "Nachricht versände isch nöd mögli gsy: "
+    },
+    "privacyError": "Bitte akzeptier d'Datäschutzerklärig, um dini Nachricht z'versände."
+  }
+}

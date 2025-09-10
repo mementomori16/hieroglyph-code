@@ -1,0 +1,138 @@
+@use "sass:color";
+@import '../../../global.scss';
+
+$header-mobile-height: calc(2rem + 2 * #{$space-sm});
+
+.header-mobile {
+  position: sticky;
+  top: 0;
+  background-color: $color-surface;
+  padding: $space-sm $space-lg;
+  z-index: 1000;
+  box-shadow: $shadow-sm;
+}
+
+.navbarmobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  .mobile-logo-img {
+    height: 2rem;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+.mobile-hamburger {
+  cursor: pointer;
+  z-index: 1010;
+  .hamburger-react {
+    color: $color-secondary;
+  }
+  svg path {
+    stroke-width: 2px !important;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  transform: translateX(-100%);
+  top: $header-mobile-height;
+  height: calc(100vh - #{$header-mobile-height});
+  background-color: $color-surface;
+  list-style: none;
+  padding: $space-lg;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; // Add this line
+  align-items: flex-start;
+  gap: $space-lg;
+  visibility: hidden;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 1005;
+
+  // Default for small screens
+  width: 59vw;
+
+  &.active {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  // Medium screens (tablets)
+  @media (min-width: 768px) {
+    width: 40vw;
+  }
+
+  // Large screens (notebooks/desktops)
+  @media (min-width: 1024px) {
+    width: 30vw;
+  }
+
+  .mobile-item {
+    width: 100%;
+
+    &.search-item {
+      display: flex;
+      justify-content: flex-start;
+
+      .search-bar-container {
+        width: 100%;
+        max-width: 100%;
+        padding-right: $space-sm;
+
+        .search-bar {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .mobile-link {
+      color: $color-text-light;
+      text-decoration: none;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-bold;
+      display: inline-block;
+      padding: 0.5rem 0;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+      text-align: left;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $color-primary;
+        transition: width 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: $color-button-blue;
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &.active {
+        color: $color-button-blue;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-mobile {
+    display: none;
+  }
+}

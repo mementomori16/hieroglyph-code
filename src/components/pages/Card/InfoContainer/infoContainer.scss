@@ -1,0 +1,130 @@
+@use "sass:color";
+@import '../../../../global.scss';
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  padding: $space-lg; 
+  
+  width: 100%;
+  
+  @media (min-width: $breakpoint-lg) {
+    max-width: $breakpoint-lg; 
+  }
+  
+  @media (max-width: $breakpoint-md) {
+    padding: $space-md;
+  }
+
+  .description {
+    margin: 0;
+    font-size: $font-size-base;
+    color: $color-secondary;
+    max-width: 100%;
+    line-height: 1.7;
+    margin-bottom: $space-md;
+    padding-right: 0;
+    
+    // Updated h5 styling to use $color-text-light
+    h5 {
+      color: $color-text-title;
+      font-size: $font-size-md;
+      font-weight: $font-weight-semibold;
+      margin-top: $space-lg;
+      margin-bottom: $space-sm;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-left: 0;
+      
+      li {
+        position: relative;
+        padding-left: $space-md;
+        margin-bottom: $space-sm;
+        
+        // Add style for strong tags within list items
+        strong {
+          color: $color-text-title;
+          font-weight: $font-weight-semibold; // Or change to $font-weight-normal if you want it to be not bold
+        }
+        
+        &::before {
+          content: '•';
+          color: $color-primary;
+          position: absolute;
+          left: 0;
+          font-weight: $font-weight-bold;
+          font-size: $font-size-md;
+          line-height: 1;
+        }
+      }
+    }
+  }
+  
+  .iconsSection {
+    margin-top: $space-lg;
+    width: 100%;
+    h4 {
+      margin-bottom: $space-sm;
+      color: $color-text-title;
+      font-size: $font-size-h5;
+      font-weight: $font-weight-semibold;
+    }
+  }
+
+  .iconsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-sm;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .iconItem {
+    display: flex;
+    align-items: center;
+    gap: $space-xxs;
+    font-size: $font-size-sm;
+    color: $color-secondary;
+    padding: $space-xs $space-sm;
+    border: 1px solid $color-border-subtle;
+    border-radius: $border-radius-sm;
+    background-color: $color-background;
+    transition: all 0.2s ease-in-out;
+
+    svg {
+      flex-shrink: 0;
+      color: $color-primary;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-sm;
+      background-color: lighten($color-primary, 45%);
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  .article-link {
+    margin-top: $space-lg;
+    font-size: $font-size-base;
+    color: $color-secondary;
+    a {
+      text-decoration: underline;
+      color: $color-primary;
+      font-size: $font-size-base;
+      font-weight: $font-weight-medium;
+      &:hover {
+        color: darken($color-primary, 15%);
+      }
+    }
+  }
+}
+
+           

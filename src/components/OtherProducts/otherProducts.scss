@@ -1,0 +1,54 @@
+.otherProducts {
+    margin-top: 2rem;
+    padding: 1rem;
+    align-items: center; // Center items horizontally
+    max-width: 1000px; // Set a maximum width for the component
+    margin-left: auto; // Center the component horizontally
+    margin-right: auto; // Center the component horizontally
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.2rem; // Increased font size for better visibility
+        color: #837c7c;
+    }
+
+    .scrollableGallery {
+        display: flex; // Use flexbox for horizontal layout
+        overflow-x: auto; // Allow horizontal scrolling
+        padding: 0.5rem 0; // Optional padding for better appearance
+        white-space: nowrap; // Prevent wrapping of items
+
+        .otherProductItem {
+            display: flex;
+            flex-direction: column; // Stack image and title vertically
+            align-items: center; // Center items horizontally
+            min-width: 150px; // Ensure consistent width for items
+            margin: 0 0.5rem; // Space between items
+            text-align: center;
+
+            .image {
+                width: 150px; // Set image width
+                height: auto; // Maintain aspect ratio
+                border-radius: 4px;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .title {
+                margin-top: 0.5rem;
+                font-size: 0.9rem; // Corrected font size
+                color: #e6e6e6;
+                word-wrap: break-word; // Allow long words to break
+                max-width: 150px; // Ensure title does not exceed image width
+                text-align: center; // Center the title text
+                overflow: hidden; // Hide overflow text
+                text-overflow: ellipsis; // Add ellipsis for overflow
+                white-space: nowrap; // Prevent wrapping
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@use "sass:color";
+@import '../../global.scss';
+
+.similarProducts {
+  margin-top: $space-xl;
+  padding: $space-md;
+  text-align: center;
+  max-width: $breakpoint-lg;
+  margin-left: auto;
+  margin-right: auto;
+  
+  h2 {
+    @include services-heading;
+    font-size: $font-size-h4;
+    color: $color-text-title;
+    margin-bottom: $space-lg;
+  }
+
+  .scrollableGallery {
+    display: flex;
+    overflow-x: auto;
+    gap: $space-lg;
+    padding: $space-sm 0;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-border-subtle-2;
+      border-radius: $border-radius-sm;
+    }
+    &::-webkit-scrollbar-track {
+      background: $color-alt-background-2;
+    }
+
+    .similarProductItem {
+      flex: 0 0 auto;
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.2s ease-in-out;
+      
+      &:hover {
+        transform: translateY(-$space-xs);
+      }
+
+      .image {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: $border-radius-sm;
+        border: 1px solid $color-border-light;
+        box-shadow: $shadow-sm;
+      }
+
+      .title {
+        margin-top: $space-sm;
+        font-size: $font-size-sm;
+        color: $color-text-title;
+        font-weight: $font-weight-semibold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+      }
+    }
+  }
+}

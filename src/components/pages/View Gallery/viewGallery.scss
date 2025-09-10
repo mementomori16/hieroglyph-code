@@ -1,0 +1,296 @@
+.viewGallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #222020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 2000;
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    color: rgb(132, 126, 126);
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #dadada;
+    }
+  }
+
+  .largeImageContainer {
+    margin-bottom: 20px; // Add space below the large image
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    .largeImage {
+      max-width: 100%;
+      max-height: 70vh;
+      border-radius: 1.5px;
+      transition: opacity 0.6s ease-in-out; // Ensure this line is present
+    }
+  }
+
+  .imageInfo {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: rgb(188, 179, 179);
+    text-align: left;
+
+    .imageTitle {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .imageDate {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+
+  .thumbnailsContainer {
+    margin-top: 20px; // Add space above the thumbnails
+    width: 100%; // Ensure it takes full width
+    display: flex;
+    justify-content: center; // Center thumbnails
+  }
+
+  .thumbnails {
+    display: flex;
+    margin-top: 20px;
+
+    .thumbnailContainer {
+      margin: 0 5px;
+
+      .thumbnail {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: border 0.3s;
+      }
+    }
+  }
+
+  .zoomControls {
+    position: fixed;
+    top: 20px; // Positioning in the left top corner
+    left: 20px; // Positioning on the left
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .zoomButton {
+      background: transparent; // Transparent background for outline style
+      color: rgb(132, 126, 126); // Text color
+      border: 2px solid rgb(132, 126, 126); // Outline
+      border-radius: 50%; // Circular shape
+      width: 30px; // Button width
+      height: 30px; // Button height
+      font-size: 1.1rem; // Text size
+      cursor: pointer;
+      margin: 5px; // Space between buttons
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1); // Slight background change on hover
+      }
+    }
+  }
+
+  // Arrows in corners
+  .arrow {
+    position: absolute;
+    background: transparent;
+    color: rgb(135, 134, 134);
+    border: none;
+    font-size: 2rem; // Default size
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 1100; // Ensure arrows are on top
+
+    &:hover {
+      color: #b8b7b7;
+    }
+
+    &.top-left {
+      left: 20px; // Positioning on the left
+      top: 50%; // Center vertically
+      transform: translateY(-50%); // Adjust for centering
+    }
+
+    &.top-right {
+      right: 20px; // Positioning on the right
+      top: 50%; // Center vertically
+      transform: translateY(-50%); // Adjust for centering
+    }
+  }
+}
+
+
+/*
+.viewGallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #222020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 2000;
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    color: rgb(132, 126, 126);
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #dadada;
+    }
+  }
+
+  .largeImageContainer {
+    margin-bottom: 20px; // Add space below the large image
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    .largeImage {
+      max-width: 100%;
+      max-height: 70vh;
+      border-radius: 1.5px;
+      transition: opacity 0.6s ease-in-out; // Ensure this line is present
+    }
+  }
+
+  .imageInfo {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: rgb(188, 179, 179);
+    text-align: left;
+
+    .imageTitle {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .imageDate {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+
+  .thumbnailsContainer {
+    margin-top: 20px; // Add space above the thumbnails
+    width: 100%; // Ensure it takes full width
+    display: flex;
+    justify-content: center; // Center thumbnails
+  }
+
+  .thumbnails {
+    display: flex;
+    margin-top: 20px;
+
+    .thumbnailContainer {
+      margin: 0 5px;
+
+      .thumbnail {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: border 0.3s;
+      }
+    }
+  }
+
+  .zoomControls {
+    position: fixed;
+    top: 20px; // Positioning in the left top corner
+    left: 20px; // Positioning on the left
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .zoomButton {
+      background: transparent; // Transparent background for outline style
+      color: rgb(132, 126, 126); // Text color
+      border: 2px solid rgb(132, 126, 126); // Outline
+      border-radius: 50%; // Circular shape
+      width: 30px; // Button width
+      height: 30px; // Button height
+      font-size: 1.1rem; // Text size
+      cursor: pointer;
+      margin: 5px; // Space between buttons
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1); // Slight background change on hover
+      }
+    }
+  }
+
+  // Arrows in corners
+  .arrow {
+    position: absolute;
+    background: transparent;
+    color: rgb(135, 134, 134);
+    border: none;
+    font-size: 2rem; // Default size
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 1100; // Ensure arrows are on top
+
+    &:hover {
+      color: #b8b7b7;
+    }
+
+    &.top-left {
+      left: 20px; // Positioning on the left
+      top: 50%; // Center vertically
+      transform: translateY(-50%); // Adjust for centering
+    }
+
+    &.top-right {
+      right: 20px; // Positioning on the right
+      top: 50%; // Center vertically
+      transform: translateY(-50%); // Adjust for centering
+    }
+  }
+}
+*/

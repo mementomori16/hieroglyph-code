@@ -1,0 +1,81 @@
+// src/styles/_variables.scss
+
+// Font Imports
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');    // NEW
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap'); // NEW
+
+
+// --- Colors ---
+$color-primary: #4e6f8f;        // Deep Slate Gray (consistent primary button/link color)
+$color-secondary: #A67D4B;      // Muted Bronze/Gold (from about page accent)
+$color-accent: #61bbbc;         // Teal/Green (from services button)
+
+// Your existing accent-primary and accent-secondary from new snippets
+$color-accent-gold: #A67D4B;    // Renamed from color-accent-primary to be more descriptive
+$color-accent-gold-light: #C79F6D; // Renamed from color-accent-secondary
+
+$color-text-dark: #2C3E50;      // Deep charcoal for main text/headings
+$color-text-light: #FFFFFF;     // White text (e.g., on primary buttons)
+$color-text-light-grey: rgb(156, 154, 154); // For attribution heading, etc.
+
+$color-background-body: #f4f4f4; // Global body background
+$color-background-content: #F8F8F8; // Light background for content areas
+
+$color-success: #4CAF50;        // Green for success messages
+$color-error: #F44336;          // Red for error messages
+
+$color-border-subtle: #D3D3D3;   // Light grey for subtle borders/inactive dots
+$color-border-dark: lighten($color-text-dark, 20%); // A slightly lighter version of text-dark for inputs
+$color-border-light: #ddd;      // For stripe borders
+
+// --- Fonts ---
+$font-family-heading: 'Playfair Display', serif;
+$font-family-body: 'Open Sans', 'Inter', 'Roboto', sans-serif;
+$font-family-button: 'Montserrat', sans-serif;
+$font-family-lora: 'Lora', serif;      // NEW
+$font-family-raleway: 'Raleway', sans-serif; // NEW
+
+
+// --- Font Sizes ---
+$font-size-base: 1rem;       // 16px
+$font-size-sm: 0.9rem;      // 14.4px
+$font-size-md: 1.1rem;      // 17.6px
+$font-size-lg: 1.2rem;      // 19.2px
+$font-size-xl: 2.2rem;      // 35.2px (for main page headings)
+$font-size-xxl: 2.5rem;     // 40px (for very large headings, like page titles)
+$font-size-h2-attributions: 1.5rem; // Specific size for attributions h2
+$font-size-small-link: 0.85rem; // <--- THIS IS THE ONE!
+
+
+// --- Spacing ---
+$spacing-xxs: 0.25rem; // 4px
+$spacing-xs: 0.5rem;   // 8px
+$spacing-s: 1rem;      // 16px
+$spacing-m: 1.5rem;    // 24px
+$spacing-l: 2rem;      // 32px
+$spacing-xl: 3rem;     // 48px
+
+
+// --- Breakpoints ---
+$breakpoint-mobile-sm: 320px;
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-desktop-lg: 1200px;
+
+
+// --- Shadows ---
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 5px 10px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.25);
+
+
+// --- Border Radii ---
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 10px;

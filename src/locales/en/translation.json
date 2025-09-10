@@ -1,0 +1,156 @@
+{
+  "home": "Home",
+  "services": "Software Services",
+  "projects": "Projects",
+  "about": "About",
+  "contact": "Contact",
+  "homePage": {
+        "aboutTeaserTitle": "About",
+        "aboutTeaserDescription": "Your digital presence deserves more than a template. Hieroglyph Code is your all-in-one partner for custom web and mobile development, from concept to completion and beyond.<h5>Driven by Expertise</h5>Led by Ilya Medvedev, a Certified Full-Stack Developer based in Basel, Switzerland, Hieroglyph Code is passionate about transforming complex ideas into elegant, user-friendly software. By combining technical precision with creative vision, the firm delivers custom solutions that truly elevate your digital presence.<h5>A Focus on Key Services</h5><ul><li><strong>Full-Stack Development:</strong> Powerful full-stack applications that are responsive and fast.</li><li><strong>Specialized Features:</strong> Services include building APIs, robust e-commerce platforms, secure login systems, and seamless payment integrations.</li><li><strong>Maintenance & Support:</strong> Reliable ongoing maintenance and updates to ensure your digital tools always run smoothly.</li></ul>",
+        "learnMoreButton": "Click For More"
+    },
+  "carousel": {
+    "globalTitle": "Hieroglyph Code: Crafting Digital Excellence",
+    "globalDescription": "Transforming your vision into robust, intuitive, and visually stunning software solutions.",
+    "learnMoreButton": "Learn More About This Service"
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "viewButton": "View Details"
+  },
+  "servicesPage": {
+    "title": "Software Services",
+    "viewButton": "View Details"
+  },
+  "cardPage": {
+    "productNotFound": "Product not found",
+    "technologiesUsed": "Technologies Used:",
+    "siteLink": "Site Link:"
+  },
+  "products": {
+    "200": {
+      "title": "Web Application & E-commerce Development",
+      "description": "Robust web applications and high-converting e-commerce platforms are developed. Solutions are built using JavaScript and TypeScript for a scalable and maintainable codebase. By utilizing modern frameworks, powerful and engaging web applications are architected.<h5>Key Features & Technologies</h5><ul><li><strong>Front-End Development:</strong> Polished and intuitive user interfaces are built using cutting-edge frameworks like React, Next.js, Vue.js, and Svelte. For optimized content delivery and performance, technologies like SvelteKit and Bunny.net CDN are also used.</li><li><strong>Back-End Systems:</strong> The backend is built on Node.js to create a scalable and secure foundation. For specific needs, other robust server-side languages like Java or Golang can also be integrated.</li><li><strong>E-commerce & Payments:</strong> Secure transactions and a rock-solid foundation for growth are ensured through the integration of leading payment gateways such as Stripe, PayPal, and other direct payment methods.</li></ul>"
+    },
+    "201": {
+      "title": "UI/UX Design & Prototyping",
+      "description": "An exceptional digital product begins with an outstanding user experience. The service specializes in creating intuitive, engaging, and visually stunning user interfaces (UI) and user experiences (UX) that captivate audiences.<h5>Key Features & Process</h5><ul><li><strong>User-Centered Design:</strong> The comprehensive process covers everything from initial user research and detailed wireframing to interactive prototypes and polished final designs.</li><li><strong>Intuitive Experiences:</strong> The focus is on ensuring a digital product is not only functional but also a joy to use and a memorable experience for every user.</li></ul>"
+    },
+    "202": {
+      "title": "Mobile App Development",
+      "description": "Innovative ideas are brought to the fingertips of millions through the development of high-performance, responsive mobile applications with React Native. This ensures a fluid and consistent user experience across both iOS and Android.<h5>Core Components</h5><ul><li><strong>UI/UX Design:</strong> The service crafts intuitive UI/UX designs, supported by Redux for seamless state management.</li><li><strong>Backend Integration:</strong> Robust backend systems are integrated, ensuring apps are built to truly stand out.</li><li><strong>Visuals & Functionality:</strong> Expect pixel-perfect visuals and unshakeable functionality with every tap and swipe, designed to engage users and keep them coming back.</li></ul>"
+    },
+    "203": {
+      "title": "Performance Optimization & SEO Audits",
+      "description": "Website visibility is significantly boosted and user experience is enhanced with specialized performance and SEO audits.<h5>Audit Process</h5><ul><li><strong>In-depth Analysis:</strong> The process includes an in-depth analysis of a site to identify speed bottlenecks, evaluate Core Web Vitals, and ensure optimal search engine friendliness.</li><li><strong>Actionable Reports:</strong> The service provides detailed, actionable reports and strategic recommendations to dramatically improve loading times, responsiveness, and organic search rankings.</li><li><strong>Goal-Oriented Results:</strong> The goal is to ensure a website achieves its full potential and attracts a significantly larger audience.</li></ul>"
+    },
+    "204": {
+      "title": "Custom API Development & Integration",
+      "description": "Different systems are enabled to communicate effortlessly, providing a powerful backend for cutting-edge applications. The service specializes in designing and building secure, scalable, and highly efficient APIs (Application Programming Interfaces). Whether architecting a custom RESTful or GraphQL API from scratch or seamlessly integrating with essential third-party services like payment gateways or CRM systems, the focus is always on ensuring smooth data flow and flawless connectivity that empowers operations.<h5>Core Functionalities & Technologies</h5><ul><li><strong>API Development:</strong> Custom APIs are built from the ground up to meet unique needs, enabling applications to communicate with other services and fetch data from external resources.</li><li><strong>Core Technologies:</strong> The backend APIs are developed using powerful server-side technologies like Node.js with frameworks such as Express.js, NestJS, or Koa.js. Libraries like Mongoose (for MongoDB) or Sequelize (for SQL databases) are also utilized to manage data. Data integrity and security are ensured with proper validation and authentication methods.</li></ul>"
+    },
+    "205": {
+      "title": "Website Maintenance & Content Management",
+      "description": "A website is a living asset, and the services ensure it remains sharp, secure, and always up-to-date.<h5>Maintenance Services</h5><ul><li><strong>Comprehensive Coverage:</strong> Website maintenance covers both front-end polish and critical back-end stability.</li><li><strong>Proactive Management:</strong> The process includes regular updates, crucial performance optimizations, and meticulous content management. From cleaning up unused files to integrating exciting new features, websites are managed proactively.</li><li><strong>Client Focus:</strong> This allows a client to fully focus on their core business, with the peace of mind that their online platform is consistently performing at its absolute peak.</li></ul>"
+    },
+    "206": {
+      "title": "WordPress Development",
+      "description": "The full power of an online presence is unlocked with custom WordPress solutions tailored precisely to specific needs.<h5>Development & Functionality</h5><ul><li><strong>E-commerce & Events:</strong> The service handles everything from establishing a powerful e-commerce store with WooCommerce to managing complex event schedules.</li><li><strong>Multilingual Support:</strong> A seamless multilingual experience is created using tools like Polylang.</li><li><strong>Bespoke Solutions:</strong> From the initial core installation to bespoke plugin development, a WordPress site will be robust, user-friendly, and perfectly aligned with the unique business objectives, ensuring maximum impact.</li></ul>"
+    },
+    "207": {
+      "title": "Static Website Development",
+      "description": "Websites are crafted to load in an instant and provide a razor-sharp user experience.<h5>Key Features</h5><ul><li><strong>Lightning-Fast Performance:</strong> The service specializes in building lightning-fast static websites using pure Vanilla JavaScript, HTML5, and SCSS.</li><li><strong>High Optimization:</strong> These sites are not only visually appealing; they are also highly optimized for speed, inherently secure, and built for maximum efficiency.</li><li><strong>Ideal Use Cases:</strong> Perfect for dynamic portfolios, impactful marketing pages, or any project where immediate loading and impeccable design are paramount to captivating a message instantly.</li></ul>"
+    },
+    "208": {
+      "title": "Progressive Web App (PWA) Development",
+      "description": "The gap between traditional web and native mobile applications is seamlessly bridged with a Progressive Web App (PWA). An existing web presence can be transformed into an installable, app-like experience that truly excels.<h5>Core PWA Benefits</h5><ul><li><strong>Enhanced Performance:</strong> The apps work offline and load instantly.</li><li><strong>Increased Engagement:</strong> They are capable of sending rich push notifications directly to users.</li><li><strong>Improved Accessibility:</strong> Unparalleled user engagement and enhanced accessibility are delivered without the need for complex app store downloads, providing a remarkably smooth and fast experience across all devices and networks.</li></ul>"
+    },
+    "100": {
+      "title": "Application for Democratic Voting: delib-5.web.app",
+      "description": "Contribution to the development of custom popup components for the delib-5.web.app platform. The project leveraged Figma for design and Next.js with TypeScript for implementation.<h5>Key Contributions</h5><ul><li><strong>Interactive Popups:</strong> A double-paged popup component was developed with fully interactive elements, allowing users to navigate between the two pages and return to the first one.</li><li><strong>Bug Fixes & Performance:</strong> The work also included bug fixes and CSS corrections, resulting in a noticeable improvement in overall site functionality and performance by 15%.</li><li><strong>Collaboration:</strong> This was a collaborative effort with a team of eight members, with all work coordinated via Slack to ensure seamless communication and progress.</li></ul>"
+    },
+    "101": {
+      "title": "Music Study Application: loctoc.ch",
+      "description": "Maintenance and active development of frontend components for a Swiss-based music application that provides online and in-person lessons for students.<h5>Development & Technology</h5><ul><li><strong>Frontend Development:</strong> As part of this effort, two new front-page components were added and translated into four languages (English, French, Italian, and Spanish), improving the site's homepage explanation by 30% and giving users a clearer understanding of the platform's purpose. The platform uses Svelte and SvelteKit.</li><li><strong>Integrations:</strong> Payment services were integrated via Stripe, and content delivery was optimized with BunnyNet CDN.</li><li><strong>Project Ecosystem:</strong> The project operates within a comprehensive development ecosystem that includes a Golang backend, Postgres DB, Docker, Heroku, and GitLab for seamless collaboration and deployment.</li></ul>"
+    },
+    "102": {
+      "title": "Orchestra Concerts Platform: klangweltfinder-lartedelsuono.ch",
+      "description": "A comprehensive, multilingual WordPress website was developed for a Swiss-based philharmonic orchestra.<h5>Platform Features & Development</h5><ul><li><strong>Custom Event Management:</strong> The platform features a custom event management system, with core functionality extended through deep customization of PHP files.</li><li><strong>Multilingual Support:</strong> The site is fully translatable via the Polylang plugin, ensuring a seamless experience for a diverse audience.</li><li><strong>Technical Scope:</strong> The project scope included domain implementation, SSL certificate management, secure hosting deployment, and ongoing maintenance of the MySQL database and PHP backend to ensure long-term stability and performance.</li></ul>"
+    },
+    "103": {
+      "title": "Mobile Psychological Therapy Services Website: lebend-ich.ch",
+      "description": "A bespoke, high-performance website was developed for a psychological support practice. Built from scratch using Vanilla JavaScript, styled with SASS and CSS, and powered by a Node.js backend, the site is exceptionally lightweight and fast.<h5>Project Scope & Features</h5><ul><li><strong>Development & Deployment:</strong> The entire project lifecycle, from initial design to production deployment, was handled with demonstrated expertise in domain registration, DNS management, SSL/TLS configuration, and cloud deployment via Firebase.</li><li><strong>Interactive Elements:</strong> The application features a custom 'read more/read less' button, a dynamic testimonials component and a picture gallery. Additionally, the privacy policy was meticulously crafted to meet official Swiss medical health standards.</li><li><strong>Analytics & Optimization:</strong> For ongoing optimization, Google Analytics was deployed to track site functionality and user activity, providing data used for continuous improvement of the user experience.</li></ul>"
+    },
+    "104": {
+      "title": "Custom E-commerce Platform Online Store",
+      "description": "Development of a high-converting online store with secure payments and inventory management, engineered to significantly boost client sales. The platform's architecture is built with a focus on performance, scalability, and a seamless user experience, utilizing a robust RESTful API for efficient data handling. <h5>Front-End Components and User Experience</h5> <ul> <li><strong>Product Card & Detail Page:</strong> A custom card component provides a clean display of products. Clicking a card opens a dedicated product page with a custom-developed image gallery featuring a thumbnail-based navigation system and a smooth zoom component for detailed viewing. Each product page includes a likes counter, a view counter, and product sharing options via social media or a direct link.</li> <li><strong>Navigation & Discovery:</strong> The site employs multiple product carousel components to enhance user discovery. These include a homepage carousel for featured products, a carousel for similar items based on a user's current view, and another for additional related products. A search bar is also available, providing users with a fast and efficient way to find products.</li> <li><strong>Interactive Features:</strong> Core components were developed to improve site usability and performance. This includes a lazy-load component to optimize loading times, a 'push up' button for easy navigation, and a notification popup for age-gated content, limiting adult product viewing for users under 18.</li> </ul> <h5>Backend and Core Functionality</h5> <ul> <li><strong>Secure Transactions:</strong> The Stripe payment component and shopping basket component were implemented to handle secure transactions and inventory management. This integration ensures a smooth and reliable checkout process for customers.</li> <li><strong>User Authentication:</strong> A Login component was integrated, offering users the convenience of a Google account for quick and easy sign-in.</li> </ul> <h5>Unique Features</h5> <ul> <li><strong>Audio Player:</strong> A custom audio player component was developed and placed in the footer, providing a unique user experience. It allows users to start music upon entering the site, with controls for volume and mute.</li> </ul>"
+    },
+    "105": {
+      "title": "Messenger component for Mobile App",
+      "description": "A front-end messenger component was developed for a mobile application, built using React Native.<h5>Component Features</h5><ul><li><strong>User Interface:</strong> The component features a user's name and photo, text fields, message timestamps, a message notification icon with an unread count, and read/unread status arrows.</li><li><strong>Functionality:</strong> A search bar was also included to allow users to search for specific users or messages.</li><li><strong>Interactive Elements:</strong> An additional popup component was created to include a 'write a message' button, as well as buttons for location, notifications, and announcements, providing a comprehensive and intuitive user experience.</li></ul>"
+    }
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "Discover the real impact of our software solutions, straight from our partners.",
+    "readMoreButton": "Read More",
+    "ariaLabels": {
+      "previousTestimonial": "Previous testimonial",
+      "nextTestimonial": "Next testimonial",
+      "goToSlide": "Go to slide {{slideNumber}}",
+      "closeModal": "Close modal"
+    },
+    "1": {
+      "quote": "I can recommend Ilya's work, and him personally, with full conviction. I don't even know where to begin in highlighting his qualities. His personality is exceptional, and this shines through in his work. He's not your typical programmer. I have a feeling he started that field of study simply to satisfy his brilliant mind. But Ilya's work is more than just coding. His range of experience seems endless, which makes his input incredibly valuable. He's knowledgeable in art as well as current technological developments. His creativity overflows. He genuinely invests himself in his work rather than just fulfilling a task. What's truly valuable is that he contributes for the benefit of the client. He's always thinking, \"What else could be helpful? What could make this new homepage even more up-to-date?\" Things I couldn't even imagine existed are commonplace for him, and he incorporates them. He also possesses a patience and kindness that made our collaboration incredibly pleasant. My objections, ideas, wishes... everything! He always took everything to heart and implemented it. Even when my work required something a bit old-fashioned, he made an absolute effort to find the best solution for me. It's a gift to have Ilya by my side, both for the design and the maintenance of my homepage.",
+      "clientName": "Daniela Hagmann",
+      "clientTitle": "Co",
+      "clientCompany": "Lebend-Ich"
+    },
+    "2": {
+      "quote": "We were incredibly pleased with Ilya's contributions to our team. He played a key role in developing several components of our main PWA, consistently maintaining a positive attitude and fostering a great atmosphere in the workplace. Ilya is a true asset!",
+      "clientName": "Tal Yaron",
+      "clientTitle": "CEO",
+      "clientCompany": "FreeDi"
+    }
+  },
+  "aboutPage": {
+    "titlePrefix": "About",
+    "titleSuffix": "HIEROGLYPH CODE",
+    "intro1": "Welcome to Hieroglyph Code, a custom software solutions service led by Ilya Medvedev, a full-stack Software Engineer based in Basel, Switzerland. The service combines technical expertise with creative artistry to deliver professional, user-friendly, and scalable digital experiences. Hieroglyph Code specializes in crafting solutions that are not only functional but also intuitive and visually appealing.",
+    "intro2": "Hieroglyph Code is dedicated to building high-quality applications by leveraging modern web technologies, AI tools, and a meticulous eye for detail. The foundation of the work is a deep knowledge of TypeScript and Vanilla JavaScript, which ensures the delivery of robust and scalable applications using frameworks like React, Next.js, React Native, Vue.js, Svelte.js, Node.js, CSS3, and SASS.",
+    "servicesTitle": "Software Services",
+    "servicesIntro": "At Hieroglyph Code, services encompass comprehensive custom software development, from initial concept to final deployment:",
+    "serviceList": {
+      "fullStack": "Full Stack Web & Mobile Development: Responsive, robust applications are built using modern technologies like TypeScript, Vanilla JavaScript, React.js, Next.js, React Native, Vue.js, Svelte.js, Node.js, CSS3, and SASS.",
+      "backEnd": "Back-End & API Development: Secure and scalable back-end services are created with Node.js and custom API development is handled. The service has extensive experience with various databases, including MongoDB, Firebase, MySQL, and Postgres DB. The service also integrates platforms like Stripe for e-commerce.",
+      "wordpress": "WordPress Development & Maintenance: Services range from designing and building new e-commerce sites with Divi and Elementor to optimizing and maintaining existing platforms, with a specific focus on customizing plugins using PHP.",
+      "aiTools": "AI Tools & Integration: Platforms like Google AI Studio and Gemini are leveraged to streamline development workflows, optimize component code, and generate content outlines for efficient and innovative solutions.",
+      "devOps": "DevOps & Deployment: The development and deployment process is streamlined using modern tools like Docker, GitLab, and Heroku. This includes essential services like SSL and DNS implementation to ensure a secure and reliable online presence.",
+      "uiUx": "UI/UX Focused Development: With proficiency in tools like Figma and Photoshop, Hieroglyph Code ensures that applications are not only powerful but also delightful to use, with careful attention to design details and user engagement."
+    },
+    "outro": "Hieroglyph Code is committed to clear communication and delivering solutions precisely tailored to client needs, always with a focus on clean, efficient, and lightweight code.",
+    "ctaTitle": "Ready to discuss your next project?",
+    "ctaButton": "Get in Touch"
+  },
+
+   "similarProjects": {
+    "exploreOtherProjects": "Explore Other Projects"
+  },
+
+  "contactPage": {
+    "title": "Contact",
+    "imageCaption": "Basel, Switzerland",
+    "description": "Ready to discuss your project? Hieroglyph Code is based in Basel, Switzerland, and specializes in transforming ideas into reality. Reach out today to start a conversation about your custom software needs. All inquiries are typically responded to within 2 hours.",
+    "connectTitle": "Let's Connect",
+    "connectDescription": "While the work is primarily remote, consultations are available in Basel or via a video call to discuss your project in detail.",
+    "form": {
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "messagePlaceholder": "Your Message",
+      "privacyAgreement": "By checking this box, you agree that I may contact you to discuss your inquiry.",
+      "submitButton": "Send Message",
+      "successMessage": "Message sent successfully!",
+      "errorMessage": "Failed to send message: "
+    },
+    "privacyError": "Please accept the privacy policy to send your message."
+  }
+}

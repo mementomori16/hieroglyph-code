@@ -1,0 +1,323 @@
+@use "sass:color";
+@import '../../../global.scss';
+
+.testimonials-section {
+    @include responsive-padding(60px 20px, 40px 15px, 30px 10px);
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: $font-family-base;
+    color: $color-secondary;
+    text-align: center;
+    overflow-x: hidden;
+
+    .section-title {
+        @include services-heading;
+        margin-bottom: $space-xs;
+        color: $color-text-light;
+        text-transform: none;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: $font-size-h3;
+            margin-bottom: $space-lg;
+        }
+        @media (max-width: $breakpoint-sm) {
+            font-size: $font-size-h4;
+            margin-bottom: $space-md;
+        }
+    }
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    @include responsive-padding(0 40px, 0 20px, 0 10px);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 700ms ease-in-out;
+    align-items: stretch;
+}
+
+.testimonial-slide-wrapper {
+    flex: 0 0 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background-color: rgba($color-surface, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: $border-radius-lg;
+    border: 1px solid rgba($color-surface, 0.2);
+    @include responsive-padding(30px, 25px, 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: $shadow-sm;
+    min-height: 250px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        transform: translateY(-8px);
+        background-color: rgba($color-surface, 0.2);
+        box-shadow: $shadow-md;
+    }
+
+    .testimonial-quote {
+        position: relative;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: $color-secondary;
+        font-style: italic;
+        margin-bottom: 20px;
+        text-align: left;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        line-clamp: 5; // Added standard property to fix linting error
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    .read-more-btn {
+        background: none;
+        border: none;
+        color: $color-primary;
+        cursor: pointer;
+        font-size: 0.9em;
+        font-weight: $font-weight-semibold;
+        padding: 5px 0;
+        margin-top: 5px;
+        transition: color 0.2s ease;
+        text-align: center;
+        width: 100%;
+
+        &:hover {
+            color: darken($color-primary, 10%);
+        }
+    }
+
+    .client-info {
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid rgba($color-border-subtle, 0.5);
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .client-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: $spacing-s;
+        flex-shrink: 0;
+        border: 2px solid $color-primary;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .client-name {
+        font-weight: $font-weight-bold;
+        color: $color-secondary;
+        font-size: 0.9em;
+        margin-bottom: 2px;
+    }
+
+    .client-role {
+        font-size: 0.8em;
+        color: $color-text-light;
+    }
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include set-responsive-square-size(40px, 35px, 30px);
+    background-color: rgba($color-surface, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba($color-surface, 0.4);
+    box-shadow: $shadow-sm;
+    transition: all 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: $border-radius-lg;
+
+    &.carousel-arrow-left {
+        left: 5px;
+    }
+    &.carousel-arrow-right {
+        right: 5px;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        box-shadow: $shadow-md;
+        transform: translateY(-50%) scale(1.05);
+        .arrow-icon {
+            color: $color-surface;
+        }
+    }
+    &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba($color-secondary, 0.05);
+    }
+
+    .arrow-icon {
+        @include set-responsive-square-size(20px, 18px, 16px);
+        color: rgba($color-secondary, 0.8);
+        transition: color 0.3s ease;
+        flex-shrink: 0;
+        display: block;
+    }
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $spacing-m;
+    @media (max-width: $breakpoint-tablet) {
+        margin-top: $spacing-s;
+    }
+    @media (max-width: $breakpoint-mobile) {
+        margin-top: $spacing-xs;
+    }
+
+    .dot {
+        @include set-responsive-square-size(8px, 7px, 6px);
+        border-radius: 50%;
+        background-color: $color-border-subtle;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        margin: 0 4px;
+        border: 1px solid transparent;
+        padding: 0;
+
+        &:hover {
+            background-color: lighten($color-primary, 20%);
+            border-color: $color-primary;
+        }
+
+        &.active {
+            @include set-responsive-square-size(10px, 9px, 8px);
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: $color-surface;
+    border-radius: $border-radius-lg;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: $shadow-lg;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    @include responsive-padding(30px, 25px, 20px);
+
+    .modal-close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        color: $color-text-light;
+        cursor: pointer;
+        padding: 5px;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    .modal-quote {
+        font-size: 1em;
+        line-height: 1.6;
+        color: $color-secondary;
+        font-style: italic;
+        margin-bottom: 20px;
+        flex-grow: 1;
+        white-space: pre-wrap;
+
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 0.95em;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 0.9em;
+        }
+    }
+
+    .modal-client-info {
+        margin-top: auto;
+        padding-top: 10px;
+        border-top: 1px solid $color-border-light;
+        display: flex;
+        align-items: center;
+    }
+
+    .modal-client-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: $spacing-s;
+        flex-shrink: 0;
+        @media (max-width: $breakpoint-mobile) {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .modal-client-name {
+        font-weight: $font-weight-bold;
+        color: $color-secondary;
+        font-size: 0.9em;
+        margin-bottom: 2px;
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 0.85em;
+        }
+    }
+
+    .modal-client-role {
+        font-size: 0.8em;
+        color: $color-text-light;
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 0.75em;
+        }
+    }
+}

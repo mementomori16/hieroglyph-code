@@ -1,0 +1,303 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+// 1. COLOR PALETTE
+// ----------------------------------------------------
+$color-primary: rgb(138, 190, 236);
+$color-secondary: #333333;
+$color-background: #F9F7F5;
+$color-surface: #FFFFFF;
+$color-text-white: #FFFFFF;
+$color-text-button: #fa8a3b;
+$color-primary-transparent: rgba(232, 125, 46, 0.15);
+$color-success: #28A745;
+$color-error: #DC3545;
+$color-warning: #FFC107;
+$color-border-subtle: #EBEBEB;
+$color-border-subtle-2: #dbdbdb;
+$color-text-light: #7F8C8D;
+$color-text-dark: #333333;
+$color-border-light: #EBEBEB;
+$color-alt-background-1: #FFF8F0;
+$color-alt-background-2: #F2F2F2;
+$color-button-blue: rgb(138, 190, 236);
+$color-text-title: #495057;
+
+// 2. TYPOGRAPHY
+// ----------------------------------------------------
+$font-family-base: 'Open Sans', sans-serif;
+$font-size-base: 1rem;
+$font-size-h1: 3.5rem;
+$font-size-h2: 2.5rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.25rem;
+$font-size-h5: 1.125rem;
+$font-size-h6: 1rem;
+$font-size-homepage-section-title: 2rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.8rem;
+$font-size-xxs: 0.8rem;
+$font-size-md: 1.125rem;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// 3. SPACING
+// ----------------------------------------------------
+$space-xxxs: 0.01rem;
+$space-xxs: 0.125rem;
+$space-xs: 0.25rem;
+$space-sm: 0.5rem;
+$space-md: 1rem;
+$space-lg: 1.5rem;
+$space-xl: 2rem;
+$space-xxl: 3rem;
+$space-xxxl: 4rem;
+$space-xxxxl: 6rem;
+$space-xxxxxl: 8rem;
+$spacing-s: $space-sm;
+$spacing-m: $space-md;
+$spacing-xs: $space-xs;
+
+// 4. BREAKPOINTS
+// ----------------------------------------------------
+$breakpoint-sm: 40rem;
+$breakpoint-md: 48rem;
+$breakpoint-lg: 64rem;
+$breakpoint-xl: 80rem;
+$breakpoint-xxl: 90rem;
+$breakpoint-tablet: $breakpoint-md;
+$breakpoint-mobile: $breakpoint-sm;
+
+// 5. SHADOWS
+// ----------------------------------------------------
+$shadow-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05);
+$shadow-md: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 0.625rem 0.9375rem rgba(0, 0, 0, 0.12);
+$shadow-xl: 0 1.25rem 1.5rem rgba(0, 0, 0, 0.15); 
+
+
+// 6. BORDER RADIUS
+// ----------------------------------------------------
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 0.75rem;
+
+// 7. MIXINS
+// ----------------------------------------------------
+@mixin responsive-text($base-font-size, $tablet-font-size, $mobile-font-size, $base-margin-bottom, $tablet-margin-bottom, $mobile-margin-bottom) {
+    font-size: $base-font-size;
+    margin-bottom: $base-margin-bottom;
+    @media (max-width: $breakpoint-md) {
+        font-size: $tablet-font-size;
+        margin-bottom: $tablet-margin-bottom;
+    }
+    @media (max-width: $breakpoint-sm) {
+        font-size: $mobile-font-size;
+        margin-bottom: $mobile-margin-bottom;
+    }
+}
+
+@mixin responsive-padding($base-padding, $tablet-padding, $mobile-padding) {
+    padding: $base-padding;
+    @media (max-width: $breakpoint-md) {
+        padding: $tablet-padding;
+    }
+    @media (max-width: $breakpoint-sm) {
+        padding: $mobile-padding;
+    }
+}
+
+@mixin set-responsive-square-size($base-size, $tablet-size, $mobile-size) {
+    width: $base-size;
+    height: $base-size;
+    @media (max-width: $breakpoint-md) {
+        width: $tablet-size;
+        height: $tablet-size;
+    }
+    @media (max-width: $breakpoint-sm) {
+        width: $mobile-size;
+        height: $mobile-size;
+    }
+}
+
+// NEW MIXIN FOR CONSISTENT HEADINGS
+@mixin services-heading {
+    font-family: $font-family-base;
+    text-align: center;
+    margin-bottom: $space-xl;
+    color: $color-text-light;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    position: relative;
+    padding-bottom: 0;
+    font-size: $font-size-h2;
+    
+}
+
+// 8. GLOBAL STYLES (Base Elements and Utility Classes)
+// ----------------------------------------------------
+* { box-sizing: border-box; }
+html { font-size: $font-size-base; }
+
+body {
+    font-family: $font-family-base;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $color-secondary;
+    background-color: $color-background;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $font-weight-bold;
+    color: $color-text-title;
+    margin-top: $space-lg;
+    margin-bottom: $space-md;
+    line-height: 1.2;
+}
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+h5 { font-size: $font-size-h5; }
+h6 { font-size: $font-size-h6; }
+
+p {
+    margin-bottom: $space-md;
+    color: $color-text-light;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+        color: color.adjust($color-primary, $lightness: -10%);
+        text-decoration: underline; // <-- This is the core problem.
+    }
+}
+
+.btn {
+    padding: $space-md $space-lg;
+    border-radius: $border-radius-md;
+    border: none;
+    font-weight: $font-weight-semibold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    &:focus {
+        outline: 0.125rem solid color.adjust($color-primary, $lightness: 20%);
+        outline-offset: 0.125rem;
+    }
+}
+
+.btn-primary {
+    @extend .btn;
+    background-color: $color-primary;
+    color: $color-surface;
+    box-shadow: $shadow-sm;
+    &:hover {
+        background-color: color.adjust($color-primary, $lightness: -8%);
+        transform: translateY(-0.0625rem);
+        box-shadow: $shadow-md;
+    }
+}
+
+.btn-secondary {
+    @extend .btn;
+    background-color: transparent;
+    color: $color-primary;
+    border: 0.0625rem solid $color-primary;
+    &:hover {
+        background-color: color.adjust($color-primary, $lightness: 40%);
+        transform: translateY(-0.0625rem);
+    }
+}
+
+.btn-ghost {
+    @extend .btn;
+    background: none;
+    border: none;
+    color: $color-text-light;
+    padding: $space-xs $space-sm;
+    font-weight: $font-weight-normal;
+    &:hover {
+        color: $color-primary;
+        background-color: transparent;
+        transform: none;
+        text-decoration: underline;
+    }
+}
+
+.btn-blue {
+    @extend .btn;
+    background-color: $color-button-blue;
+    color: $color-text-white;
+    box-shadow: $shadow-sm;
+    &:hover {
+        background-color: color.adjust($color-button-blue, $lightness: -8%);
+        transform: translateY(-0.0625rem);
+        box-shadow: $shadow-md;
+    }
+}
+
+.container {
+    max-width: $breakpoint-xxl;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $space-xl;
+    padding-right: $space-xl;
+    @media (max-width: $breakpoint-md) {
+        padding-left: $space-lg;
+        padding-right: $space-lg;
+    }
+    @media (max-width: $breakpoint-sm) {
+        padding-left: $space-md;
+        padding-right: $space-md;
+    }
+}
+
+.text-center { text-align: center; }
+.shadow-sm { box-shadow: $shadow-sm; }
+.shadow-md { box-shadow: $shadow-md; }
+.shadow-lg { box-shadow: $shadow-lg; }
+.rounded-sm { border-radius: $border-radius-sm; }
+.rounded-md { border-radius: $border-radius-md; }
+.rounded-lg { border-radius: $border-radius-lg; }
+.text-primary { color: $color-primary; }
+.text-secondary { color: $color-secondary; }
+.text-light { color: $color-text-light; }
+.text-success { color: $color-success; }
+.text-error { color: $color-error; }
+
+// General Fix for larger tablets (including iPad Air and Pro)
+@media only screen and (min-device-width: 800px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #root {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-page, .portfolioPage {
+        flex-grow: 1;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+}
