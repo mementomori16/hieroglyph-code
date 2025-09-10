@@ -28,10 +28,17 @@ const SearchBar: React.FC<SearchBarProps> = ({ onProductSelect }) => {
       ...products.portfolio,
     ];
 
-    const filtered = allProducts.filter(product =>
-      product.title.toLowerCase().includes(term) ||
-      product.description.toLowerCase().includes(term)
-    );
+    const filtered = allProducts.filter(product => {
+      // Check if product.description is a string. If not, join the array elements.
+      const descriptionText = typeof product.description === 'string'
+        ? product.description
+        : product.description.join(' ');
+
+      return (
+        product.title.toLowerCase().includes(term) ||
+        descriptionText.toLowerCase().includes(term)
+      );
+    });
 
     setFilteredProducts(filtered);
   };

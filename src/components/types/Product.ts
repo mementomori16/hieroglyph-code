@@ -24,6 +24,5 @@ export interface Product {
   price?: number;
   icons?: string[];
   technologies?: string[];
-  // Add the testimonials property here 👇
   testimonials?: Testimonial[];
 }
