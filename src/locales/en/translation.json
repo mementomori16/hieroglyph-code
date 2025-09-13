@@ -132,6 +132,10 @@
     "ctaButton": "Get in Touch"
   },
 
+  "similarProducts": {
+    "exploreOtherServices": "Explore Other Services"
+  },
+
    "similarProjects": {
     "exploreOtherProjects": "Explore Other Projects"
   },
@@ -152,5 +156,53 @@
       "errorMessage": "Failed to send message: "
     },
     "privacyError": "Please accept the privacy policy to send your message."
+  },
+
+  "legalPage": {
+    "mainTitle": "Privacy Policy & Legal",
+    "attributions": {
+      "title": "Attributions",
+      "textPrefix": "The illustrations on this website are by",
+      "textSuffix": "."
+    },
+     "privacyPolicy": {
+      "title": "Privacy Policy",
+      "section1": {
+        "title": "Introduction",
+        "text": "The protection of your personal data is an important concern for us. In this privacy policy, we inform you about which personal data we collect, what we use it for, and what rights you have. In doing so, we adhere to the provisions of the Swiss Data Protection Act (revDSG) and, where applicable, the European General Data Protection Regulation (GDPR)."
+      },
+      "section2": {
+        "title": "Responsible Party",
+        "text": "The operator of this website is responsible for data processing on this website. If you have any questions about data protection, you can reach us via the contact form on this website."
+      },
+      "section3": {
+        "title": "Type and Scope of Data Processing",
+        "text": "a) Data that you provide to us\n\nWe process personal data that you voluntarily submit to us, especially when you use our contact form. This generally includes: name (optional), email address, and the content of your message. This data is processed exclusively to answer your inquiries and for further communication with you.\n\nb) Data that is collected automatically\n\nWhen you visit our website, our servers automatically collect technical data. This includes: the IP address of your device, date and time of access, name of the accessed page, operating system and browser type, and the referral URL. This data is used to ensure the security of our website, for error analysis, and for the statistical optimization of our services."
+      },
+      "section4": {
+        "title": "Purpose of Data Processing",
+        "text": "We process your data for the following purposes: to process your inquiries and to communicate with you; to provide and ensure the functionality and security of our website and our software solutions; and for the statistical analysis of website usage to optimize our services."
+      },
+      "section5": {
+        "title": "Legal Basis for Data Processing",
+        "text": "The processing of your data is based on the following legal grounds: your consent (e.g., by submitting the contact form); and our legitimate interest in data processing (e.g., to improve our services)."
+      },
+      "section6": {
+        "title": "Data Disclosure to Third Parties and Data Processing Abroad",
+        "text": "We only disclose your data to third parties if this is necessary for the provision of our services (e.g., hosting providers) or if there is a legal obligation. Our website is hosted via Firebase Hosting, with servers located in Zurich (europe-west6). The data processed there therefore remains within Switzerland. For the statistical analysis of website usage, we use Google Analytics. The data collected in this process is also processed within the EU. We ensure that these providers are contractually obligated to guarantee an adequate level of data protection."
+      },
+      "section7": {
+        "title": "Cookies and Similar Technologies",
+        "text": "We do not currently use cookies on our website. However, we reserve the right to use cookies and similar technologies in the future to facilitate usage and improve functionality. In this case, you will be informed accordingly."
+      },
+      "section8": {
+        "title": "Your Rights as a Data Subject",
+        "text": "Under the revDSG, you have the following rights: right to information, right to rectification, right to erasure, right to object, and right to withdraw consent. To exercise your rights, please contact us via the contact form on our website."
+      },
+      "section9": {
+        "title": "Changes to this Privacy Policy",
+        "text": "We reserve the right to change this privacy policy at any time. The current version will be published on this page."
+      }
+    }
   }
 }

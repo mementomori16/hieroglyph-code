@@ -12,7 +12,7 @@
   margin-top: 0; // Ensures no default margin pushes it down
 
   p {
-    color: lighten($color-background, 40%); // Lighter shade of charcoal for paragraphs
+    color: color.adjust($color-background, $lightness: 40%);
     font-size: $font-size-sm;
     margin-bottom: $space-sm; // Using global spacing variable
     &:last-child {

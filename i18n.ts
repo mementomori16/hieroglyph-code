@@ -16,6 +16,12 @@ i18n
   .init({
     resources,
     fallbackLng: 'en',
+    // The corrected detection object
+    detection: {
+      order: ['localStorage', 'navigator'],
+      lookupLocalStorage: 'i18nextLng',
+      caches: ['localStorage']
+    },
     interpolation: {
       escapeValue: false
     }

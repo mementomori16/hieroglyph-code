@@ -1,16 +1,16 @@
 // src/routes/router.tsx
 import { createBrowserRouter, Navigate } from "react-router-dom";
+import { Outlet } from "react-router-dom"; // You will need to import Outlet
 import NavBarWrapper from "../layouts/NavBarWrapper";
-import PreloaderWrapper from "../components/ImagePreloader/PreloaderWrapper"; // Import the new component
 
 import Home from "../components/pages/Home/Home";
 import About from "../components/pages/About/About";
 import Contact from "../components/pages/Contact/Contact";
 import Services from "../components/pages/ServicesPage/Services";
 import CardPage from "../components/pages/Card/CardPage/CardPage";
-import Attributions from "../components/pages/Attributions/Attributions";
 import Testimonials from "../components/pages/Testimonials/Testimonials";
 import Projects from "../components/pages/Projects/Projects";
+import LegalInfo from "../components/pages/Attributions/Legal-info";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <PreloaderWrapper />, // Use PreloaderWrapper here
+        element: <Outlet />,
         children: [
           { path: "/", element: <Navigate to="/home" replace /> },
           { path: "home", element: <Home /> },
@@ -30,13 +30,10 @@ const router = createBrowserRouter([
           { path: "card", element: <CardPage /> },
           { path: "card/:id", element: <CardPage /> },
           { path: "contact", element: <Contact /> },
-          { path: "attributions", element: <Attributions /> },
+          { path: "legalinfo", element: <LegalInfo /> },
         ],
       },
     ],
-  },
-  {
-    path: "/ecommerce",
   },
 ]);
 

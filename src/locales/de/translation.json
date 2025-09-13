@@ -132,6 +132,10 @@
     "ctaButton": "Kontakt aufnehmen"
   },
 
+   "similarProducts": {
+    "exploreOtherServices": "Andere Dienstleistungen erkunden"
+  },
+
   "similarProjects": {
     "exploreOtherProjects": "Ähnliche Projekte entdecken"
   },
@@ -152,5 +156,52 @@
       "errorMessage": "Nachricht versände isch nöd mögli gsy: "
     },
     "privacyError": "Bitte akzeptier d'Datäschutzerklärig, um dini Nachricht z'versände."
+  },
+   "legalPage": {
+    "mainTitle": "Datenschutz & Rechtliche Hinweise",
+    "attributions": {
+      "title": "Bildnachweise (Attributions)",
+      "textPrefix": "Die Illustrationen auf dieser Website stammen von",
+      "textSuffix": "."
+     },
+    "privacyPolicy": {
+      "title": "Datenschutzerklärung",
+      "section1": {
+        "title": "Einleitung",
+        "text": "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. In dieser Datenschutzerklärung informieren wir Sie darüber, welche personenbezogenen Daten wir erheben, wofür wir sie verwenden und welche Rechte Sie haben. Wir halten uns dabei an die Bestimmungen des schweizerischen Datenschutzgesetzes (revDSG) und, soweit anwendbar, der europäischen Datenschutz-Grundverordnung (DSGVO)."
+      },
+      "section2": {
+        "title": "Verantwortliche Stelle",
+        "text": "Verantwortlich für die Datenbearbeitung auf dieser Website ist der Betreiber dieser Website. Bei Fragen zum Datenschutz können Sie uns über das Kontaktformular auf dieser Website erreichen."
+      },
+      "section3": {
+        "title": "Art und Umfang der Datenbearbeitung",
+        "text": "a) Daten, die Sie uns zur Verfügung stellen\n\nWir verarbeiten personenbezogene Daten, die Sie uns freiwillig übermitteln, insbesondere wenn Sie unser Kontaktformular nutzen. Dazu gehören in der Regel: Name (optional), E-Mail-Adresse und der Inhalt Ihrer Nachricht. Diese Daten werden ausschliesslich zur Beantwortung Ihrer Anfragen und zur weiteren Kommunikation mit Ihnen verarbeitet.\n\nb) Daten, die automatisch erhoben werden\n\nBeim Besuch unserer Website erheben unsere Server automatisch technische Daten. Dazu gehören: die IP-Adresse Ihres Geräts, Datum und Uhrzeit des Zugriffs, Name der aufgerufenen Seite, Betriebssystem und Browsertyp sowie die Referral-URL. Diese Daten werden zur Gewährleistung der Sicherheit unserer Website, zur Fehleranalyse und zur statistischen Optimierung unseres Angebots verwendet."
+      },
+      "section4": {
+        "title": "Zweck der Datenbearbeitung",
+        "text": "Wir verarbeiten Ihre Daten für die folgenden Zwecke: zur Bearbeitung Ihrer Anfragen und zur Kommunikation mit Ihnen; zur Bereitstellung und Sicherstellung der Funktionalität und Sicherheit unserer Website und unserer Softwarelösungen; und zur statistischen Analyse der Website-Nutzung, um unser Angebot zu optimieren."
+      },
+      "section5": {
+        "title": "Rechtsgrundlagen der Datenbearbeitung",
+        "text": "Die Bearbeitung Ihrer Daten basiert auf den folgenden Rechtsgrundlagen: Ihre Einwilligung (z. B. durch Absenden des Kontaktformulars); und unser berechtigtes Interesse an der Datenbearbeitung (z. B. zur Verbesserung unseres Angebots)."
+      },
+      "section6": {
+        "title": "Datenweitergabe an Dritte und Datenverarbeitung im Ausland",
+        "text": "Wir geben Ihre Daten nur dann an Dritte weiter, wenn dies zur Erbringung unserer Dienstleistungen erforderlich ist (z.B. Hosting-Dienstleister) oder wenn eine gesetzliche Verpflichtung besteht. Unsere Website wird über Firebase Hosting bereitgestellt, mit Servern in Zürich (europe-west6). Die dort verarbeiteten Daten bleiben somit innerhalb der Schweiz. Für die statistische Analyse der Website-Nutzung setzen wir Google Analytics ein. Die dabei erhobenen Daten werden ebenfalls innerhalb der EU verarbeitet. Wir stellen sicher, dass diese Anbieter vertraglich verpflichtet sind, ein angemessenes Datenschutzniveau zu gewährleisten."
+      },
+      "section7": {
+        "title": "Cookies und ähnliche Technologien",
+        "text": "Derzeit verwenden wir auf unserer Website keine Cookies. Wir behalten uns jedoch das Recht vor, in Zukunft Cookies und ähnliche Technologien einzusetzen, um die Nutzung zu erleichtern und die Funktionalität zu verbessern. In diesem Fall werden Sie darüber informiert."
+      },
+      "section8": {
+        "title": "Ihre Rechte als betroffene Person",
+        "text": "Nach dem revDSG haben Sie folgende Rechte: Auskunftsrecht, Recht auf Berichtigung, Recht auf Löschung, Widerspruchsrecht und Widerrufsrecht. Um Ihre Rechte geltend zu machen, kontaktieren Sie uns bitte über das Kontaktformular auf unserer Website."
+      },
+      "section9": {
+        "title": "Änderungen an dieser Datenschutzerklärung",
+        "text": "Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit zu ändern. Die jeweils aktuelle Version wird auf dieser Seite veröffentlicht."
+      }
+    }
   }
 }

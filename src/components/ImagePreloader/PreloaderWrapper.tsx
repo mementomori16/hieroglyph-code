@@ -1,11 +1,11 @@
-// src/components/PreloaderWrapper.tsx
+// src/components/ImagePreloader/PreloaderWrapper.tsx
 import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { extractAllImageUrls, preloadImages } from '../../utils/ImagePreloader/imagePreloader';
-import '../ImagePreloader/preloader.scss'; 
+import './preloader.scss';
 
 const PreloaderWrapper = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const imageUrls = extractAllImageUrls();

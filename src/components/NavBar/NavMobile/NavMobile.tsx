@@ -71,7 +71,8 @@ const NavMobile = () => {
               </div>
             </li>
             <li className="mobile-item language-item">
-              <LanguageSwitcher />
+              {/* Pass the closeMenu function as a prop */}
+              <LanguageSwitcher onCloseMenu={closeMenu} />
             </li>
           </ul>
         </>

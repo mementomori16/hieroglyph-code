@@ -1,0 +1,97 @@
+@use "sass:color";
+@import '../../../global.scss';
+
+// Main wrapper for the entire page
+.legal-info-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px); 
+}
+
+// Container for the content, using global styles for consistency
+.legal-info-page {
+  @extend .container;
+  
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+
+  color: $color-secondary; 
+  padding: $space-lg;
+  margin-top: $space-lg;
+  
+  flex-grow: 1; 
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Styling for the main headings
+.legal-info-page h1 {
+  text-align: center;
+  color: $color-text-light;
+  margin-bottom: $space-xxl;
+  font-weight: $font-weight-bold;
+
+  font-size: $font-size-h2; 
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-h3;
+    margin-bottom: $space-lg;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-size-h4;
+    margin-bottom: $space-md;
+  }
+}
+
+// Styling for section subheadings
+.legal-info-content h2 { 
+  text-align: left;
+  margin-top: $space-xl;
+  margin-bottom: $space-md;
+  color: $color-text-light;
+  font-weight: $font-weight-bold;
+
+  font-size: $font-size-h4;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-h5;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-size-base;
+  }
+}
+
+.legal-info-content {
+  .section {
+    margin-bottom: $space-lg;
+  }
+
+  p {
+    color: $color-secondary;
+    font-size: $font-size-base;
+    margin-bottom: $space-md;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  .privacy-policy-content strong {
+    color: $color-text-title;
+    font-weight: $font-weight-semibold;
+  }
+
+  // Link styling for consistency
+  a {
+    color: $color-primary;
+    transition: color 0.3s ease;
+    text-decoration: none; 
+
+    &:visited,
+    &:active,
+    &:hover {
+      text-decoration: none; 
+      color: lighten($color-primary, 15%);
+    }
+  }
+}

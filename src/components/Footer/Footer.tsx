@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <p>
         &copy; 2026 Hieroglyph Code - Custom Software Solutions. All rights reserved. |
-        <a href="/attributions" className="footer-link"> Attributions</a>
+        <a href="/legalinfo" className="footer-link"> Legal Info</a>
       </p>
     </footer>
   );
