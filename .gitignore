@@ -1,19 +1,39 @@
-# Logs
-logs
-*.log
+# .gitignore
+
+# Node.js and npm
+/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Logs
+logs
+*.log
+
+# Build artifacts and caches
+/dist
+/dist-ssr
 *.local
+.vite
+.cache
+.env.local
+
+# Sensitive files and environment variables
+.env
+.env.*.local
+*.ts
+*.js
+
+# Firebase and hosting
+firebase.json
+.firebaserc
+src/firebase.ts
+hosting.log
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
 .idea
 .DS_Store
