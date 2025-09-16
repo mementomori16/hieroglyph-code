@@ -140,15 +140,19 @@
     "exploreOtherProjects": "Explore Other Projects"
   },
 
+ 
   "contactPage": {
     "title": "Contact",
     "imageCaption": "Basel, Switzerland",
-    "description": "Ready to discuss your project? Hieroglyph Code is based in Basel, Switzerland, and specializes in transforming ideas into reality. Reach out today to start a conversation about your custom software needs. All inquiries are typically responded to within 2 hours.",
+    "description": "Ready to discuss your project? Hieroglyph Code is based in Basel, Switzerland, and specializes in transforming ideas into reality. Reach out today to start a conversation about your custom software needs. All inquiries are typically answered within office hours. You can write directly to the following email or use the contact form.",
+    "emailPrefix": "Email:",
+    "contactEmail": "contact@hieroglyphcode.ch",
     "connectTitle": "Let's Connect",
     "connectDescription": "While the work is primarily remote, consultations are available in Basel or via a video call to discuss your project in detail.",
     "form": {
       "namePlaceholder": "Your Name",
       "emailPlaceholder": "Your Email",
+      "phonePlaceholder": "Your Phone",
       "messagePlaceholder": "Your Message",
       "privacyAgreement": "By checking this box, you agree that I may contact you to discuss your inquiry.",
       "submitButton": "Send Message",
@@ -197,7 +201,7 @@
       },
       "section8": {
         "title": "Your Rights as a Data Subject",
-        "text": "Under the revDSG, you have the following rights: right to information, right to rectification, right to erasure, right to object, and right to withdraw consent. To exercise your rights, please contact us via the contact form on our website."
+        "text": "Under the revDSG, you have the following rights: right to information, right to rectification, right to erasure, right to object, and right to withdraw consent. To exercise your rights, please contact via email: contact@hieroglyphcode.ch, or by the contact form on the contact page."
       },
       "section9": {
         "title": "Changes to this Privacy Policy",

@@ -1,5 +1,5 @@
 @use "sass:color";
-@import '../../../../global.scss';
+@use '../../../../global.scss' as *;
 
 .infoContainer {
   display: flex;
@@ -121,7 +121,8 @@
       font-size: $font-size-base;
       font-weight: $font-weight-medium;
       &:hover {
-        color: darken($color-primary, 15%);
+        // Line 124: Replaced darken() with color.adjust()
+        color: color.adjust($color-primary, $lightness: -15%);
       }
     }
   }

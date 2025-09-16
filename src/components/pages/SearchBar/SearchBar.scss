@@ -1,6 +1,7 @@
 /* src/components/SearchBar/searchBar.scss */
 // Ensure this path correctly points to your global.scss
-@import '../../../global.scss';
+@use "sass:color";
+@use "../../../global.scss" as *;
 
 .search-bar {
   position: relative; // Position relative for absolute positioning of results
@@ -22,7 +23,8 @@
 
     &:focus-within { // Style when input inside is focused
       border-color: $color-primary; // Highlight border with primary color
-      box-shadow: 0 0 0 2px lighten($color-primary, 30%); // Subtle focus ring
+      box-shadow: $color-text-title-2; // Highlight color
+; // Subtle focus ring
     }
 
     input {
@@ -76,11 +78,12 @@
       }
 
       &:hover {
-        background-color: lighten($color-background, 3%); // Light hover effect
+        background-color: $color-text-title-2; // Highlight color
+; // Light hover effect
       }
 
       &.highlighted {
-        background-color: lighten($color-primary, 40%); // Highlight color
+        background-color: $color-text-title-2; // Highlight color
       }
 
       .thumbnail {

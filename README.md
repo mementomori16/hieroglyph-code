@@ -198,5 +198,5 @@ Fast deploy in firebase:
 
 npm run build
 
-firebase deploy
+firebase deploy --only hosting/firebase deploy
 

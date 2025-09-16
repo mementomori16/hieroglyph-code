@@ -4,15 +4,14 @@
 @import "../../global.scss";
 
 .preloader-container {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  background-color: var(--color-background); // Changed to a solid color
-  display: flex;
+  background-color: var(--color-background);
   justify-content: center;
   align-items: center;
 }
@@ -21,20 +20,23 @@
   display: flex;
 }
 
-.spinner {
-  border: 0.25rem solid rgba($color-text-dark, 0.1);
-  width: 6.75rem;  // Made 3 times bigger
-  height: 6.75rem; // Made 3 times bigger
-  border-radius: 50%;
-  border-left-color: $color-button-blue;
-  animation: spin 1s linear infinite;
+.preloader-logo {
+  max-width: 120px;
+  height: auto;
+  animation: subtlePulse 2s infinite ease-in-out; /* Apply a new, subtle animation */
 }
 
-@keyframes spin {
+@keyframes subtlePulse {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05); /* A very slight scale up */
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    transform: scale(1);
+    opacity: 0.9;
   }
 }
