@@ -42,3 +42,12 @@ hosting.log
 *.njsproj
 *.sln
 *.sw?
+
+# My custom components and layouts
+src/components/viewgallery/
+src/components/cardcontainer/
+src/components/infocontainer/
+src/components/navbars/
+src/layouts/MainLayout.tsx
+src/layouts/mainLayout.scss
+src/layouts/UserLayout.tsx
