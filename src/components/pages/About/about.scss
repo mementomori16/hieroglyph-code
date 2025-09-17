@@ -18,7 +18,7 @@
   h1 {
     font-size: $font-size-h2;
     line-height: 1.2;
-    color: $color-primary;
+    color: $color-button-blue-2;
     margin-bottom: $space-xxl; // Consistent with Services heading
 
     @media (max-width: $breakpoint-md) {
@@ -85,7 +85,7 @@
 
         &::before {
           content: '•';
-          color: $color-primary;
+          color: $color-button-blue-2;
           position: absolute;
           left: 0;
           font-weight: $font-weight-bold;

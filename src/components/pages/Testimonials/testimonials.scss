@@ -91,7 +91,7 @@
     .read-more-btn {
         background: none;
         border: none;
-        color: $color-primary;
+        color: $color-button-blue-2;
         cursor: pointer;
         font-size: 0.9em;
         font-weight: $font-weight-semibold;
@@ -102,7 +102,7 @@
         width: 100%;
 
         &:hover {
-            color: darken($color-primary, 10%);
+            color: darken($color-button-blue-2, 10%);
         }
     }
 
@@ -163,7 +163,7 @@
 
     &:hover {
         background-color: $color-primary;
-        border-color: $color-primary;
+        border-color: $color-button-blue-2;
         box-shadow: $shadow-md;
         transform: translateY(-50%) scale(1.05);
         .arrow-icon {
@@ -209,14 +209,14 @@
         padding: 0;
 
         &:hover {
-            background-color: lighten($color-primary, 20%);
-            border-color: $color-primary;
+            background-color: lighten($color-button-blue-2, 20%);
+            border-color: $color-button-blue-2;
         }
 
         &.active {
             @include set-responsive-square-size(10px, 9px, 8px);
-            background-color: $color-primary;
-            border-color: $color-primary;
+            background-color: $color-button-blue-2;
+            border-color: $color-button-blue-2;
         }
     }
 }

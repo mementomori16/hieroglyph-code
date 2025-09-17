@@ -3,22 +3,18 @@ import { init, send } from '@emailjs/browser';
 import './contact.scss';
 import { useTranslation } from 'react-i18next';
 import ViewGallery from '../View Gallery/ViewGallery';
+import { FaEnvelope } from 'react-icons/fa'; // Import the email icon
 
-// Define the ImageData interface here, or import it from the ViewGallery component if available
-// Assuming ImageData is defined in ViewGallery.tsx or a shared types file
 interface ImageData {
     url: string;
-    title: string; // Keeping title and date as empty strings to satisfy the interface
-    date: string;  // If you can modify ViewGallery.tsx, you should update ImageData there
+    title: string;
+    date: string;
 }
 
-// Initialize EmailJS with your user ID
 init('gl7rH7PGkTVyGkUCB');
 
-// Your external city view image URL.
 const CITY_VIEW_EXTERNAL_URL = 'https://i.ibb.co/qYQHYzBF/eryk-piotr-munk-B6ngl-YOw-Qy-U-unsplash.jpg';
 
-// Define a type for the form data to ensure type safety
 interface FormData {
     name: string;
     email: string;
@@ -42,8 +38,8 @@ const Contact: React.FC = () => {
     const galleryImages: ImageData[] = [
       {
         url: CITY_VIEW_EXTERNAL_URL,
-        title: '', // Set to empty string
-        date: ''   // Set to empty string
+        title: '',
+        date: ''
       }
     ];
 
@@ -106,8 +102,8 @@ const Contact: React.FC = () => {
                     </div>
                     <p className="contact-description">{t('contactPage.description')}</p>
                     <p className="contact-email-line">
-                        {t('contactPage.emailPrefix')}{' '}
                         <a href={`mailto:${t('contactPage.contactEmail')}`} className="contact-email-link">
+                            <FaEnvelope className="contact-email-icon" />
                             {t('contactPage.contactEmail')}
                         </a>
                     </p>

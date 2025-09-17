@@ -1,4 +1,6 @@
-import { useState } from 'react';
+// NavMobile.tsx
+
+import { useState, useEffect } from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
 import { useTranslation } from 'react-i18next';
@@ -39,6 +41,15 @@ const NavMobile = () => {
     navigate(`/card/${product.id}`);
   };
 
+  // **New useEffect hook to manage the body class**
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+  }, [isOpen]);
+
   return (
     <header className="header-mobile">
       <nav className="navbarmobile">
@@ -49,34 +60,29 @@ const NavMobile = () => {
           <Hamburger toggled={isOpen} toggle={setOpen} size={24} />
         </div>
       </nav>
-      {isOpen && (
-        <>
-          <div className={`menu-overlay ${isOpen ? 'active' : ''}`} onClick={closeMenu}></div>
-          <ul className={`mobile-menu ${isOpen ? 'active' : ''}`}>
-            {routes.map((route) => (
-              <li key={route.path} className="mobile-item">
-                <NavLink
-                  to={route.path}
-                  className={({ isActive }) => `mobile-link ${isActive ? 'active' : ''}`}
-                  end={route.path === '/'}
-                  onClick={closeMenu}
-                >
-                  {t(route.label)}
-                </NavLink>
-              </li>
-            ))}
-            <li className="mobile-item search-item">
-              <div className="search-bar-container">
-                <SearchBar onProductSelect={handleProductSelect} />
-              </div>
-            </li>
-            <li className="mobile-item language-item">
-              {/* Pass the closeMenu function as a prop */}
-              <LanguageSwitcher onCloseMenu={closeMenu} />
-            </li>
-          </ul>
-        </>
-      )}
+      {/* The `menu-overlay` div is no longer needed here */}
+      <ul className={`mobile-menu ${isOpen ? 'active' : ''}`}>
+        {routes.map((route) => (
+          <li key={route.path} className="mobile-item">
+            <NavLink
+              to={route.path}
+              className={({ isActive }) => `mobile-link ${isActive ? 'active' : ''}`}
+              end={route.path === '/'}
+              onClick={closeMenu}
+            >
+              {t(route.label)}
+            </NavLink>
+          </li>
+        ))}
+        <li className="mobile-item search-item">
+          <div className="search-bar-container">
+            <SearchBar onProductSelect={handleProductSelect} />
+          </div>
+        </li>
+        <li className="mobile-item language-item">
+          <LanguageSwitcher onCloseMenu={closeMenu} />
+        </li>
+      </ul>
     </header>
   );
 };

@@ -18,15 +18,15 @@ const ViewGallery: React.FC<ViewGalleryProps> = ({ images, currentImageId, onClo
   const [currentIndex, setCurrentIndex] = useState(currentImageId);
   const [transformWrapperRef, setTransformWrapperRef] = useState<any>(null);
   const [maxScale, setMaxScale] = useState<number>(2);
-  const [opacity, setOpacity] = useState<number>(1); // State for opacity
+  const [opacity, setOpacity] = useState<number>(1); 
 
   const handleThumbnailClick = (index: number) => {
-    setOpacity(0); // Fade out
+    setOpacity(0);
     setTimeout(() => {
       setCurrentIndex(index);
       resetZoom();
-      setOpacity(1); // Fade in
-    }, 600); // Match this duration with the CSS transition duration
+      setOpacity(1); 
+    }, 600); 
   };
 
   const handleNext = () => {
@@ -87,58 +87,68 @@ const ViewGallery: React.FC<ViewGalleryProps> = ({ images, currentImageId, onClo
   return (
     <div className="viewGallery">
       <button className="close-button" onClick={onClose}>X</button>
-      <div className="largeImageContainer">
-        <TransformWrapper
-          ref={setTransformWrapperRef}
-          centerOnInit={true}
-          maxScale={maxScale}
-        >
-          <TransformComponent>
-            {images.length > 0 && (
-              <img
-                src={images[currentIndex].url}
-                alt={`Image ${currentIndex}`}
-                className="largeImage"
-                style={{ opacity }} 
-              />
-            )}
-          </TransformComponent>
-        </TransformWrapper>
-      </div>
+
+      <TransformWrapper
+        ref={setTransformWrapperRef}
+        centerOnInit={true}
+        maxScale={maxScale}
+        initialScale={1}
+        minScale={1}
+        doubleClick={{ disabled: true }}
+        // Replaced 'options' object with direct props
+        limitToBounds={false}
+        minPositionX={-Infinity}
+        maxPositionX={Infinity}
+        minPositionY={-Infinity}
+        maxPositionY={Infinity}
+      >
+        <TransformComponent>
+          {images.length > 0 && (
+            <img
+              src={images[currentIndex].url}
+              alt={`Image ${currentIndex}`}
+              className="largeImage"
+              style={{ opacity }} 
+            />
+          )}
+        </TransformComponent>
+      </TransformWrapper>
+    
       {images.length > 0 && (
         <div className="imageInfo">
           <h2 className="imageTitle">{images[currentIndex].title}</h2>
           <p className="imageDate">{images[currentIndex].date}</p>
         </div>
       )}
-      <div className="thumbnailsContainer"> {}
-      <div className="thumbnails">
-      {images.map((image, index) => (
-        <div key={index} className="thumbnailContainer">
-          <img
-            src={image.url} // Accessing the url property
-            alt={`Thumbnail ${index}`}
-            className={`thumbnail ${currentIndex === index ? 'active' : ''}`}
-            onClick={() => handleThumbnailClick(index)}
-          />
+
+      <div className="thumbnailsContainer">
+        <div className="thumbnails">
+          {images.map((image, index) => (
+            <div key={index} className="thumbnailContainer">
+              <img
+                src={image.url}
+                alt={`Thumbnail ${index}`}
+                className={`thumbnail ${currentIndex === index ? 'active' : ''}`}
+                onClick={() => handleThumbnailClick(index)}
+              />
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
+
+      <div className="zoomControls">
+        <button className="zoomButton" onClick={handleZoomIn}>
+          <span className="icon">+</span>
+        </button>
+        <button className="zoomButton" onClick={handleZoomOut}>
+          <span className="icon">-</span>
+        </button>
+      </div>
+
+      <button className="arrow top-left" onClick={handlePrev}>&lt;</button>
+      <button className="arrow top-right" onClick={handleNext}>&gt;</button>
     </div>
-  </div>
-
-  <div className="zoomControls">
-    <button className="zoomButton" onClick={handleZoomIn}>
-      <span className="icon">+</span>
-    </button>
-    <button className="zoomButton" onClick={handleZoomOut}>
-      <span className="icon">-</span>
-    </button>
-  </div>
-
-  <button className="arrow top-left" onClick={handlePrev}>&lt;</button>
-  <button className="arrow top-right" onClick={handleNext}>&gt;</button>
-</div>
-);
+  );
 };
 
 export default ViewGallery;

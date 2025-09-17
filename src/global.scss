@@ -203,7 +203,7 @@ a {
 
 .btn-primary {
     @extend .btn;
-    background-color: $color-primary;
+    background-color: $color-button-blue-2;
     color: $color-surface;
     box-shadow: $shadow-sm;
     &:hover {
@@ -217,9 +217,9 @@ a {
     @extend .btn;
     background-color: transparent;
     color: $color-primary;
-    border: 0.0625rem solid $color-primary;
+    border: 0.0625rem solid $color-button-blue-2;
     &:hover {
-        background-color: color.adjust($color-primary, $lightness: 40%);
+        background-color: color.adjust($color-button-blue-2, $lightness: 40%);
         transform: translateY(-0.0625rem);
     }
 }
@@ -232,7 +232,7 @@ a {
     padding: $space-xs $space-sm;
     font-weight: $font-weight-normal;
     &:hover {
-        color: $color-primary;
+        color: $color-button-blue-2;
         background-color: transparent;
         transform: none;
         text-decoration: underline;
@@ -241,11 +241,11 @@ a {
 
 .btn-blue {
     @extend .btn;
-    background-color: $color-button-blue;
+    background-color: $color-button-blue-2;
     color: $color-text-white;
     box-shadow: $shadow-sm;
     &:hover {
-        background-color: color.adjust($color-button-blue, $lightness: -8%);
+        background-color: color.adjust($color-button-blue-2, $lightness: -8%);
         transform: translateY(-0.0625rem);
         box-shadow: $shadow-md;
     }

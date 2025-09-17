@@ -22,7 +22,7 @@
     align-items: center;
     font-size: 1.5rem;
     font-weight: $font-weight-bold;
-    color: $color-primary;
+    color: $color-button-blue-2;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.05rem;
@@ -49,7 +49,7 @@
         font-family: $font-family-base;
         font-size: $font-size-xs;
         font-weight: $font-weight-semibold;
-        color: $color-text-title-2;
+        color: $color-text-title;
         text-decoration: none;
         position: relative;
         padding: 0.5rem 0;
@@ -64,21 +64,23 @@
           left: 0;
           width: 0;
           height: 2px;
-          background-color: $color-primary;
+          background-color: $color-button-blue-2;
           transition: width 0.3s ease-in-out;
         }
 
         &:hover {
-          color: $color-button-blue;  
+          color: $color-button-blue-2; 
+          &::after {
+            width: 100%;
+          }
         }
 
         &.active {
-          color: $color-button-blue;
+          color: $color-button-blue-2;
           font-weight: $font-weight-bold;
           
           &::after {
-            width: 0;
-            height: 0;
+            width: 100%; // Changed from 0 to 100%
           }
         }
       }

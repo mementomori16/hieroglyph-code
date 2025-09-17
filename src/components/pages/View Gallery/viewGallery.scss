@@ -22,26 +22,27 @@
     font-size: 1.8rem;
     cursor: pointer;
     transition: color 0.3s;
+    z-index: 2001;
 
     &:hover {
       color: #dadada;
     }
   }
 
-  .largeImageContainer {
-    margin-bottom: 20px; // Add space below the large image
-    position: relative;
+  .react-transform-wrapper, .react-transform-component {
+    flex-grow: 1; 
+    width: 100% !important;
+    height: 100% !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+  }
 
-    .largeImage {
-      max-width: 100%;
-      max-height: 70vh;
-      border-radius: 1.5px;
-      transition: opacity 0.6s ease-in-out; // Ensure this line is present
-    }
+  .largeImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1.5px;
+    transition: opacity 0.6s ease-in-out;
   }
 
   .imageInfo {
@@ -50,6 +51,7 @@
     bottom: 20px;
     color: rgb(188, 179, 179);
     text-align: left;
+    z-index: 2001;
 
     .imageTitle {
       font-size: 18px;
@@ -63,19 +65,17 @@
   }
 
   .thumbnailsContainer {
-    margin-top: 20px; // Add space above the thumbnails
-    width: 100%; // Ensure it takes full width
+    margin-top: 20px;
+    width: 100%;
     display: flex;
-    justify-content: center; // Center thumbnails
+    justify-content: center;
   }
 
   .thumbnails {
     display: flex;
     margin-top: 20px;
-
     .thumbnailContainer {
       margin: 0 5px;
-
       .thumbnail {
         width: 60px;
         height: 60px;
@@ -88,59 +88,69 @@
   }
 
   .zoomControls {
-    position: fixed;
-    top: 20px; // Positioning in the left top corner
-    left: 20px; // Positioning on the left
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2001;
 
     .zoomButton {
-      background: transparent; // Transparent background for outline style
-      color: rgb(132, 126, 126); // Text color
-      border: 2px solid rgb(132, 126, 126); // Outline
-      border-radius: 50%; // Circular shape
-      width: 30px; // Button width
-      height: 30px; // Button height
-      font-size: 1.1rem; // Text size
+      background: transparent;
+      color: rgb(132, 126, 126);
+      border: 2px solid rgb(132, 126, 126);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 1.1rem;
       cursor: pointer;
-      margin: 5px; // Space between buttons
+      margin: 5px;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: background 0.3s;
 
       &:hover {
-        background: rgba(255, 255, 255, 0.1); // Slight background change on hover
+        background: rgba(255, 255, 255, 0.1);
       }
     }
   }
 
-  // Arrows in corners
   .arrow {
     position: absolute;
     background: transparent;
     color: rgb(135, 134, 134);
     border: none;
-    font-size: 2rem; // Default size
+    font-size: 2rem;
     cursor: pointer;
     transition: color 0.3s;
-    z-index: 1100; // Ensure arrows are on top
+    z-index: 1100;
 
     &:hover {
       color: #b8b7b7;
     }
 
     &.top-left {
-      left: 20px; // Positioning on the left
-      top: 50%; // Center vertically
-      transform: translateY(-50%); // Adjust for centering
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     &.top-right {
-      right: 20px; // Positioning on the right
-      top: 50%; // Center vertically
-      transform: translateY(-50%); // Adjust for centering
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+/* Hide arrows and image info on screens smaller than 768px */
+@media (max-width: 768px) {
+  .viewGallery {
+    .arrow,
+    .imageInfo {
+      display: none;
     }
   }
 }

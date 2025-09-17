@@ -4,7 +4,7 @@ A modern and interactive web application built to showcase custom software solut
 Live Application 🌐
 Explore the live application and see the features in action:
 
-https://hieroglyphcode.ch/
+hieroglyphcode.ch
 
 Key Features ✨
 Fully Responsive Design: The application is designed to be fully scalable and cross-device compatible, adapting seamlessly to all desktop screens, mobiles, and tablets, including rare or custom screen sizes.
@@ -16,6 +16,15 @@ Dynamic Product Display: Product cards on the main page link to individual produ
 Custom Carousels: The application includes dynamic carousel components for both the homepage, which showcases products, and a dedicated client testimonials section. The testimonials carousel features client images, names, professions, and a read more button for extended content.
 
 Functional Contact Page: A dedicated page with a fully functional contact form to facilitate client communication.
+
+Architecture 🏛️
+The application uses a hybrid architecture to manage and display its content.
+
+Data Source: All product and text-based information is stored in a structured, local .ts file. This allows for quick and efficient access to data without a full backend database.
+
+API Usage: The application makes API calls to a separate, external server to retrieve image assets. It uses direct links to dynamically fetch and display product images within the carousels, galleries, and product cards. This approach separates data from assets, creating a lightweight and efficient front-end.
+
+Dynamic Rendering: The app's logic dynamically combines the local product data with the API-fetched image links to render the complete user interface.
 
 Technology Stack 🛠️
 The application is built using a modern and efficient technology stack.

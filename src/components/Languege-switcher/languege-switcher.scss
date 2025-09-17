@@ -9,7 +9,7 @@
     background: transparent;
     border: 1px solid $color-border-subtle;
     border-radius: $border-radius-sm;
-    color: $color-button-blue;
+    color: $color-button-blue-2;
     padding: $space-xs $space-sm;
     font-size: $font-size-sm;
     font-weight: $font-weight-semibold;
@@ -38,7 +38,7 @@
     right: 0;
     list-style: none;
     background-color: $color-surface;
-    box-shadow: none; /* Removed box-shadow */
+    box-shadow: none; 
     border-radius: $border-radius-sm;
     padding: 0;
     min-width: 60px; /* Makes the dropdown narrower */
@@ -53,7 +53,7 @@
       cursor: pointer;
       padding: $space-xs $space-sm;
       font-size: $font-size-sm;
-      color: $color-text-light;
+      color: $color-text-title;
       
       &:hover {
         background-color: color.adjust($color-surface, $lightness: -5%);
@@ -62,7 +62,7 @@
       &.active {
         font-weight: $font-weight-bold;
         color: $color-text-white;
-        background-color: $color-button-blue;
+        background-color: $color-button-blue-2;
         box-shadow: none; /* Removed the dark outline from active item */
       }
     }
