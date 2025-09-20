@@ -5,15 +5,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-  padding: $space-lg; 
-  
+
+  padding: $space-lg;
+
   width: 100%;
-  
+
   @media (min-width: $breakpoint-lg) {
-    max-width: $breakpoint-lg; 
+    max-width: $breakpoint-lg;
   }
-  
+
   @media (max-width: $breakpoint-md) {
     padding: $space-md;
   }
@@ -26,8 +26,7 @@
     line-height: 1.7;
     margin-bottom: $space-md;
     padding-right: 0;
-    
-    // Updated h5 styling to use $color-text-light
+
     h5 {
       color: $color-text-title;
       font-size: $font-size-md;
@@ -40,18 +39,17 @@
       list-style: none;
       padding: 0;
       margin-left: 0;
-      
+
       li {
         position: relative;
         padding-left: $space-md;
         margin-bottom: $space-sm;
-        
-        // Add style for strong tags within list items
+
         strong {
           color: $color-text-title;
-          font-weight: $font-weight-semibold; // Or change to $font-weight-normal if you want it to be not bold
+          font-weight: $font-weight-semibold;
         }
-        
+
         &::before {
           content: '•';
           color: $color-primary;
@@ -64,7 +62,7 @@
       }
     }
   }
-  
+
   .iconsSection {
     margin-top: $space-lg;
     width: 100%;
@@ -110,20 +108,43 @@
       border-color: $color-primary;
     }
   }
-
-  .article-link {
+  
+  .link-container {
+    display: flex;
+    gap: $space-lg;
     margin-top: $space-lg;
-    font-size: $font-size-base;
-    color: $color-secondary;
-    a {
-      text-decoration: underline;
-      color: $color-primary;
-      font-size: $font-size-base;
-      font-weight: $font-weight-medium;
-      &:hover {
-        // Line 124: Replaced darken() with color.adjust()
-        color: color.adjust($color-primary, $lightness: -15%);
-      }
+    
+    .article-link {
+        text-decoration: none;
+        color: $color-secondary;
+        display: flex;
+        align-items: center;
+        gap: $space-sm;
+        transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+        &::before, &::after {
+          content: none;
+        }
+        
+        svg {
+          font-size: 2.2em;
+          color: $color-secondary;
+          transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+          
+          &:hover {
+            color: $color-primary;
+            transform: translateY(-2px);
+          }
+        }
+    }
+
+    .link-text {
+        margin: 0;
+        padding: 0;
+        
+        &::before, &::after {
+            content: none;
+        }
     }
   }
 }

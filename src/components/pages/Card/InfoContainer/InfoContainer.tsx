@@ -51,6 +51,8 @@ import {
   SiCloudflare,
   SiVercel,
   SiAdobephotoshop,
+  SiGithub, 
+  SiGithubactions, 
 } from 'react-icons/si';
 import {
   FaCode,
@@ -71,6 +73,7 @@ import {
   FaCog,
   FaBell,
   FaFileCode,
+  FaExternalLinkAlt, 
 } from 'react-icons/fa';
 import { BsCloudCheck } from 'react-icons/bs';
 import './infoContainer.scss';
@@ -177,6 +180,8 @@ const technologyIcons: Record<string, React.ComponentType<{ size?: number; color
   Android: (props) => <SiAndroid {...props} color="#3DDC84" size={20} />,
   PostgreSQL: (props) => <SiPostgresql {...props} color="#336791" size={20} />,
   GitLab: (props) => <SiGitlab {...props} color="#FCA121" size={20} />,
+  GitHub: (props) => <SiGithub {...props} color="#181717" size={20} />, 
+  'CI/CD': (props) => <SiGithubactions {...props} color="#2088FF" size={20} />, 
 
   // --- Hosting & Domain Implementation ---
   Cloudflare: (props) => <SiCloudflare {...props} color="#F38020" size={20} />,
@@ -192,7 +197,6 @@ const technologyIcons: Record<string, React.ComponentType<{ size?: number; color
 const InfoContainer: React.FC<Props> = ({ product }) => {
   const { t } = useTranslation();
 
-  // Get the translated description from your i18n file
   const translatedDescription = t(`products.${product.id}.description`);
 
   return (
@@ -200,8 +204,6 @@ const InfoContainer: React.FC<Props> = ({ product }) => {
       {product.medium && <p className="medium">{product.medium}</p>}
       {product.date && <p className="infodate">{product.date}</p>}
 
-      {/* Conditional rendering for description using translated text */}
-      {/* Note: The dangerouslySetInnerHTML is retained to handle HTML tags within the translation string */}
       {Array.isArray(product.description) ? (
         <div className="description">
           {product.description.map((_paragraph, index) => (
@@ -233,14 +235,21 @@ const InfoContainer: React.FC<Props> = ({ product }) => {
         </div>
       )}
 
-      {product.link && (
-        <p className="article-link">
-          {t('cardPage.siteLink')}{' '}
-          <a href={product.link} target="_blank" rel="noopener noreferrer">
-            {product.link}
+      <div className="link-container">
+        {product.link && (
+          <a href={product.link} className="article-link" target="_blank" rel="noopener noreferrer">
+            <FaExternalLinkAlt size={24} />
+            <span className="link-text">Live Project</span>
           </a>
-        </p>
-      )}
+        )}
+
+        {product.githubLink && (
+          <a href={product.githubLink} className="article-link" target="_blank" rel="noopener noreferrer">
+            <SiGithub size={24} />
+            <span className="link-text">Code Repository</span>
+          </a>
+        )}
+      </div>
     </div>
   );
 };

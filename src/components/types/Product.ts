@@ -20,6 +20,7 @@ export interface Product {
   likes?: number;
   views?: number;
   link?: string;
+  githubLink?: string;
   tags?: string[];
   price?: number;
   icons?: string[];
