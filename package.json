@@ -21,6 +21,7 @@
     "framer-motion": "^12.11.3",
     "hamburger-react": "^2.5.2",
     "i18next-browser-languagedetector": "^8.2.0",
+    "jsonresume-theme-markdown": "^1.0.2",
     "lottie-web": "^5.12.2",
     "react": "^18.3.1",
     "react-alice-carousel": "^2.9.1",

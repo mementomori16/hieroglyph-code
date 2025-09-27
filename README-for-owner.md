@@ -62,3 +62,29 @@ Bash
 
 npm run build
 firebase deploy --only hosting
+
+4. Running Cypress End-to-End Tests
+This project includes an End-to-End (E2E) test suite using Cypress, located in the cypress/ folder. Tests confirm that the application's critical user paths and components are working correctly.
+
+4.1. Launching the Cypress Test Runner
+To open the interactive Cypress Test Runner for development and debugging:
+
+Start your application server in one terminal:
+
+Bash
+
+npm run dev
+Open Cypress in a separate terminal:
+
+Bash
+
+npx cypress open
+This command will launch the Cypress UI, allowing you to select your preferred browser and click on any test file (spec) to run it.
+
+4.2. Running Tests Headlessly (For CI/CD)
+To run all tests quickly from the command line without opening the graphical browser (ideal for Continuous Integration/GitHub Actions):
+
+Bash
+
+npx cypress run
+This command will execute all tests in the cypress/e2e folder using the Electron browser by default and generate videos and screenshots of any failures.

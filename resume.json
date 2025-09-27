@@ -1,0 +1,254 @@
+{
+  "basics": {
+    "name": "Ilya Medvedev",
+    "label": "Full Stack Developer",
+    "picture": "",
+    "email": "contact@hieroglyphcode.ch",
+    "phone": "",
+    "website": "hieroglyphcode.ch",
+    "summary": "Full-Stack Developer with expertise in the MERN stack. Proficient across a wide range of modern web technologies including TypeScript, React, SvelteKit, Next.js, Vue.js, Node.js, and SQL/NoSQL databases, I leverage a strong aesthetic sensibility derived from my fine arts background to build intuitive and visually compelling web applications. I have a proven ability to deliver tangible business outcomes, including boosting user-friendliness by 15% and client clarity by 30% for a Swiss-based music application.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Basel",
+      "countryCode": "CH",
+      "region": "Switzerland"
+    },
+    "profiles": [
+      {
+        "network": "Personal Website",
+        "username": "hieroglyphcode.ch",
+        "url": "https://hieroglyphcode.ch"
+      },
+      {
+        "network": "GitHub",
+        "username": "mementomori16",
+        "url": "https://github.com/mementomori16"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Hieroglyph Code - Custom Software Solutions",
+      "position": "Professional Services web app",
+      "url": "https://hieroglyphcode.ch",
+      "startDate": "2025-07-01",
+      "endDate": "2025-09-30",
+      "summary": "",
+      "highlights": [
+        "Full-Stack Architecture: Engineered a RESTful API with Node.js and Express.js to handle all content, including dynamic image assets fetched from an external server, creating a highly efficient front-end.",
+        "Key Components: Developed from scratch: Product Card, Interactive Gallery, Product Carousel, Navbar, Language Switcher, Search Functionality, Preloader and other components.",
+        "Design & UX: Utilized Figma to collaborate on and implement the front-end design, ensuring a professional and user-friendly interface.",
+        "End-to-End Quality Assurance: Implemented a dedicated test suite using Cypress to establish reliable End-to-End (E2E) testing for core user journeys, ensuring site integrity and preventing regressions across major components.",
+        "Workflow: Implemented a CI/CD pipeline using GitHub Actions for automated deployments."
+      ]
+    },
+    {
+      "name": "Loctoc PTE. LTD",
+      "position": "Full Stack Developer (Freelance Project)",
+      "url": "",
+      "startDate": "2025-06-01",
+      "endDate": "2025-07-31",
+      "summary": "Switzerland-based music application.",
+      "highlights": [
+        "Boosted user-friendliness by 15% and client clarity by 30% by actively developing frontend components for a Swiss-based music application using Svelte and SvelteKit.",
+        "Integrated payment services via Stripe and optimized content delivery with BunnyNet CDN.",
+        "Collaborated within a comprehensive development ecosystem involving Golang, Postgres DB, Docker, Heroku, and GitLab."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Open University: INT college – Institute of Innovation & Technology",
+      "area": "Full Stack Developer",
+      "studyType": "",
+      "startDate": "2023-04-01",
+      "endDate": "2024-07-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Hamidrasha-Faculty of the Arts",
+      "area": "Bachelor of Education, Certified Senior Teacher in subject of Art",
+      "studyType": "Bachelor",
+      "startDate": "2007-10-01",
+      "endDate": "2011-06-30",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Ort Geula High School",
+      "area": "High School Diploma (Graphic Design Focus)",
+      "studyType": "Diploma",
+      "startDate": "1998-09-01",
+      "endDate": "2000-06-30",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "FRONT-END",
+      "level": "",
+      "keywords": [
+        "TypeScript",
+        "Vanilla JS",
+        "React.js",
+        "Vue.js 3",
+        "Angular.js",
+        "React Native",
+        "Expo",
+        "Next.js",
+        "Redux.js",
+        "Svelte",
+        "SvelteKit",
+        "Responsive Web Design",
+        "HTML/HTML5",
+        "CSS3",
+        "SASS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "name": "BACK-END",
+      "level": "",
+      "keywords": [
+        "Node.js",
+        "Express.js",
+        "Vite",
+        "Cypress (E2E Testing)",
+        "Jest",
+        "Postman API testing",
+        "PHP",
+        "Golang"
+      ]
+    },
+    {
+      "name": "AI TOOLS & INTEGRATION",
+      "level": "",
+      "keywords": [
+        "Google AI Studio",
+        "Specialized AI Coding Platforms",
+        "Google Generate AI",
+        "Workflow Automation"
+      ]
+    },
+    {
+      "name": "DATABASES",
+      "level": "",
+      "keywords": [
+        "MongoDB",
+        "MongoAtlas",
+        "Firebase",
+        "MYSQL",
+        "Postgres DB"
+      ]
+    },
+    {
+      "name": "PLATFORMS & SERVICES",
+      "level": "",
+      "keywords": [
+        "Git",
+        "VS Code",
+        "Trello",
+        "Slack",
+        "Docker",
+        "Heroku",
+        "GitLab",
+        "Stripe",
+        "BunnyNet",
+        "EmailJS",
+        "DNS",
+        "SSL",
+        "SEO",
+        "Google Analytics",
+        "VS Code"
+      ]
+    },
+    {
+      "name": "DESIGN & UI",
+      "level": "",
+      "keywords": [
+        "Adobe Photoshop",
+        "Figma",
+        "Ant Design",
+        "Corel Painter"
+      ]
+    },
+    {
+      "name": "CMS",
+      "level": "",
+      "keywords": [
+        "WordPress",
+        "Elementor",
+        "WordPress Plugins",
+        "Divi",
+        "SMUI"
+      ]
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Mindconnect.ai - AI Chatbot",
+      "startDate": "2024-10-01",
+      "endDate": "2024-12-31",
+      "description": "Full Stack Developer Intern | Basel, Switzerland (Private Enterprise Project)",
+      "highlights": [
+        "Engineered and implemented a user authentication system from the ground up, including responsive sign-in components, using Ant Design, Vue.js 3, and TypeScript to enable secure user login via Google Sign-in.",
+        "Built an AI chat component from scratch, focusing on an intuitive and responsive UI with TypeScript, Vue.js 3, and SASS.",
+        "Collaborated with backend developer to integrate frontend components, ensuring seamless data flow."
+      ],
+      "url": ""
+    },
+    {
+      "name": "FreeDi - AI-Powered Group Decision Platform",
+      "startDate": "2024-06-01",
+      "endDate": "2024-10-31",
+      "description": "Full Stack Developer Intern | Remote",
+      "highlights": [
+        "Designed and implemented an API function utilizing Google Generate AI, demonstrating direct experience integrating AI into web functionalities.",
+        "Successfully built Login and User components from scratch using Next.js, Redux.js, Node.js, TypeScript, and Firebase.",
+        "Resolved critical SASS and global app design issues, improving user engagement by 20% and ensuring cross-browser compatibility.",
+        "To address low user engagement, I developed a responsive Popup Notification component using Figma, TypeScript, React, and SASS, which increased user engagement by 10%."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Daniela Hagmann - Mobile Psychological Therapy Services Website (Client Project)",
+      "startDate": "2023-10-01",
+      "endDate": "2023-12-31",
+      "description": "Basel, Switzerland",
+      "highlights": [
+        "Core Stack: Engineered with a Node.js backend and a Vanilla JavaScript front-end, with styling handled by SASS and CSS for optimal performance.",
+        "Full-Lifecycle Management: Handled the entire project lifecycle, including domain registration, DNS management, and SSL/TLS configuration, with final deployment to Firebase.",
+        "Key Features: Developed dynamic elements including Mobile Navbar and a Testimonials component.",
+        "Analytics & Compliance: Integrated Google Analytics and ensured compliance with official Swiss medical health standards."
+      ],
+      "url": ""
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native/Bilingual"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Native/Bilingual"
+    },
+    {
+      "language": "German",
+      "fluency": "Conversational B1"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+    "version": "v1.0.0",
+    "lastModified": ""
+  }
+}

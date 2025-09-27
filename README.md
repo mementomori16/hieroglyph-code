@@ -1,3 +1,5 @@
+## 📄 Professional Resume
+[View my Full Stack Developer Resume here](./RESUME.md)
 Hieroglyph Code - Custom Software Solutions
 A modern and interactive web application built to showcase custom software solutions. This project features a portfolio of products, client testimonials, and a custom photo gallery, all powered by a professional and automated development workflow.
 
