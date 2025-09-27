@@ -1,0 +1,267 @@
+@use "sass:color";
+@import '../../../global.scss'; 
+
+.cv-container {
+  padding: $space-md; 
+  max-width: $breakpoint-xxl;
+  margin: 0 auto;
+  background-color: $color-background;
+  color: $color-secondary;
+  font-family: $font-family-base;
+
+  h1, h2 {
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+  }
+
+  h1.main-title {
+    font-size: $font-size-h2;
+    line-height: 1.2;
+    color: $color-text-title;
+    margin-bottom: $space-sm; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .job-title {
+      font-size: $font-size-h3;
+      color: $color-secondary;
+      margin-bottom: $space-xxs;
+    }
+    .full-name {
+      font-size: $font-size-h1;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .profile-header-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $space-lg;
+    margin-bottom: $space-xl;
+    
+    .location {
+      display: flex;
+      align-items: center;
+      gap: $space-xs;
+      color: $color-secondary;
+      .location-icon {
+        color: $color-primary;
+      }
+    }
+    
+    .social-links-container {
+      display: flex;
+      gap: $space-md;
+      
+      .social-icon {
+        color: $color-secondary;
+        transition: color 0.2s ease-in-out;
+        
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  h2.section-title {
+    font-size: $font-size-h3;
+    margin-top: $space-xxl;
+    color: $color-text-light;
+  }
+
+  .cv-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $space-xxl;
+
+    .profile-intro-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $space-lg;
+        max-width: 900px;
+        margin-bottom: $space-lg;
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: $shadow-md;
+            flex-shrink: 0;
+            margin-bottom: $space-md;
+
+            @media (min-width: $breakpoint-md) {
+                margin-right: $space-lg;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    p {
+      max-width: 800px;
+      text-align: left;
+      font-weight: $font-weight-normal;
+      font-size: $font-size-base;
+      line-height: 1.7;
+      color: $color-secondary;
+      font-family: $font-family-base;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 800px;
+      gap: $space-lg;
+      
+      @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .flex-item {
+        flex: 1;
+        
+        ul {
+          margin: 0;
+          
+          li {
+            margin-bottom: $space-xs;
+          }
+        }
+        
+        p {
+          margin-bottom: $space-lg;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: $space-xl;
+      max-width: 800px;
+      text-align: left;
+      li {
+        position: relative;
+        padding-left: $space-md;
+        margin-bottom: $space-sm;
+        font-family: $font-family-base;
+        font-size: $font-size-base;
+        color: $color-secondary;
+        
+        &::before {
+          content: '•';
+          color: $color-primary;
+          position: absolute;
+          left: 0;
+          font-weight: $font-weight-bold;
+          font-size: $font-size-md;
+          line-height: 1;
+        }
+      }
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: $space-sm;
+      width: 100%;
+      max-width: 900px;
+      // THE KEY CHANGE TO FIX THE GAPS
+      align-items: stretch; 
+      
+      .skill-category {
+        background-color: $color-surface;
+        padding: $space-md;
+        border-radius: $border-radius-lg;
+        box-shadow: $shadow-sm;
+        
+        flex: 1 1 200px; 
+        min-width: 200px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          font-size: $font-size-md;
+          color: $color-text-title;
+          margin: 0 0 $space-sm 0;
+          text-align: center;
+          font-weight: $font-weight-semibold;
+        }
+
+        .iconsList {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: $space-xxs;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          .iconItem {
+            display: flex;
+            align-items: center;
+            gap: $space-xxs;
+            font-size: $font-size-sm;
+            color: $color-secondary;
+            padding: $space-xs $space-sm;
+            border: 1px solid $color-border-subtle;
+            border-radius: $border-radius-sm;
+            background-color: $color-background;
+            transition: all 0.2s ease-in-out;
+            
+            &:hover {
+              transform: translateY(-1px);
+              box-shadow: $shadow-sm;
+              background-color: lighten($color-primary, 45%);
+              color: $color-primary;
+              border-color: $color-primary;
+            }
+
+            svg {
+              flex-shrink: 0;
+              font-size: $font-size-md;
+            }
+            &::before {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cta-section {
+    display: flex;
+    justify-content: center;
+    gap: $space-lg;
+    text-align: center;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+    margin: 0 auto;
+    max-width: 900px;
+
+    .cta-button {
+      @extend .btn-primary;
+      padding: $space-md $space-lg;
+      font-size: $font-size-md;
+    }
+  }
+}

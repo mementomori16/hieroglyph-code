@@ -4,13 +4,15 @@
   "projects": "Projects",
   "about": "About",
   "contact": "Contact",
+  "cv": "CV",
   "homePage": {
         "aboutTeaserTitle": "About",
         "aboutTeaserDescription": "Your digital presence deserves more than a template. Hieroglyph Code is your all-in-one partner for custom web and mobile development, from concept to completion and beyond.<h5>Driven by Expertise</h5>Led by Ilya Medvedev, a Certified Full-Stack Developer based in Basel, Switzerland, Hieroglyph Code is passionate about transforming complex ideas into elegant, user-friendly software. By combining technical precision with creative vision, the firm delivers custom solutions that truly elevate your digital presence.<h5>A Focus on Key Services</h5><ul><li><strong>Full-Stack Development:</strong> Powerful full-stack applications that are responsive and fast.</li><li><strong>Specialized Features:</strong> Services include building APIs, robust e-commerce platforms, secure login systems, and seamless payment integrations.</li><li><strong>Maintenance & Support:</strong> Reliable ongoing maintenance and updates to ensure your digital tools always run smoothly.</li></ul>",
         "learnMoreButton": "Click For More"
     },
   "carousel": {
-    "globalTitle": "Hieroglyph Code: Crafting Digital Excellence",
+    "globalTitlePrimary": "Hieroglyph Code",
+    "globalTitleSecondary": "Crafting Digital Excellence",
     "globalDescription": "Transforming your vision into robust, intuitive, and visually stunning software solutions.",
     "learnMoreButton": "Learn More About This Service"
   },
@@ -215,5 +217,51 @@
         "text": "We reserve the right to change this privacy policy at any time. The current version will be published on this page."
       }
     }
+  },
+   "cvPage": {
+    "titlePrefix": "Full-Stack Developer",
+    "titleSuffix": "Ilya Medvedev",
+    "intro": "As a full-stack developer with a foundation in fine arts, I create web applications that are as intuitive and visually compelling as they are powerful and efficient. I specialize in the MERN stack and a diverse set of modern technologies like TypeScript, React, SvelteKit, and Next.js. My unique perspective allows me to bridge the gap between aesthetics and functionality, ensuring every user interaction feels seamless and natural.",
+    "outro": "This blend of technical skill and artistic vision has enabled me to deliver applications that don't just work—they resonate with users. I'm passionate about building clean, performant codebases and crafting digital experiences that drive tangible results and leave a lasting impression.",
+    "skillsTitle": "Skills",
+    "skillCategory": {
+      "frontEnd": {
+        "title": "FRONT-END"
+      },
+      "backEnd": {
+        "title": "BACK-END"
+      },
+      "databases": {
+        "title": "DATABASES"
+      },
+      "ai": {
+        "title": "AI TOOLS & INTEGRATION"
+      },
+      "platforms": {
+        "title": "PLATFORMS & SERVICES"
+      },
+      "design": {
+        "title": "DESIGN & UI"
+      },
+      "cms": {
+        "title": "CMS"
+      }
+    },
+    "educationTitle": "Education",
+    "educationSummary": "I possess a diverse educational background that blends technical expertise with creative artistry.",
+    "education": {
+      "fullStack": "Full Stack Developer, Open University: INT college - Institute of Innovation & Technology",
+      "bachelor": "Bachelor of Education, Certified Senior Teacher in subject of Art, Hamidrasha-Faculty of the Arts",
+      "highSchool": "High School Diploma (Graphic Design Focus), Ort Geula High School"
+    },
+    "languagesTitle": "Languages",
+    "languages": {
+      "english": "English - Native/Bilingual",
+      "russian": "Russian - Native/Bilingual",
+      "german": "German - Conversational B1"
+    },
+    "location": "Basel, Switzerland",
+    "ctaButton": "Contact Me",
+    "projectsButton": "My Projects"
   }
 }

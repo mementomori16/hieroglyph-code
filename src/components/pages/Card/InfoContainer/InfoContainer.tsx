@@ -51,8 +51,8 @@ import {
   SiCloudflare,
   SiVercel,
   SiAdobephotoshop,
-  SiGithub, 
-  SiGithubactions, 
+  SiGithub,
+  SiGithubactions,
 } from 'react-icons/si';
 import {
   FaCode,
@@ -73,7 +73,7 @@ import {
   FaCog,
   FaBell,
   FaFileCode,
-  FaExternalLinkAlt, 
+  FaExternalLinkAlt,
 } from 'react-icons/fa';
 import { BsCloudCheck } from 'react-icons/bs';
 import './infoContainer.scss';
@@ -180,8 +180,8 @@ const technologyIcons: Record<string, React.ComponentType<{ size?: number; color
   Android: (props) => <SiAndroid {...props} color="#3DDC84" size={20} />,
   PostgreSQL: (props) => <SiPostgresql {...props} color="#336791" size={20} />,
   GitLab: (props) => <SiGitlab {...props} color="#FCA121" size={20} />,
-  GitHub: (props) => <SiGithub {...props} color="#181717" size={20} />, 
-  'CI/CD': (props) => <SiGithubactions {...props} color="#2088FF" size={20} />, 
+  GitHub: (props) => <SiGithub {...props} color="#181717" size={20} />,
+  'CI/CD': (props) => <SiGithubactions {...props} color="#2088FF" size={20} />,
 
   // --- Hosting & Domain Implementation ---
   Cloudflare: (props) => <SiCloudflare {...props} color="#F38020" size={20} />,
@@ -249,9 +249,18 @@ const InfoContainer: React.FC<Props> = ({ product }) => {
             <span className="link-text">Code Repository</span>
           </a>
         )}
+
+        {/* Add the GitLab link here */}
+        {product.gitlabLink && (
+          <a href={product.gitlabLink} className="article-link" target="_blank" rel="noopener noreferrer">
+            <SiGitlab size={24} />
+            <span className="link-text">GitLab Repository</span>
+          </a>
+        )}
       </div>
     </div>
   );
 };
 
 export default InfoContainer;
+

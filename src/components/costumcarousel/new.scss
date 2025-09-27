@@ -1,0 +1,286 @@
+@use "sass:color";
+@import '../../global.scss'; 
+
+// 2. Component Specific Styles
+.new-component-layout {
+    // Shared container styles
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0; 
+    position: relative;
+    overflow: hidden;
+    background-color: $color-background;
+
+    /* --- Mobile Layout (default) --- */
+    .content-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // FIX 1: Reduced bottom padding for mobile
+        padding: $space-lg $space-md $space-sm $space-md; 
+        
+        @media (max-width: $breakpoint-sm) {
+            // FIX 1: Reduced bottom padding for small phones
+            padding: $space-md $space-sm $space-xs $space-sm;
+        }
+    }
+
+    /* -------------------- HALF 1: Text Section (Titles & Description) -------------------- */
+    .text-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Keeps titles and button centered on mobile
+        text-align: center; // Keeps text centered within its own element on mobile
+        width: 100%;
+        margin-bottom: $space-xl; // Space below text before the card visuals
+
+        .main-title {
+            // Restore the original mixin (using this for general responsive scaling)
+            @include responsive-text($font-size-h4, $font-size-h5, $font-size-h6, $space-xs, $space-xxs, $space-xxs);
+            margin-bottom: $space-sm;
+            text-align: center; 
+            line-height: 1.1; // Tighten line height for titles
+            
+            .highlight {
+                color: $color-primary; 
+                font-weight: $font-weight-extrabold;
+                
+                // Title Mobile Size: H1/H2 range
+                font-size: $font-size-h1; 
+                
+                display: block; 
+                margin-bottom: $space-md; 
+            }
+
+            .secondary-title {
+                color: $color-text-title-2;
+                font-weight: $font-weight-bold;
+                
+                // Title Mobile Size: H2/H3 range
+                font-size: $font-size-h2; 
+                
+                display: block; 
+                text-transform: none; 
+                letter-spacing: normal;
+                margin-top: $space-xxs;
+            }
+            
+            // Adjust smaller mobile screens
+            @media (max-width: $breakpoint-sm) {
+                .highlight {
+                    font-size: $font-size-h2; 
+                }
+                .secondary-title {
+                    font-size: $font-size-h3; 
+                }
+            }
+
+            .mobile-break {
+                display: none; 
+            }
+        }
+
+        .description-text {
+            // ✅ FIX: Making font size explicitly bigger on mobile/default
+            font-size: $font-size-md; // Changed from $font-size-base
+            color: $color-text-dark;
+            line-height: 1.5;
+            margin-bottom: $space-xl; 
+            
+            @media (max-width: $breakpoint-sm) {
+                // Ensure it scales down slightly for very small phones if needed
+                font-size: $font-size-base; 
+            }
+        }
+        
+        .explore-button {
+            @extend .btn-blue; 
+            padding: $space-sm $space-lg;
+            margin-top: $space-md; 
+            font-size: $font-size-base; 
+            border-radius: $border-radius-md; 
+            font-weight: $font-weight-bold; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+            width: auto;
+            display: block;
+            text-align: center;
+            // Removed margin-left: auto / margin-right: auto as parent centering handles it
+        }
+    }
+
+    /* -------------------- HALF 2: Single Card & Bullets -------------------- */
+    .carousel-visuals {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        
+        .card-link-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 25rem; 
+            text-decoration: none;
+        }
+
+        .service-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: $space-md $space-sm;
+            background-color: $color-surface;
+            width: 100%;
+            
+            height: 45vh; 
+            min-height: 18rem; 
+            max-height: 22rem; 
+            
+            justify-content: space-between;
+            transition: transform 0.3s ease; 
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-$space-xxs);
+                box-shadow: $shadow-lg;
+            }
+            
+            @media (max-width: $breakpoint-sm) {
+                height: 40vh;
+                min-height: 16rem;
+                padding: $space-sm $space-sm;
+            }
+        }
+
+        .card-image {
+            width: 90%;
+            height: auto;
+            max-width: 90%;
+            max-height: 60%; 
+            object-fit: contain;
+            display: block;
+            margin-bottom: $space-sm;
+            transition: all 0.5s ease;
+        }
+        
+        .card-title {
+            font-size: $font-size-h5;
+            font-weight: $font-weight-bold;
+            color: $color-text-title;
+            margin: 0;
+            margin-bottom: $space-sm;
+            line-height: 1.2;
+        }
+
+        .view-button {
+            @extend .btn-blue; 
+            padding: $space-sm $space-lg;
+            margin-top: $space-sm; 
+            font-size: $font-size-base; 
+            border-radius: $border-radius-md; 
+            font-weight: $font-weight-bold; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+        }
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: $space-lg; 
+        
+        .dot {
+            @include set-responsive-square-size(0.6rem, 0.6rem, 0.6rem); 
+            border-radius: 50%; 
+            background-color: $color-border-subtle;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            margin: 0 $space-xxs;
+            border: 1px solid transparent;
+
+            &:hover {
+                background-color: $color-button-blue;
+                border-color: $color-button-blue-2;
+            }
+
+            &.active {
+                @include set-responsive-square-size(0.8rem, 0.8rem, 0.8rem); 
+                background-color: $color-button-blue-2;
+                border-color: $color-button-blue-2;
+                border-radius: 50%; 
+            }
+        }
+    }
+
+    /* ==================== RESPONSIVENESS: Desktop/Tablet Fixes ==================== */
+    @media (min-width: $breakpoint-md) {
+        min-height: 87vh; 
+        height: auto;
+        justify-content: center;
+        
+        .content-layout {
+            display: flex;
+            flex-direction: row; 
+            width: 100%; 
+            max-width: $breakpoint-xxl; 
+            // FIX 1: Bottom padding for desktop remains smaller
+            padding: $space-xxl $space-xl $space-lg $space-xl; 
+
+            .text-section {
+                flex: 1;
+                padding-right: $space-xxl;
+                // FIX: Centralize titles, description, and button on desktop
+                text-align: center;
+                align-items: center;
+                margin-bottom: 0; 
+
+                .main-title {
+                    font-size: $font-size-h1; 
+                    text-align: center;
+
+                    .highlight {
+                        font-size: $font-size-h1; 
+                        // Increased space between the two titles on desktop
+                        margin-bottom: $space-lg; 
+                    }
+
+                    .secondary-title {
+                        font-size: $font-size-h2; 
+                    }
+                }
+                
+                // Desktop description size is fine at $font-size-base/default
+                .description-text {
+                    font-size: $font-size-base; 
+                    // Limit width for better centered readability on large screens
+                    max-width: 600px;
+                }
+            }
+
+            .carousel-visuals {
+                flex: 0 0 45%;
+                padding: 0;
+
+                .card-link-wrapper {
+                    max-width: none;
+                }
+                
+                .service-card {
+                    height: auto;
+                    min-height: 22rem; 
+                    max-height: 28rem;
+                    padding: $space-xl;
+                }
+
+                .card-image {
+                    max-height: 18rem; 
+                    width: auto;
+                }
+            }
+        }
+    }
+}

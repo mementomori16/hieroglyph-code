@@ -9,6 +9,8 @@ import Services from "../components/pages/ServicesPage/Services";
 import CardPage from "../components/pages/Card/CardPage/CardPage";
 import Projects from "../components/pages/Projects/Projects";
 import LegalInfo from "../components/pages/Attributions/Legal-info";
+import Cv from "../components/pages/CV/Cv";
+import New from "../components/costumcarousel/New";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,8 @@ const router = createBrowserRouter([
       { path: "card/:id", element: <CardPage /> },
       { path: "contact", element: <Contact /> },
       { path: "legalinfo", element: <LegalInfo /> },
+      { path: "cv", element: <Cv /> },
+      { path: "new", element: <New /> },
     ],
   },
 ]);

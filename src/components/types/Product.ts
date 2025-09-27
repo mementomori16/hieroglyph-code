@@ -21,6 +21,7 @@ export interface Product {
   views?: number;
   link?: string;
   githubLink?: string;
+  gitlabLink?: string;
   tags?: string[];
   price?: number;
   icons?: string[];

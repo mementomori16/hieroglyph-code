@@ -3,7 +3,7 @@
 
 // 1. COLOR PALETTE
 // ----------------------------------------------------
-$color-primary: rgb(138, 190, 236);
+$color-primary: rgb(107, 179, 241);
 $color-secondary: #333333;
 $color-background: #F9F7F5;
 $color-surface: #FFFFFF;
@@ -137,8 +137,7 @@ $border-radius-lg: 0.75rem;
     position: relative;
     padding-bottom: 0;
     font-size: $font-size-h2;
-    
-}
+} // <-- CRITICAL FIX: Missing closing brace added here
 
 // 8. GLOBAL STYLES (Base Elements and Utility Classes)
 // ----------------------------------------------------
