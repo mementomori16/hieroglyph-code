@@ -1,267 +1,412 @@
 @use "sass:color";
 @import '../../../global.scss'; 
 
-.cv-container {
-  padding: $space-md; 
-  max-width: $breakpoint-xxl;
-  margin: 0 auto;
-  background-color: $color-background;
-  color: $color-secondary;
+/* -------------------------------------------------------------------
+ * GLOBAL CONTAINER & LAYOUT FOR SCROLLING IMPLEMENTATION
+ * -------------------------------------------------------------------*/
+.cv-container.image-layout {
+  display: flex;
+  flex-direction: column; 
+  
+  background-color: $color-background; 
   font-family: $font-family-base;
-
-  h1, h2 {
-    text-align: center;
-    position: relative;
-    margin-top: 0;
-  }
-
-  h1.main-title {
-    font-size: $font-size-h2;
-    line-height: 1.2;
-    color: $color-text-title;
-    margin-bottom: $space-sm; 
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .job-title {
-      font-size: $font-size-h3;
-      color: $color-secondary;
-      margin-bottom: $space-xxs;
-    }
-    .full-name {
-      font-size: $font-size-h1;
-      font-weight: $font-weight-bold;
+  color: $color-text-dark;
+  
+  a {
+    text-decoration: none;
+    color: $color-text-dark; 
+    &:hover {
+      color: color.adjust($color-primary, $lightness: -10%);
     }
   }
+}
 
-  .profile-header-meta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: $space-lg;
-    margin-bottom: $space-xl;
+.cv-flex-wrapper {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  max-width: $breakpoint-xxl; 
+  margin: 0 auto;
+  box-shadow: $shadow-sm; 
+}
+
+/* -------------------------------------------------------------------
+ * LEFT COLUMN: SIDEBAR (TRULY FIXED CONTENT)
+ * -------------------------------------------------------------------*/
+.cv-sidebar {
+  width: 300px; 
+  min-width: 300px;
+  background-color: $color-surface;
+  padding: $space-md $space-lg; 
+  border-right: 1px solid $color-border-subtle;
+  text-align: center;
+  
+  position: fixed; 
+  
+  // Custom alignment adjustments
+  margin-left: 88px; 
+  top: 70px; 
+  
+  // Align left edge with main wrapper
+  left: calc(50vw - (#{$breakpoint-xxl} / 2));
+  
+  transform: none; 
+  right: auto;
+  margin-right: 0; 
+  
+  max-height: calc(100vh - 80px); 
+  overflow-y: auto; 
+  z-index: 10; 
+}
+
+/* Profile Image */
+.profile-image-container {
+  display: inline-block;
+  margin-bottom: $space-md; 
+  
+  img {
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Name and Profession Styling */
+#nameBlock {
+    margin-bottom: $space-lg;
     
-    .location {
-      display: flex;
-      align-items: center;
-      gap: $space-xs;
-      color: $color-secondary;
-      .location-icon {
-        color: $color-primary;
+    .name {
+        font-size: $font-size-md; 
+        font-weight: $font-weight-bold;
+        color: $color-text-title;
+        display: block;
+        margin-bottom: $space-xxs;
+    }
+    .label {
+        font-size: $font-size-sm;
+        color: $color-secondary;
+        display: block;
+        font-weight: $font-weight-normal;
+    }
+}
+
+/* Contact Info & External Links Sections */
+.sidebar-section {
+    padding: $space-xs 0;
+    
+    &.contact-info-block {
+        border-bottom: 1px solid $color-border-subtle;
+        margin-bottom: $space-xs;
+    }
+    
+    &.external-links-block {
+        padding-top: $space-xs;
+        margin-bottom: $space-xs;
+    }
+}
+
+.sidebar-contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: $space-xs;
+    margin-bottom: $space-xxs; 
+    font-size: $font-size-sm; 
+    color: $color-text-dark;
+    
+    .icon {
+        color: $color-primary; 
+        flex-shrink: 0;
+    }
+    
+    a { text-align: left; }
+    span { text-align: center; }
+
+    &.language-item-override {
+      align-items: flex-start;
+      
+      .language-list-horizontal {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: $space-xxs; 
+        font-size: $font-size-xs;
+        text-align: left;
+        
+        span { text-align: left; }
+
+        .language-separator {
+          padding: 0 $space-xxs;
+          color: $color-secondary;
+          font-weight: $font-weight-bold;
+        }
       }
     }
+}
+
+/* Social Icons Styling */
+.profile-links {
+    display: flex;
+    justify-content: center;
+    gap: $space-md;
+    padding: $space-xs 0 $space-md 0;
     
-    .social-links-container {
-      display: flex;
-      gap: $space-md;
-      
-      .social-icon {
+    a {
         color: $color-secondary;
-        transition: color 0.2s ease-in-out;
+        transition: color 0.2s;
         
         &:hover {
-          color: $color-primary;
+            color: $color-primary;
         }
-      }
     }
-  }
+}
 
-  h2.section-title {
-    font-size: $font-size-h3;
-    margin-top: $space-xxl;
-    color: $color-text-light;
-  }
 
-  .cv-content {
+/* -------------------------------------------------------------------
+ * RIGHT COLUMN: MAIN CONTENT (FLUID - Scrolls with the page)
+ * -------------------------------------------------------------------*/
+.cv-main-content {
+  flex-grow: 1;
+  padding: $space-xl $space-xxl;
+  min-width: 600px;
+  background-color: $color-surface; 
+  
+  height: auto;
+  overflow-y: visible; 
+  
+  margin-left: 300px; 
+}
+
+.main-content-section {
+  margin-bottom: $space-xxl;
+
+  .section-title {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: $space-xxl;
-
-    .profile-intro-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: $space-lg;
-        max-width: 900px;
-        margin-bottom: $space-lg;
-
-        @media (min-width: $breakpoint-md) {
-            flex-direction: row;
-            align-items: flex-start;
-            text-align: left;
-        }
-
-        .profile-image {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: $shadow-md;
-            flex-shrink: 0;
-            margin-bottom: $space-md;
-
-            @media (min-width: $breakpoint-md) {
-                margin-right: $space-lg;
-                margin-bottom: 0;
-            }
-        }
+    gap: $space-xs;
+    
+    font-size: $font-size-md;
+    color: $color-secondary;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    border-bottom: 1px solid $color-border-subtle;
+    padding-bottom: $space-xs;
+    margin-bottom: $space-lg;
+    
+    svg {
+        color: $color-primary;
     }
+  }
+}
 
-    p {
-      max-width: 800px;
-      text-align: left;
-      font-weight: $font-weight-normal;
-      font-size: $font-size-base;
-      line-height: 1.7;
-      color: $color-secondary;
-      font-family: $font-family-base;
-    }
+/* Ensure consistent script/text styling */
+.summary-text, .degree, ul.highlights li, .jobBlock p, .educationBlock p {
+    font-size: $font-size-base; 
+    line-height: 1.6;
+    color: $color-text-dark;
+}
 
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      max-width: 800px;
-      gap: $space-lg;
+/* -------------------------------------------------------------------
+ * SKILLS, EXPERIENCE, EDUCATION STYLES
+ * -------------------------------------------------------------------*/
+#skills {
+  .skills-grid {
+    .skill-category {
+      margin-bottom: $space-lg;
       
-      @media (min-width: $breakpoint-md) {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-      }
-
-      .flex-item {
-        flex: 1;
-        
-        ul {
-          margin: 0;
-          
-          li {
-            margin-bottom: $space-xs;
-          }
-        }
-        
-        p {
-          margin-bottom: $space-lg;
-        }
-      }
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: $space-xl;
-      max-width: 800px;
-      text-align: left;
-      li {
-        position: relative;
-        padding-left: $space-md;
+      h3 {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        color: $color-text-title;
+        padding-bottom: $space-xs;
         margin-bottom: $space-sm;
-        font-family: $font-family-base;
-        font-size: $font-size-base;
-        color: $color-secondary;
-        
-        &::before {
-          content: '•';
-          color: $color-primary;
-          position: absolute;
-          left: 0;
-          font-weight: $font-weight-bold;
-          font-size: $font-size-md;
-          line-height: 1;
-        }
+        border-bottom: 1px solid $color-border-subtle;
       }
-    }
 
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: $space-sm;
-      width: 100%;
-      max-width: 900px;
-      // THE KEY CHANGE TO FIX THE GAPS
-      align-items: stretch; 
+      .iconsList {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: $space-xs;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
       
-      .skill-category {
-        background-color: $color-surface;
-        padding: $space-md;
-        border-radius: $border-radius-lg;
-        box-shadow: $shadow-sm;
-        
-        flex: 1 1 200px; 
-        min-width: 200px; 
-        display: flex;
-        flex-direction: column;
+      .iconItem {
+        display: flex; 
         align-items: center;
-
-        h3 {
-          font-size: $font-size-md;
-          color: $color-text-title;
-          margin: 0 0 $space-sm 0;
-          text-align: center;
-          font-weight: $font-weight-semibold;
+        gap: $space-xs;
+        background-color: $color-alt-background-1;
+        border: 1px solid $color-border-subtle-2;
+        padding: $space-xxs $space-sm;
+        border-radius: $border-radius-md;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-normal;
+        transition: background-color 0.2s, border-color 0.2s;
+        
+        &:hover {
+            background-color: $color-alt-background-2;
+            border-color: $color-button-blue-2;
+            cursor: default;
         }
 
-        .iconsList {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: $space-xxs;
-          list-style: none;
+        svg, .icon-placeholder {
+          display: block; 
+          width: 1em; 
+          height: 1em;
+          color: $color-primary; 
+        }
+        
+        span {
+          color: $color-text-dark; 
           padding: 0;
-          margin: 0;
-
-          .iconItem {
-            display: flex;
-            align-items: center;
-            gap: $space-xxs;
-            font-size: $font-size-sm;
-            color: $color-secondary;
-            padding: $space-xs $space-sm;
-            border: 1px solid $color-border-subtle;
-            border-radius: $border-radius-sm;
-            background-color: $color-background;
-            transition: all 0.2s ease-in-out;
-            
-            &:hover {
-              transform: translateY(-1px);
-              box-shadow: $shadow-sm;
-              background-color: lighten($color-primary, 45%);
-              color: $color-primary;
-              border-color: $color-primary;
-            }
-
-            svg {
-              flex-shrink: 0;
-              font-size: $font-size-md;
-            }
-            &::before {
-              content: none;
-            }
-          }
+          font-weight: $font-weight-normal;
         }
       }
     }
   }
+}
 
-  .cta-section {
+.jobBlock, .educationBlock {
+  margin-bottom: $space-lg;
+  
+  .blockHeader {
     display: flex;
-    justify-content: center;
-    gap: $space-lg;
-    text-align: center;
-    padding-top: $space-xl;
-    padding-bottom: $space-xl;
-    margin: 0 auto;
-    max-width: 900px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: $space-xs;
+  }
+  
+  .title {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+  }
+  
+  .date {
+    font-size: $font-size-sm;
+    color: $color-secondary;
+    flex-shrink: 0;
+  }
+  
+  .degree {
+    font-size: $font-size-sm;
+    color: $color-secondary;
+    margin-bottom: $space-sm;
+  }
+  
+  .project-links {
+      margin-top: $space-xs;
+      a {
+          display: inline-flex;
+          align-items: center;
+          gap: $space-xs;
+          margin-right: $space-md;
+          font-size: $font-size-sm;
+          color: $color-primary;
+          
+          &:hover {
+              text-decoration: underline;
+          }
+      }
+  }
+}
 
-    .cta-button {
-      @extend .btn-primary;
-      padding: $space-md $space-lg;
-      font-size: $font-size-md;
+ul.highlights {
+  list-style-type: disc;
+  padding-left: $space-lg;
+  margin-top: $space-xs;
+  
+  li {
+    font-size: $font-size-base;
+    line-height: 1.6;
+    margin-bottom: $space-xs;
+    color: $color-text-dark;
+  }
+}
+
+.separator {
+  border-top: 1px solid $color-border-subtle;
+  margin-top: $space-md;
+  margin-bottom: $space-md;
+  height: 0;
+}
+
+/* -------------------------------------------------------------------
+ * RESPONSIVENESS FIXES
+ * -------------------------------------------------------------------*/
+@media (max-width: $breakpoint-lg) {
+  
+  .cv-container.image-layout {
+    height: auto; 
+    overflow: visible;
+  }
+
+  .cv-flex-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cv-sidebar {
+    // Revert to non-fixed on small screens/tablets
+    position: static;
+    max-height: none; 
+    overflow-y: visible; 
+    
+    width: 100%;
+    min-width: auto;
+    border-right: none;
+    border-bottom: 1px solid $color-border-subtle;
+    text-align: left;
+    padding: $space-md;
+    z-index: auto; 
+    
+    // Remove fixed positioning adjustments
+    left: auto;
+    right: auto;
+    top: auto; 
+    margin-right: 0; 
+    margin-left: 0; 
+    transform: none;
+    
+    .profile-image-container {
+        float: left;
+        margin-right: $space-lg;
+        margin-bottom: 0;
     }
+
+    #nameBlock {
+      display: inline-flex;
+      flex-direction: column;
+      margin-bottom: $space-md;
+    }
+    
+    .sidebar-section {
+      clear: both;
+      padding-top: $space-md;
+    }
+
+    .profile-links {
+      justify-content: flex-start;
+      gap: $space-xl;
+      a {
+        padding: 0 $space-xs;
+      }
+    }
+    
+    .sidebar-contact-item {
+        justify-content: flex-start; 
+    }
+  }
+
+  .cv-main-content {
+    min-width: auto;
+    padding: $space-xl $space-md;
+    overflow-y: visible; 
+    height: auto;
+    
+    // Ensure no offset on small screens
+    margin-left: 0;
   }
 }

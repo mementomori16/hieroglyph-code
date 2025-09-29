@@ -255,7 +255,7 @@ export const services: Product[] = [
 
 export const portfolio: Product[] = [
   {
-    id: 102,
+    id: 100,
     title: 'Application for Democratic Vouting: delib-5.web.app',
     description:
       `Contribution to the development of custom popup components for the delib-5.web.app platform. The project leveraged Figma for design and Next.js with TypeScript for implementation.
@@ -292,7 +292,7 @@ export const portfolio: Product[] = [
     gitlabLink:'https://gitlab.com/loctoc'
   },
   {
-    id: 103,
+    id: 102,
     title: "Orchestra Concerts Platform: klangweltfinder-lartedelsuono.ch",
     description:
       `A comprehensive, multilingual WordPress website was developed for a Swiss-based philharmonic orchestra.
@@ -310,7 +310,7 @@ export const portfolio: Product[] = [
     link: "https://klangweltfinder-lartedelsuono.ch/"
   },
   {
-    id: 104,
+    id: 103,
     title: 'Psychological Support Website: lebend-ich.ch',
     description:
       `A bespoke, high-performance website was developed for a psychological support practice. Built from scratch using Vanilla JavaScript, styled with SASS and CSS, and powered by a Node.js backend.
@@ -334,7 +334,7 @@ export const portfolio: Product[] = [
 
   },
   {
-    id: 105,
+    id: 104,
     title: 'Custom E-commerce Platform Online Store',
     description: `Development of a high-converting online store with secure payments and inventory management, engineered to significantly boost client sales. The platform's architecture is built with a focus on performance, scalability, and seamless user experience, utilizing a robust RESTful API for efficient data handling.
     
@@ -361,7 +361,7 @@ export const portfolio: Product[] = [
     icons: ['TypeScript', 'React Context', 'Redux', 'Next.js', 'Jest', 'Node.js', 'Vite', 'Stripe', 'React', 'RESTful API', 'Json', 'Lazy Loading', 'Express.js', 'SASS', 'MongoDB', 'Google Analytics', 'GitLab', 'Git', 'Front-end Maintenance', 'Back-end Maintenance'],
   },
   {
-    id: 106,
+    id: 105,
     title: 'Messenger component for Mobile App',
     description:
       `A front-end messenger component was developed for a mobile application, built using React Native.
@@ -378,13 +378,12 @@ export const portfolio: Product[] = [
     icons: ['React Native', 'React Native Components', 'React Navigation', 'NativeBase', 'Expo Router', 'Expo', 'Babel', 'TypeScript', 'npm', 'Json', 'SASS', 'iOS', 'Android', 'Firebase'],
   },
   {
-  "id": 100,
+  "id": 106,
   "title": "Hieroglyph Code: Custom Software Solutions",
   "description": "A dynamic web application and portfolio site that demonstrates the creation of robust digital products from concept to completion. This project showcases my expertise as a full-stack developer, combining elegant design with a modern, scalable architecture.\n\n##### Key Features\n<ul>\n<li><strong>Responsive Design:</strong> The application is fully responsive, providing a seamless user experience across all devices, including mobile, tablet, and desktop.</li>\n<li><strong>Dynamic Content:</strong> Custom-built components, such as a fully interactive photo gallery with zoom functionality and dynamic carousels, handle products and testimonials.</li>\n<li><strong>Intuitive UX/UI:</strong> Every element, from the navigation menu to the contact form, was meticulously designed for user-friendliness and visual appeal, ensuring effortless engagement.</li>\n</ul>\n\n##### Technology & Architecture\n<ul>\n<li><strong>Front-End:</strong> Built with React and TypeScript, ensuring a robust and maintainable codebase.</li>\n<li><strong>Back-End:</strong> Powered by Node.js, with a hybrid architecture that leverages API calls for dynamic image assets while using a local JSON data source for content.</li>\n<li><strong>Workflow:</strong> An automated CI/CD pipeline was configured with GitHub Actions and Firebase Hosting, ensuring reliable, hands-off deployment.</li>\n</ul>",
-  "image": "https://i.ibb.co/BSdqkR2/Screenshot-2025-09-20-121504.png",
+  "image": "https://i.ibb.co/DDgTTR3h/Screenshot-2025-09-29-161049.png",
   "thumbnails": [
     "https://i.ibb.co/zVkKDcBY/4c7d777b-b51d-4e24-81cb-ad078c82f3a2-processed.png",
-    "https://i.ibb.co/s90wKvms/Screenshot-2025-09-17-155416.png",
     "https://i.ibb.co/nqtBgsTB/Screenshot-2025-09-17-155400.png"
   ],
   "tags": [

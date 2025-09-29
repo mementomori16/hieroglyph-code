@@ -5,9 +5,11 @@ import { products as productData } from '../data/products';
 import { Product } from '../types/Product'; // Assuming this type exists
 import './new.scss'; 
 
+// --- RESTORED CODE: Initializing products array ---
 const products: Product[] = [
     ...(productData.services || []),
 ];
+// ---------------------------------------------------
 
 const New: React.FC = () => {
     const { t } = useTranslation();
@@ -29,7 +31,6 @@ const New: React.FC = () => {
 
     const currentProduct = products[currentIndex] || products[0]; 
 
-    // ✅ CHANGE: Fetching separate translation keys (globalTitlePrimary and globalTitleSecondary)
     const highlightedText = t('carousel.globalTitlePrimary');
     const secondaryText = t('carousel.globalTitleSecondary');
 
@@ -48,26 +49,17 @@ const New: React.FC = () => {
     return (
         <div className="new-component-layout container">
             
-            {/* -------------------- LAYOUT: Handles Mobile/Desktop Split via CSS -------------------- */}
             <div className="content-layout"> 
                 
-                {/* -------------------- HALF 1: Titles and Text (TEXT CONTENT) -------------------- */}
                 <div className="text-section">
                     <h1 className="main-title">
-                        {/* FIRST TITLE: Hieroglyph Code (Blue, Larger) */}
                         <span className="highlight">{highlightedText}</span>
-                        
-                        {/* We hide this <br> tag in the final SCSS, but keep it here for structure */}
                         <br className="mobile-break"/> 
-                        
-                        {/* SECOND TITLE: Crafting Digital Excellence (Gray, Smaller) */}
                         <span className="secondary-title">{secondaryText}</span>
                     </h1>
                     <p className="description-text">
                         {globalDescription}
                     </p>
-                    
-                    {/* CTA button links to the current product's CardPage */}
                     <button
                         className="explore-button"
                         onClick={() => handleCtaClick(currentProduct.id)}
@@ -76,15 +68,14 @@ const New: React.FC = () => {
                     </button>
                 </div>
 
-                {/* -------------------- HALF 2: Single Product Card (VISUALS) & Bullets -------------------- */}
                 <div className="media-section carousel-visuals">
-                    
                     <div 
                         className="card-link-wrapper"
                         title={`View details for ${t(`products.${currentProduct.id}.title`)}`}
                     >
                         <div 
-                            className="service-card shadow-lg rounded-lg"
+                            // REMOVED: shadow-lg rounded-lg classes from here
+                            className="service-card"
                             onClick={() => handleCtaClick(currentProduct.id)}
                         >
                             <img
@@ -98,7 +89,8 @@ const New: React.FC = () => {
                             </h3>
                             
                             <button 
-                                className="view-button btn btn-secondary btn-sm" 
+                                // REMOVED: btn btn-secondary btn-sm classes from here
+                                className="view-button" 
                                 onClick={(e) => { 
                                     e.stopPropagation(); 
                                     handleCtaClick(currentProduct.id); 

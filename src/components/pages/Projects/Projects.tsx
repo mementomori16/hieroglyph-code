@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
       <h1 className="heading">{t('projectsPage.title')}</h1>
       <div className="gallery">
         {filteredProducts.map((product) => (
-          <div key={product.id} className="portfolioItem">
+          <div key={product.id} className="serviceItem"> {/* CHANGED from "portfolioItem" */}
             <Link to={`/card/${product.id}`}>
               <img
                 src={product.image}

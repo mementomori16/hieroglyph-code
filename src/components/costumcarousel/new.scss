@@ -84,8 +84,8 @@
         }
 
         .description-text {
-            // ✅ FIX: Making font size explicitly bigger on mobile/default
-            font-size: $font-size-md; // Changed from $font-size-base
+            // FIX: Making font size explicitly bigger on mobile/default
+            font-size: $font-size-md; 
             color: $color-text-dark;
             line-height: 1.5;
             margin-bottom: $space-xl; 
@@ -97,17 +97,39 @@
         }
         
         .explore-button {
-            @extend .btn-blue; 
+            /* * UPDATED STYLE: Transparent background, gray outline, gray text 
+             * Using $color-text-dark for border and text color.
+             */
+            @extend .btn; 
+            background-color: transparent;
+            color: $color-text-title;
+            border: 2px solid $color-text-title; 
             padding: $space-sm $space-lg;
             margin-top: $space-md; 
             font-size: $font-size-base; 
-            border-radius: $border-radius-md; 
+            border-radius: $border-radius-xl; 
             font-weight: $font-weight-bold; 
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+            text-shadow: none; 
             width: auto;
             display: block;
             text-align: center;
-            // Removed margin-left: auto / margin-right: auto as parent centering handles it
+            
+            &:hover {
+                // Subtle fill on hover
+                background-color: $color-alt-background-2; 
+                border-color: $color-secondary; 
+                color: $color-secondary;
+                transform: translateY(-0.0625rem);
+                box-shadow: $shadow-sm; 
+            }
+
+            .arrow {
+                transition: transform 0.3s ease;
+            }
+
+            &:hover .arrow {
+                transform: translateX($space-xs);
+            }
         }
     }
 
@@ -129,55 +151,67 @@
         }
 
         .service-card {
+            /* FIX 1: Apply standard card styles (shadow, border, radius) */
+            border: 1px solid $color-border-subtle;
+            border-radius: $border-radius-md;
+            box-shadow: $shadow-sm; 
+            
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: $space-md $space-sm;
+            padding: $space-lg; 
             background-color: $color-surface;
             width: 100%;
             
-            height: 45vh; 
-            min-height: 18rem; 
-            max-height: 22rem; 
+            /* FIX 2: Removed fixed height properties for correct mobile button placement */
+            height: auto; 
+            min-height: 20rem; 
+            max-height: none; 
             
             justify-content: space-between;
-            transition: transform 0.3s ease; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
             cursor: pointer;
 
             &:hover {
-                transform: translateY(-$space-xxs);
-                box-shadow: $shadow-lg;
+                transform: translateY(-5px); 
+                box-shadow: $shadow-md; 
             }
             
             @media (max-width: $breakpoint-sm) {
-                height: 40vh;
-                min-height: 16rem;
-                padding: $space-sm $space-sm;
+                padding: $space-md; 
+                min-height: 18rem;
             }
         }
 
         .card-image {
-            width: 90%;
-            height: auto;
+            /* FIX 3: Ensures the entire image is visible without cropping */
+            width: 90%; 
+            height: auto; 
             max-width: 90%;
-            max-height: 60%; 
-            object-fit: contain;
+            max-height: 180px; /* Constrain height to allow room for title/button */
+            object-fit: contain; /* CRITICAL: Prevents cropping */
+            
+            border-radius: $border-radius-sm; 
+            margin-bottom: $space-md; 
+            
+            // Center the image
+            margin-left: auto;
+            margin-right: auto;
             display: block;
-            margin-bottom: $space-sm;
-            transition: all 0.5s ease;
         }
         
         .card-title {
             font-size: $font-size-h5;
-            font-weight: $font-weight-bold;
+            font-weight: $font-weight-semibold; 
             color: $color-text-title;
             margin: 0;
-            margin-bottom: $space-sm;
+            margin-bottom: $space-xs; 
             line-height: 1.2;
         }
 
         .view-button {
+            /* FIX 4: Updated button styling to match gallery cards */
             @extend .btn-blue; 
             padding: $space-sm $space-lg;
             margin-top: $space-sm; 
@@ -185,9 +219,10 @@
             border-radius: $border-radius-md; 
             font-weight: $font-weight-bold; 
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+            width: auto; 
         }
     }
-
+    
     .dots {
         display: flex;
         justify-content: center;
@@ -227,13 +262,11 @@
             flex-direction: row; 
             width: 100%; 
             max-width: $breakpoint-xxl; 
-            // FIX 1: Bottom padding for desktop remains smaller
             padding: $space-xxl $space-xl $space-lg $space-xl; 
 
             .text-section {
                 flex: 1;
                 padding-right: $space-xxl;
-                // FIX: Centralize titles, description, and button on desktop
                 text-align: center;
                 align-items: center;
                 margin-bottom: 0; 
@@ -244,7 +277,6 @@
 
                     .highlight {
                         font-size: $font-size-h1; 
-                        // Increased space between the two titles on desktop
                         margin-bottom: $space-lg; 
                     }
 
@@ -253,10 +285,8 @@
                     }
                 }
                 
-                // Desktop description size is fine at $font-size-base/default
                 .description-text {
                     font-size: $font-size-base; 
-                    // Limit width for better centered readability on large screens
                     max-width: 600px;
                 }
             }
@@ -270,15 +300,13 @@
                 }
                 
                 .service-card {
-                    height: auto;
-                    min-height: 22rem; 
-                    max-height: 28rem;
+                    min-height: 24rem; 
+                    max-height: 30rem;
                     padding: $space-xl;
                 }
 
                 .card-image {
-                    max-height: 18rem; 
-                    width: auto;
+                    max-height: 220px; 
                 }
             }
         }

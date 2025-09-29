@@ -78,7 +78,8 @@
         }
     }
 
-    .servicesPage, .about-container, .testimonials-section, .contact-page {
+    /* 👇 CRITICAL FIX: Include .portfolioPage to remove its inherent padding/margin when nested */
+    .servicesPage, .portfolioPage, .about-container, .testimonials-section, .contact-page {
         padding: 0;
         margin: 0;
         box-shadow: none;

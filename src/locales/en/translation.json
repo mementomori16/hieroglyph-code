@@ -10,12 +10,12 @@
         "aboutTeaserDescription": "Your digital presence deserves more than a template. Hieroglyph Code is your all-in-one partner for custom web and mobile development, from concept to completion and beyond.<h5>Driven by Expertise</h5>Led by Ilya Medvedev, a Certified Full-Stack Developer based in Basel, Switzerland, Hieroglyph Code is passionate about transforming complex ideas into elegant, user-friendly software. By combining technical precision with creative vision, the firm delivers custom solutions that truly elevate your digital presence.<h5>A Focus on Key Services</h5><ul><li><strong>Full-Stack Development:</strong> Powerful full-stack applications that are responsive and fast.</li><li><strong>Specialized Features:</strong> Services include building APIs, robust e-commerce platforms, secure login systems, and seamless payment integrations.</li><li><strong>Maintenance & Support:</strong> Reliable ongoing maintenance and updates to ensure your digital tools always run smoothly.</li></ul>",
         "learnMoreButton": "Click For More"
     },
-  "carousel": {
-    "globalTitlePrimary": "Hieroglyph Code",
-    "globalTitleSecondary": "Crafting Digital Excellence",
-    "globalDescription": "Transforming your vision into robust, intuitive, and visually stunning software solutions.",
-    "learnMoreButton": "Learn More About This Service"
-  },
+      "carousel": {
+        "globalTitlePrimary": "Hieroglyph Code",
+        "globalTitleSecondary": "Digitale Exzellenz gestalten",
+        "globalDescription": "Wir verwandeln Ihre Vision in robuste, intuitive und visuell beeindruckende Softwarelösungen.",
+        "learnMoreButton": "Mehr über diesen Service erfahren"
+    },
   "projectsPage": {
     "title": "Projects",
     "viewButton": "View Details"
@@ -67,19 +67,19 @@
       "description": "The gap between traditional web and native mobile applications is seamlessly bridged with a Progressive Web App (PWA). An existing web presence can be transformed into an installable, app-like experience that truly excels.<h5>Core PWA Benefits</h5><ul><li><strong>Enhanced Performance:</strong> The apps work offline and load instantly.</li><li><strong>Increased Engagement:</strong> They are capable of sending rich push notifications directly to users.</li><li><strong>Improved Accessibility:</strong> Unparalleled user engagement and enhanced accessibility are delivered without the need for complex app store downloads, providing a remarkably smooth and fast experience across all devices and networks.</li></ul>"
     },
     "100": {
-      "title": "Application for Democratic Voting: delib-5.web.app",
+      "title": "Application for Democratic Voting",
       "description": "Contribution to the development of custom popup components for the delib-5.web.app platform. The project leveraged Figma for design and Next.js with TypeScript for implementation.<h5>Key Contributions</h5><ul><li><strong>Interactive Popups:</strong> A double-paged popup component was developed with fully interactive elements, allowing users to navigate between the two pages and return to the first one.</li><li><strong>Bug Fixes & Performance:</strong> The work also included bug fixes and CSS corrections, resulting in a noticeable improvement in overall site functionality and performance by 15%.</li><li><strong>Collaboration:</strong> This was a collaborative effort with a team of eight members, with all work coordinated via Slack to ensure seamless communication and progress.</li></ul>"
     },
     "101": {
-      "title": "Music Study Application: loctoc.ch",
+      "title": "Music Study Application",
       "description": "Maintenance and active development of frontend components for a Swiss-based music application that provides online and in-person lessons for students.<h5>Development & Technology</h5><ul><li><strong>Frontend Development:</strong> As part of this effort, two new front-page components were added and translated into four languages (English, French, Italian, and Spanish), improving the site's homepage explanation by 30% and giving users a clearer understanding of the platform's purpose. The platform uses Svelte and SvelteKit.</li><li><strong>Integrations:</strong> Payment services were integrated via Stripe, and content delivery was optimized with BunnyNet CDN.</li><li><strong>Project Ecosystem:</strong> The project operates within a comprehensive development ecosystem that includes a Golang backend, Postgres DB, Docker, Heroku, and GitLab for seamless collaboration and deployment.</li></ul>"
     },
     "102": {
-      "title": "Orchestra Concerts Platform: klangweltfinder-lartedelsuono.ch",
+      "title": "Orchestra Concerts Platform",
       "description": "A comprehensive, multilingual WordPress website was developed for a Swiss-based philharmonic orchestra.<h5>Platform Features & Development</h5><ul><li><strong>Custom Event Management:</strong> The platform features a custom event management system, with core functionality extended through deep customization of PHP files.</li><li><strong>Multilingual Support:</strong> The site is fully translatable via the Polylang plugin, ensuring a seamless experience for a diverse audience.</li><li><strong>Technical Scope:</strong> The project scope included domain implementation, SSL certificate management, secure hosting deployment, and ongoing maintenance of the MySQL database and PHP backend to ensure long-term stability and performance.</li></ul>"
     },
     "103": {
-      "title": "Mobile Psychological Therapy Services Website: lebend-ich.ch",
+      "title": "Mobile Psychological Therapy Services Website",
       "description": "A bespoke, high-performance website was developed for a psychological support practice. Built from scratch using Vanilla JavaScript, styled with SASS and CSS, and powered by a Node.js backend, the site is exceptionally lightweight and fast.<h5>Project Scope & Features</h5><ul><li><strong>Development & Deployment:</strong> The entire project lifecycle, from initial design to production deployment, was handled with demonstrated expertise in domain registration, DNS management, SSL/TLS configuration, and cloud deployment via Firebase.</li><li><strong>Interactive Elements:</strong> The application features a custom 'read more/read less' button, a dynamic testimonials component and a picture gallery. Additionally, the privacy policy was meticulously crafted to meet official Swiss medical health standards.</li><li><strong>Analytics & Optimization:</strong> For ongoing optimization, Google Analytics was deployed to track site functionality and user activity, providing data used for continuous improvement of the user experience.</li></ul>"
     },
     "104": {
@@ -91,7 +91,7 @@
       "description": "A front-end messenger component was developed for a mobile application, built using React Native.<h5>Component Features</h5><ul><li><strong>User Interface:</strong> The component features a user's name and photo, text fields, message timestamps, a message notification icon with an unread count, and read/unread status arrows.</li><li><strong>Functionality:</strong> A search bar was also included to allow users to search for specific users or messages.</li><li><strong>Interactive Elements:</strong> An additional popup component was created to include a 'write a message' button, as well as buttons for location, notifications, and announcements, providing a comprehensive and intuitive user experience.</li></ul>"
     },
     "106": {
-       "title": "Hieroglyph Code: hieroglyphcode.ch",
+       "title": "Software Serivces Web App",
       "description": "A dynamic web application and portfolio site that demonstrates the creation of robust digital products from concept to completion. This project showcases my expertise as a full-stack developer, combining elegant design with a modern, scalable architecture.<h5>Key Features</h5><ul><li><strong>Responsive Design:</strong> The application is fully responsive, providing a seamless user experience across all devices, including mobile, tablet, and desktop.</li><li><strong>Dynamic Content:</strong> Custom-built components, such as a fully interactive photo gallery with zoom functionality and dynamic carousels, handle products and testimonials.</li><li><strong>Intuitive UX/UI:</strong> Every element, from the navigation menu to the contact form, was meticulously designed for user-friendliness and visual appeal, ensuring effortless engagement.</li></ul><h5>Technology & Architecture</h5><ul><li><strong>Front-End:</strong> Built with React and TypeScript, ensuring a robust and maintainable codebase.</li><li><strong>Back-End:</strong> Powered by Node.js, with a hybrid architecture that leverages API calls for dynamic image assets while using a local JSON data source for content.</li><li><strong>Workflow:</strong> An automated CI/CD pipeline was configured with GitHub Actions and Firebase Hosting, ensuring reliable, hands-off deployment.</li></ul>",
       "link": "https://hieroglyphcode.ch/",
       "githubLink": "https://github.com/mementomori16/hieroglyph-code"
@@ -218,12 +218,98 @@
       }
     }
   },
-   "cvPage": {
+   
+"cvPage": {
     "titlePrefix": "Full-Stack Developer",
     "titleSuffix": "Ilya Medvedev",
+    "email": "contact@hieroglyphcode.ch",
+    "location": "Basel, Switzerland, CH",
+    
+    "aboutTitle": "About",
+    "projectsTitle": "Projects",
+    "skillsTitle": "Skills",
+    "educationTitle": "Education",
+    "languagesTitle": "Languages",
+    
     "intro": "As a full-stack developer with a foundation in fine arts, I create web applications that are as intuitive and visually compelling as they are powerful and efficient. I specialize in the MERN stack and a diverse set of modern technologies like TypeScript, React, SvelteKit, and Next.js. My unique perspective allows me to bridge the gap between aesthetics and functionality, ensuring every user interaction feels seamless and natural.",
     "outro": "This blend of technical skill and artistic vision has enabled me to deliver applications that don't just work—they resonate with users. I'm passionate about building clean, performant codebases and crafting digital experiences that drive tangible results and leave a lasting impression.",
-    "skillsTitle": "Skills",
+    
+    "portfolioUrl": "http://localhost:5173/projects",
+    
+    "projects": {
+      "p1_hieroglyph": {
+        "company": "Hieroglyph Code",
+        "title": "Custom Software Solutions (Professional Services web app)",
+        "date": "Jul 2025 — Sep 2025",
+        "bullets": [
+          "Full-Stack Architecture: Engineered a RESTful API with Node.js and Express.js to handle all content, including dynamic image assets fetched from an external server, creating a highly efficient front-end.",
+          "Key Components: Developed from scratch: Product Card, Interactive Gallery, Product Carousel, Navbar, Language Switcher, Search Functionality, Preloader and other components.",
+          "Design & UX: Utilized Figma to collaborate on and implement the front-end design, ensuring a professional and user-friendly interface.",
+          "End-to-End Quality Assurance: Implemented a dedicated test suite using Cypress to establish reliable End-to-End (E2E) testing for core user journeys, ensuring site integrity and preventing regressions across major components.",
+          "Workflow: Implemented a CI/CD pipeline using GitHub Actions for automated deployments."
+        ],
+        "links": {
+          "live": "https://hieroglyphcode.ch/",
+          "code": "https://github.com/mementomori16/hieroglyph-code"
+        }
+      },
+      "p2_loctoc": {
+        "company": "Loctoc PTE. LTD",
+        "title": "Full Stack Developer (Freelance Project)",
+        "date": "Jun 2025 — Jul 2025",
+        "bullets": [
+          "Boosted user-friendliness by 15% and client clarity by 30% by actively developing frontend components for a Swiss-based music application using Svelte and SvelteKit.",
+          "Integrated payment services via Stripe and optimized content delivery with BunnyNet CDN.",
+          "Collaborated within a comprehensive development ecosystem involving Golang, Postgres DB, Docker, Heroku, and GitLab."
+        ],
+        "links": {
+          "live": "https://hieroglyphcode.ch/",
+          "code": "https://gitlab.com/loctoc"
+        }
+      },
+      "p3_mindconnect": {
+        "company": "Mindconnect.ai",
+        "title": "AI Chatbot (Full Stack Developer Intern)",
+        "date": "Oct 2024 — Dec 2024",
+        "bullets": [
+          "Engineered and implemented a user authentication system from the ground up using Ant Design, Vue.js 3, and TypeScript to enable secure user login via Google Sign-in.",
+          "Built an AI chat component from scratch, focusing on an intuitive and responsive UI with TypeScript, Vue.js 3, and SASS.",
+          "Collaborated with backend developer to integrate frontend components, ensuring seamless data flow."
+        ],
+        "links": {
+          "note": "Codebase not publicly available."
+        }
+      },
+      "p4_freedi": {
+        "company": "FreeDi",
+        "title": "AI-Powered Group Decision Platform (Full Stack Developer Intern)",
+        "date": "Jun 2024 — Oct 2024",
+        "bullets": [
+          "Designed and implemented an API function utilizing Google Generate AI, demonstrating direct experience integrating AI into web functionalities.",
+          "Successfully built Login and User components from scratch using Next.js, Redux.js, Node.js, TypeScript, and Firebase.",
+          "Developed a responsive Popup Notification component using Figma, TypeScript, React, and SASS, which increased user engagement by 10%."
+        ],
+        "links": {
+          "live": "https://delib-5.web.app/",
+          "code": "https://github.com/mementomori16/delib-5-p"
+        }
+      },
+      "p5_danielahagmann": {
+        "company": "Daniela Hagmann",
+        "title": "Mobile Psychological Therapy Services Website (Client Project)",
+        "date": "Oct 2023 — Dec 2023",
+        "bullets": [
+          "Core Stack: Engineered with a Node.js backend and a Vanilla JavaScript front-end, with styling handled by SASS and CSS for optimal performance.",
+          "Full-Lifecycle Management: Handled the entire project lifecycle, including domain registration, DNS management, and SSL/TLS configuration, with final deployment to Firebase.",
+          "Analytics & Compliance: Integrated Google Analytics and ensured compliance with official Swiss medical health standards."
+        ],
+        "links": {
+          "live": "https://lebend-ich.ch/",
+          "code": "https://github.com/mementomori16/Daniela-Hagmann-"
+        }
+      }
+    },
+    
     "skillCategory": {
       "frontEnd": {
         "title": "FRONT-END"
@@ -235,7 +321,7 @@
         "title": "DATABASES"
       },
       "ai": {
-        "title": "AI TOOLS & INTEGRATION"
+        "title": "AI TOOLS"
       },
       "platforms": {
         "title": "PLATFORMS & SERVICES"
@@ -244,24 +330,34 @@
         "title": "DESIGN & UI"
       },
       "cms": {
-        "title": "CMS"
+        "title": "CMS & TOOLS"
       }
     },
-    "educationTitle": "Education",
-    "educationSummary": "I possess a diverse educational background that blends technical expertise with creative artistry.",
+    
     "education": {
-      "fullStack": "Full Stack Developer, Open University: INT college - Institute of Innovation & Technology",
-      "bachelor": "Bachelor of Education, Certified Senior Teacher in subject of Art, Hamidrasha-Faculty of the Arts",
-      "highSchool": "High School Diploma (Graphic Design Focus), Ort Geula High School"
+      "fullStack": { 
+        "title": "Open University: INT college – Institute of Innovation & Technology", 
+        "date": "Apr 2023 — Jul 2024", 
+        "degree": "Full Stack Developer",
+        "url": "https://www.linkedin.com/school/int-college-institute-of-technology-innovation/posts/?feedView=all" 
+      },
+      "bachelor": { 
+        "title": "Hamidrasha-Faculty of the Arts", 
+        "date": "Oct 2007 — Jun 2011", 
+        "degree": "B.F.A.ed",
+        "url": "https://en.wikipedia.org/wiki/HaMidrasha_%E2%80%93_Faculty_of_the_Arts"
+      },
+      "highSchool": { 
+        "title": "Ort Geula High School", 
+        "date": "Sep 1998 — Jun 2000", 
+        "degree": "High School Diploma (Graphic Design Focus)" 
+      }
     },
-    "languagesTitle": "Languages",
+    
     "languages": {
-      "english": "English - Native/Bilingual",
-      "russian": "Russian - Native/Bilingual",
-      "german": "German - Conversational B1"
-    },
-    "location": "Basel, Switzerland",
-    "ctaButton": "Contact Me",
-    "projectsButton": "My Projects"
+      "english": { "name": "English", "fluency": "Native/Bilingual" },
+      "russian": { "name": "Russian", "fluency": "Native/Bilingual" },
+      "german": { "name": "German", "fluency": "Conversational B1" }
+    }
   }
 }
