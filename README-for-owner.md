@@ -16,7 +16,7 @@ Bash
 git add .
 git commit -m "Your descriptive commit message"
 git push origin main
-git add . stages all new, modified, and deleted files.
+git add .stages all new, modified, and deleted files.
 
 git commit -m "..." creates a new commit with a message summarizing your changes.
 
@@ -51,7 +51,7 @@ How it Works:
 
 You push a commit to the main branch on GitHub.
 
-This push automatically triggers the GitHub Action workflow.
+Th is push automatically triggers the GitHub Action workflow.
 
 The workflow builds the project and, if the build is successful, it automatically deploys the code to Firebase Hosting.
 

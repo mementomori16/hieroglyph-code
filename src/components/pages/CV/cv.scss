@@ -25,13 +25,13 @@
   display: flex;
   width: 100%;
   flex-grow: 1;
-  max-width: $breakpoint-xxl; 
-  margin: 0 auto;
+  max-width: $breakpoint-xxl; // Centers the entire two-column layout
+  margin: 0 auto; 
   box-shadow: $shadow-sm; 
 }
 
 /* -------------------------------------------------------------------
- * LEFT COLUMN: SIDEBAR (TRULY FIXED CONTENT)
+ * LEFT COLUMN: SIDEBAR (USES STICKY POSITIONING FOR LARGE SCREENS)
  * -------------------------------------------------------------------*/
 .cv-sidebar {
   width: 300px; 
@@ -41,36 +41,29 @@
   border-right: 1px solid $color-border-subtle;
   text-align: center;
   
-  position: fixed; 
-  
-  // Custom alignment adjustments
-  margin-left: 88px; 
+  // FIX: Use sticky positioning
+  position: sticky; 
+  // Aligned to clear the fixed navigation bar
   top: 70px; 
   
-  // Align left edge with main wrapper
-  left: calc(50vw - (#{$breakpoint-xxl} / 2));
-  
-  transform: none; 
-  right: auto;
-  margin-right: 0; 
-  
-  max-height: calc(100vh - 80px); 
+  // Height limited to viewport minus navigation bar height
+  max-height: calc(100vh - 70px); 
   overflow-y: auto; 
   z-index: 10; 
 }
 
 /* Profile Image */
 .profile-image-container {
-  display: inline-block;
-  margin-bottom: $space-md; 
-  
-  img {
-    width: 75px; 
-    height: 75px; 
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-  }
+    display: inline-block;
+    margin-bottom: $space-md; 
+    
+    img {
+        width: 75px; 
+        height: 75px; 
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
 }
 
 /* Name and Profession Styling */
@@ -175,6 +168,9 @@
   height: auto;
   overflow-y: visible; 
   
+  // ✅ CRITICAL FIX: Compensates for the sticky sidebar's top offset
+  margin-top: -390px; 
+  // Keeps the content next to the sidebar
   margin-left: 300px; 
 }
 
@@ -334,7 +330,7 @@ ul.highlights {
 }
 
 /* -------------------------------------------------------------------
- * RESPONSIVENESS FIXES
+ * RESPONSIVENESS (SMALL SCREENS/TABLETS)
  * -------------------------------------------------------------------*/
 @media (max-width: $breakpoint-lg) {
   
@@ -349,8 +345,8 @@ ul.highlights {
   }
 
   .cv-sidebar {
-    // Revert to non-fixed on small screens/tablets
-    position: static;
+    // Revert sticky to static (normal flow) on small screens
+    position: static; 
     max-height: none; 
     overflow-y: visible; 
     
@@ -406,7 +402,8 @@ ul.highlights {
     overflow-y: visible; 
     height: auto;
     
-    // Ensure no offset on small screens
+    // Ensure both offsets are zeroed out for the stacked mobile layout
     margin-left: 0;
+    margin-top: 0;
   }
 }
