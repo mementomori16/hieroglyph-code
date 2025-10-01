@@ -231,8 +231,13 @@
     "educationTitle": "Education",
     "languagesTitle": "Languages",
     
-    "intro": "As a full-stack developer with a foundation in fine arts, I create web applications that are as intuitive and visually compelling as they are powerful and efficient. I specialize in the MERN stack and a diverse set of modern technologies like TypeScript, React, SvelteKit, and Next.js. My unique perspective allows me to bridge the gap between aesthetics and functionality, ensuring every user interaction feels seamless and natural.",
-    "outro": "This blend of technical skill and artistic vision has enabled me to deliver applications that don't just work—they resonate with users. I'm passionate about building clean, performant codebases and crafting digital experiences that drive tangible results and leave a lasting impression.",
+    "intro1": "As a Full-Stack Developer with a foundation in fine arts, I create web applications that are as intuitive and visually compelling as they are powerful and efficient. I specialize in building clean, performant code that drives speed and stability, delivering end-to-end solutions built on TypeScript and the MERN stack, from conceptual design to deployment.",
+    
+    "intro2": "My core expertise spans React, Node.js, and advanced styling with SCSS, and I am proficient with modern frameworks like Next.js, Vue.js, and Svelte/SvelteKit. This technical foundation is merged with a Fine Arts background to create aesthetically compelling web applications, bridging the gap between design and development.",
+    
+    "intro3": "I specialize in engineering complex, reusable front-end systems and features. This includes crucial components like authentication flows, chat widgets, and advanced multimedia components—for example, zoomable galleries and adjustable audio players. I also design the related backend components for real-time integration, such as view counters and likes. I prioritize resolving critical CSS/UX issues to ensure optimal user interaction.",
+    
+    "intro4": "This focus on the user experience drives tangible outcomes, including boosting user-friendliness by 15% and enhancing user engagement by 30% on commercial applications. I manage the entire application lifecycle, including API integration, full-stack testing with Cypress, and setting up CI/CD pipelines using tools like GitHub and GitLab.",
     
     "portfolioUrl": "http://localhost:5173/projects",
     

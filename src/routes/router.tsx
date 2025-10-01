@@ -10,15 +10,17 @@ import CardPage from "../components/pages/Card/CardPage/CardPage";
 import Projects from "../components/pages/Projects/Projects";
 import LegalInfo from "../components/pages/Attributions/Legal-info";
 import Cv from "../components/pages/CV/Cv";
-import New from "../components/costumcarousel/New";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />, // Set MainLayout as the parent element
+    element: <MainLayout />, 
     children: [
-      { path: "/", element: <Navigate to="/home" replace /> },
-      { path: "home", element: <Home /> },
+     
+      { path: "/", element: <Home /> }, 
+      
+      { path: "home", element: <Navigate to="/" replace /> }, 
+      
       { path: "about", element: <About /> },
       { path: "services", element: <Services /> },
       { path: "projects", element: <Projects /> },
@@ -27,7 +29,6 @@ const router = createBrowserRouter([
       { path: "contact", element: <Contact /> },
       { path: "legalinfo", element: <LegalInfo /> },
       { path: "cv", element: <Cv /> },
-      { path: "new", element: <New /> },
     ],
   },
 ]);
