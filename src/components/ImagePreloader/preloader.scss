@@ -4,27 +4,15 @@
 @import "../../global.scss";
 
 /* -------------------------------------------------------------------
- * GLOBAL RESET FOR CENTERING
- * This ensures the 100vw/100vh calculation is not disrupted by 
- * default browser margins, guaranteeing the image is centered.
- * -------------------------------------------------------------------*/
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
-}
-
-
-/* -------------------------------------------------------------------
  * PRELOADER CONTAINER
  * -------------------------------------------------------------------*/
 .preloader-container {
     display: flex;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    // CRITICAL FIX: Use 'inset' for reliable full-screen coverage on mobile
+    inset: 0; /* Shorthand for: top: 0; right: 0; bottom: 0; left: 0; */
+    
+    // Note: We are removing 100vw/100vh since 'inset: 0' achieves the same goal
     z-index: 9999;
     background-color: var(--color-background);
     justify-content: center; /* Centers horizontally */
