@@ -3,40 +3,55 @@
 @use "sass:color";
 @import "../../global.scss";
 
+/* -------------------------------------------------------------------
+ * GLOBAL RESET FOR CENTERING
+ * This ensures the 100vw/100vh calculation is not disrupted by 
+ * default browser margins, guaranteeing the image is centered.
+ * -------------------------------------------------------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+
+/* -------------------------------------------------------------------
+ * PRELOADER CONTAINER
+ * -------------------------------------------------------------------*/
 .preloader-container {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  background-color: var(--color-background);
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: var(--color-background);
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
 }
 
 .preloader-container.loading {
-  display: flex;
+    display: flex;
 }
 
 .preloader-logo {
-  max-width: 120px;
-  height: auto;
-  animation: subtlePulse 2s infinite ease-in-out; /* Apply a new, subtle animation */
+    max-width: 120px;
+    height: auto;
+    animation: subtlePulse 2s infinite ease-in-out; 
 }
 
 @keyframes subtlePulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.9;
-  }
-  50% {
-    transform: scale(1.05); /* A very slight scale up */
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.9;
-  }
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
 }

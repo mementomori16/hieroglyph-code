@@ -16,8 +16,8 @@ Bash
 git add .
 git commit -m "Your descriptive commit message"
 git push origin main
-git add .stages all new, modified, and deleted files.
 
+git add .stages all new, modified, and deleted files.
 git commit -m "..." creates a new commit with a message summarizing your changes.
 
 git push origin main sends the new commit to the main branch on GitHub.
