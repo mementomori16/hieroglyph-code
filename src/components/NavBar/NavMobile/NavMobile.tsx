@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import './navMobile.scss';
 import SearchBar from '../../pages/SearchBar/SearchBar';
 import { Product } from '../../types/Product';
-import logo from '../../../assets/images/icons/Group 28.svg';
+import logo from '../../../assets/images/icons/new logo2.svg';
 import LanguageSwitcher from '../../Languege-switcher/Languege-switcher';
 
 interface Route {

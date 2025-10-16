@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 import SearchBar from '../../../components/pages/SearchBar/SearchBar';
 import './navDesktop.scss';
 import { Product } from '../../types/Product';
-import logo from '../../../assets/images/icons/Group 28.svg';
+import logo from '../../../assets/images/icons/new logo2.svg';
 import LanguageSwitcher from '../../Languege-switcher/Languege-switcher';
 import { useTranslation } from 'react-i18next';
 
