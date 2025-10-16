@@ -1,12 +1,11 @@
-## 📄 Professional Resume
-[View my Full Stack Developer Resume here](./RESUME.md)
+
 Hieroglyph Code - Custom Software Solutions
 A modern and interactive web application built to showcase custom software solutions. This project features a portfolio of products, client testimonials, and a custom photo gallery, all powered by a professional and automated development workflow.
 
 Live Application 🌐
 Explore the live application and see the features in action:
 
-hieroglyphcode.ch
+https://hieroglyphcode.ch/
 
 Key Features ✨
 Fully Responsive Design: The application is designed to be fully scalable and cross-device compatible, adapting seamlessly to all desktop screens, mobiles, and tablets, including rare or custom screen sizes.
@@ -28,42 +27,4 @@ API Usage: The application makes API calls to a separate, external server to ret
 
 Dynamic Rendering: The app's logic dynamically combines the local product data with the API-fetched image links to render the complete user interface.
 
-Technology Stack 🛠️
-The application is built using a modern and efficient technology stack.
 
-Front-End: React for building a dynamic user interface.
-
-Back-End: Node.js for server-side logic and handling development tasks.
-
-Languages & Data: TypeScript for type safety and improved code quality, and JSON for structured data exchange.
-
-Styling: SCSS for scalable and maintainable styling.
-
-Build Tool: Vite for a lightning-fast development experience and optimized production builds.
-
-Deployment: Firebase Hosting for reliable and secure hosting, with an automated GitHub Actions CI/CD pipeline for instant deployments on every push to the main branch.
-
-Getting Started Locally 💻
-To run the project on your local machine, follow these steps:
-
-Clone the repository:
-
-Bash
-
-git clone https://github.com/mementomori16/hieroglyph-code.git
-Navigate to the project directory:
-
-Bash
-
-cd hieroglyph-code
-Install dependencies:
-
-Bash
-
-npm install
-Start the development server:
-
-Bash
-
-npm run dev
-The application will be available at http://localhost:5173.
