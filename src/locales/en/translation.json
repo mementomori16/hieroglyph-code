@@ -10,11 +10,11 @@
         "aboutTeaserDescription": "Your digital presence deserves more than a template. Hieroglyph Code is your all-in-one partner for custom web and mobile development, from concept to completion and beyond.<h5>Driven by Expertise</h5>Led by Ilya Medvedev, a Certified Full-Stack Developer based in Basel, Switzerland, Hieroglyph Code is passionate about transforming complex ideas into elegant, user-friendly software. By combining technical precision with creative vision, the firm delivers custom solutions that truly elevate your digital presence.<h5>A Focus on Key Services</h5><ul><li><strong>Full-Stack Development:</strong> Powerful full-stack applications that are responsive and fast.</li><li><strong>Specialized Features:</strong> Services include building APIs, robust e-commerce platforms, secure login systems, and seamless payment integrations.</li><li><strong>Maintenance & Support:</strong> Reliable ongoing maintenance and updates to ensure your digital tools always run smoothly.</li></ul>",
         "learnMoreButton": "Click For More"
     },
-      "carousel": {
+   "carousel": {
         "globalTitlePrimary": "Hieroglyph Code",
-        "globalTitleSecondary": "Digitale Exzellenz gestalten",
-        "globalDescription": "Wir verwandeln Ihre Vision in robuste, intuitive und visuell beeindruckende Softwarelösungen.",
-        "learnMoreButton": "Mehr über diesen Service erfahren"
+        "globalTitleSecondary": "Shaping Digital Excellence",
+        "globalDescription": "Your vision is transformed into robust, intuitive, and visually stunning software solutions.",
+        "learnMoreButton": "Learn more about this service"
     },
   "projectsPage": {
     "title": "Projects",

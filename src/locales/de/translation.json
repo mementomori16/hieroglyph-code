@@ -10,11 +10,12 @@
     "aboutTeaserDescription": "Ihre digitale Präsenz verdient mehr als nur eine Vorlage. Hieroglyph Code ist Ihr All-in-One-Partner für massgeschneiderte Web- und Mobile-Entwicklung, von der Konzeption bis zur Fertigstellung und darüber hinaus.<h5>Geleitet von Expertise</h5>Geleitet von Ilya Medvedev, einem zertifizierten Full-Stack-Entwickler aus Basel, Schweiz, widmet sich Hieroglyph Code der leidenschaftlichen Umwandlung komplexer Ideen in elegante, benutzerfreundliche Software. Durch die Kombination von technischer Präzision und kreativer Vision liefert das Unternehmen massgeschneiderte Lösungen, die Ihre digitale Präsenz wirklich aufwerten.<h5>Ein Fokus auf Schlüssel-Dienstleistungen</h5><ul><li><strong>Full-Stack-Entwicklung:</strong> Leistungsstarke Full-Stack-Applikationen, die reaktionsschnell und schnell sind.</li><li><strong>Spezialisierte Funktionen:</strong> Zu den Dienstleistungen gehören die Erstellung von APIs, robusten E-Commerce-Plattformen, sicheren Anmeldesystemen und nahtlosen Zahlungsintegrationen.</li><li><strong>Wartung & Support:</strong> Zuverlässige, laufende Wartung und Updates, um sicherzustellen, dass Ihre digitalen Tools stets reibungslos funktionieren.</li></ul>",
     "learnMoreButton": "Mehr erfahren"
   },
-  "carousel": {
-    "globalTitle": "Hieroglyph Code: Digitale Exzellenz gestalten",
-    "globalDescription": "Ihre Vision wird in robuste, intuitive und visuell beeindruckende Softwarelösungen verwandelt.",
-    "learnMoreButton": "Erfahren Sie mehr über diesen Service"
-  },
+     "carousel": {
+        "globalTitlePrimary": "Hieroglyph Code",
+        "globalTitleSecondary": "Digitale Exzellenz gestalten",
+        "globalDescription": "Ihre Vision wird in robuste, intuitive und visuell beeindruckende Softwarelösungen.",
+        "learnMoreButton": "Mehr über diesen Service erfahren"
+    },
   "projectsPage": {
     "title": "Projekte",
     "viewButton": "Details ansehen"
