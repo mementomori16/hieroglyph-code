@@ -43,7 +43,9 @@ Commit this change and push it to GitHub to resolve the build error.
 Bash
 
 git commit -m "Fix: Resolved case-sensitivity issue with searchBar.scss"
+
 git push origin main
+
 3. Deploying Code Corrections to Firebase
 This project uses an automated deployment workflow via GitHub Actions. You typically do not need to manually deploy.
 

@@ -329,7 +329,7 @@ export const portfolio: Product[] = [
     ],
     tags: ['React', 'SEO', 'Marketing Website'],
     icons: ['Vanilla JavaScript', 'Node.js', 'HTML5', 'SASS', 'CSS3', 'Firebase', 'Front-end Maintenance', 'Back-end Maintenance', 'Service Worker', 'DNS', 'SSL'],
-    link: 'test-1-dd24e.web.app',
+    link: "https://test-1-dd24e.web.app/",
     githubLink: "https://github.com/mementomori16/Daniela-Hagmann-"
 
   },
