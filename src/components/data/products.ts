@@ -329,7 +329,7 @@ export const portfolio: Product[] = [
     ],
     tags: ['React', 'SEO', 'Marketing Website'],
     icons: ['Vanilla JavaScript', 'Node.js', 'HTML5', 'SASS', 'CSS3', 'Firebase', 'Front-end Maintenance', 'Back-end Maintenance', 'Service Worker', 'DNS', 'SSL'],
-    link: 'https://lebend-ich.ch/',
+    link: 'test-1-dd24e.web.app',
     githubLink: "https://github.com/mementomori16/Daniela-Hagmann-"
 
   },
@@ -360,6 +360,7 @@ export const portfolio: Product[] = [
     tags: ['Next.js', 'React', 'Stripe', 'E-commerce'],
     icons: ['TypeScript', 'React Context', 'Redux', 'Next.js', 'Jest', 'Node.js', 'Vite', 'Stripe', 'React', 'RESTful API', 'Json', 'Lazy Loading', 'Express.js', 'SASS', 'MongoDB', 'Google Analytics', 'GitLab', 'Git', 'Front-end Maintenance', 'Back-end Maintenance'],
   },
+   /*
   {
     id: 105,
     title: 'Messenger component for Mobile App',
@@ -377,6 +378,7 @@ export const portfolio: Product[] = [
     tags: ['React Native', 'Firebase', 'Mobile App', 'iOS', 'Android'],
     icons: ['React Native', 'React Native Components', 'React Navigation', 'NativeBase', 'Expo Router', 'Expo', 'Babel', 'TypeScript', 'npm', 'Json', 'SASS', 'iOS', 'Android', 'Firebase'],
   },
+  */
   {
   "id": 106,
   "title": "Hieroglyph Code: Custom Software Solutions",

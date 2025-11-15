@@ -298,21 +298,8 @@
           "live": "https://delib-5.web.app/",
           "code": "https://github.com/mementomori16/delib-5-p"
         }
-      },
-      "p5_danielahagmann": {
-        "company": "Daniela Hagmann",
-        "title": "Mobile Psychological Therapy Services Website (Client Project)",
-        "date": "Oct 2023 — Dec 2023",
-        "bullets": [
-          "Core Stack: Engineered with a Node.js backend and a Vanilla JavaScript front-end, with styling handled by SASS and CSS for optimal performance.",
-          "Full-Lifecycle Management: Handled the entire project lifecycle, including domain registration, DNS management, and SSL/TLS configuration, with final deployment to Firebase.",
-          "Analytics & Compliance: Integrated Google Analytics and ensured compliance with official Swiss medical health standards."
-        ],
-        "links": {
-          "live": "https://lebend-ich.ch/",
-          "code": "https://github.com/mementomori16/Daniela-Hagmann-"
-        }
       }
+     
     },
     
     "skillCategory": {
@@ -341,7 +328,7 @@
     
     "education": {
       "fullStack": { 
-        "title": "Open University: INT college – Institute of Innovation & Technology", 
+        "title": "Tel Aviv Open University: INT college – Institute of Innovation & Technology", 
         "date": "Apr 2023 — Jul 2024", 
         "degree": "Full Stack Developer",
         "url": "https://www.linkedin.com/school/int-college-institute-of-technology-innovation/posts/?feedView=all" 
