@@ -254,6 +254,37 @@ export const services: Product[] = [
 ];
 
 export const portfolio: Product[] = [
+
+   {
+  "id": 99,
+  "title": "Hieroglyph Code: Custom Software Solutions",
+  "description": "A dynamic web application and portfolio site that demonstrates the creation of robust digital products from concept to completion. This project showcases my expertise as a full-stack developer, combining elegant design with a modern, scalable architecture.\n\n##### Key Features\n<ul>\n<li><strong>Responsive Design:</strong> The application is fully responsive, providing a seamless user experience across all devices, including mobile, tablet, and desktop.</li>\n<li><strong>Dynamic Content:</strong> Custom-built components, such as a fully interactive photo gallery with zoom functionality and dynamic carousels, handle products and testimonials.</li>\n<li><strong>Intuitive UX/UI:</strong> Every element, from the navigation menu to the contact form, was meticulously designed for user-friendliness and visual appeal, ensuring effortless engagement.</li>\n</ul>\n\n##### Technology & Architecture\n<ul>\n<li><strong>Front-End:</strong> Built with React and TypeScript, ensuring a robust and maintainable codebase.</li>\n<li><strong>Back-End:</strong> Powered by Node.js, with a hybrid architecture that leverages API calls for dynamic image assets while using a local JSON data source for content.</li>\n<li><strong>Workflow:</strong> An automated CI/CD pipeline was configured with GitHub Actions and Firebase Hosting, ensuring reliable, hands-off deployment.</li>\n</ul>",
+  "image": "https://i.ibb.co/DDgTTR3h/Screenshot-2025-09-29-161049.png",
+  "thumbnails": [
+    "https://i.ibb.co/zVkKDcBY/4c7d777b-b51d-4e24-81cb-ad078c82f3a2-processed.png",
+    "https://i.ibb.co/nqtBgsTB/Screenshot-2025-09-17-155400.png"
+  ],
+  "tags": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Full-Stack",
+    "Web Application",
+    "Portfolio"
+  ],
+  "icons": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Firebase",
+    "SASS",
+    "GitHub",
+    "Service Worker",
+    "CI/CD"
+  ],
+  "link": "https://hieroglyphcode.ch/",
+  "githubLink": "https://github.com/mementomori16/hieroglyph-code"
+},
   {
     id: 100,
     title: 'Application for Democratic Vouting: delib-5.web.app',
@@ -291,6 +322,7 @@ export const portfolio: Product[] = [
     link: 'https://loctoc.ch/',
     gitlabLink:'https://gitlab.com/loctoc'
   },
+  /*
   {
     id: 102,
     title: "Orchestra Concerts Platform: klangweltfinder-lartedelsuono.ch",
@@ -309,6 +341,7 @@ export const portfolio: Product[] = [
     icons: ["WordPress", "WooCommerce", "Divi", "Elementor", "Polylang", "PHP", 'Front-end Maintenance', 'Back-end Maintenance', 'Service Worker', 'DNS', 'SSL'],
     link: "https://klangweltfinder-lartedelsuono.ch/"
   },
+  */
   {
     id: 103,
     title: 'Psychological Support Website: lebend-ich.ch',
@@ -380,7 +413,7 @@ export const portfolio: Product[] = [
   },
   */
   {
-  "id": 106,
+  "id": 99,
   "title": "Hieroglyph Code: Custom Software Solutions",
   "description": "A dynamic web application and portfolio site that demonstrates the creation of robust digital products from concept to completion. This project showcases my expertise as a full-stack developer, combining elegant design with a modern, scalable architecture.\n\n##### Key Features\n<ul>\n<li><strong>Responsive Design:</strong> The application is fully responsive, providing a seamless user experience across all devices, including mobile, tablet, and desktop.</li>\n<li><strong>Dynamic Content:</strong> Custom-built components, such as a fully interactive photo gallery with zoom functionality and dynamic carousels, handle products and testimonials.</li>\n<li><strong>Intuitive UX/UI:</strong> Every element, from the navigation menu to the contact form, was meticulously designed for user-friendliness and visual appeal, ensuring effortless engagement.</li>\n</ul>\n\n##### Technology & Architecture\n<ul>\n<li><strong>Front-End:</strong> Built with React and TypeScript, ensuring a robust and maintainable codebase.</li>\n<li><strong>Back-End:</strong> Powered by Node.js, with a hybrid architecture that leverages API calls for dynamic image assets while using a local JSON data source for content.</li>\n<li><strong>Workflow:</strong> An automated CI/CD pipeline was configured with GitHub Actions and Firebase Hosting, ensuring reliable, hands-off deployment.</li>\n</ul>",
   "image": "https://i.ibb.co/DDgTTR3h/Screenshot-2025-09-29-161049.png",
